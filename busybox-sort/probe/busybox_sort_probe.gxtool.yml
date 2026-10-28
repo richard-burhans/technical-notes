@@ -1,0 +1,68 @@
+class: GalaxyUserTool
+id: tn-busybox-sort-probe
+version: "0.2.0"
+name: BusyBox sort kill probe (technical-notes)
+description: Does Galaxy notice when BusyBox sort is killed in the middle of a pipe?
+container: quay.io/biocontainers/ucsc-maftobigmaf:482--h0b57e2e_0
+requirements:
+  # MiB. Small on purpose: the oom modes size their input from GALAXY_MEMORY_MB.
+  - type: resource
+    ram_min: 512
+inputs:
+  - name: mode
+    type: text
+    value: kill
+    label: kill (SIGKILL sort while it writes), oom-file or oom-pipe (sort exceeds the job's memory, input from a file or a live producer)
+outputs:
+  - name: result
+    type: data
+    format: txt
+    from_work_dir: lines.txt
+    label: lines that reached the consumer
+shell_command: |
+  set -e
+  mode='$(inputs.mode)'
+  mem="$GALAXY_MEMORY_MB"
+  echo "`date +%T` mode=$mode GALAXY_MEMORY_MB=$mem sh=`readlink /bin/sh` sort_bytes=`wc -c < /usr/bin/sort` ulimit_v=`ulimit -v`"
+  # Where the job's memory limit lives, as far as the container can see it.
+  cg=`sed -n 's/^0:://p' /proc/self/cgroup`
+  echo "cgroup=$cg"
+  for d in /sys/fs/cgroup "/sys/fs/cgroup$cg"; do
+    for f in memory.max memory.events; do
+      [ -r "$d/$f" ] && echo "$d/$f: `tr '\n' ' ' < $d/$f`"
+    done
+  done
+  # seq is fast; sorting it in reverse makes sort reorder every line.
+  gen() { seq "$1"; }
+  if [ "$mode" = oom-file ] || [ "$mode" = oom-pipe ]; then
+    # About 49 bytes of BusyBox sort memory per 10-byte line: 1.5 times the job's memory, at most 60 M lines,
+    # and sort is stopped after 10 minutes so an unenforced limit cannot leave the job running.
+    n=`awk -v m="$mem" 'BEGIN{n = m*1048576*1.5/49; if (n > 60000000) n = 60000000; printf "%d", n}'`
+    [ "$n" -gt 0 ] || { echo "GALAXY_MEMORY_MB is not set; use mode kill" >&2; exit 2; }
+    if [ "$mode" = oom-file ]; then
+      gen "$n" > input.txt
+      echo "`date +%T` wrote $n lines"
+      cat input.txt | timeout 600 sort -rn | awk 'END{print NR}' > lines.txt
+    else
+      gen "$n" | timeout 600 sort -rn | awk 'END{print NR}' > lines.txt
+    fi
+  else
+    # Sort completes its read; once the consumer has its first line, sort is SIGKILLed mid-write.
+    n=2000000
+    ( while [ ! -e started ]; do sleep 0.05; done; sleep 0.5; kill -9 `pidof sort` ) &
+    gen "$n" | sort -rn | awk 'NR==1{system("touch started")} NR%200000==0{system("sleep 0.3")} END{print NR}' > lines.txt
+    wait
+  fi
+  echo "`date +%T` lines reaching the consumer: `cat lines.txt` of $n"
+  for d in /sys/fs/cgroup "/sys/fs/cgroup$cg"; do
+    [ -r "$d/memory.events" ] && echo "after: $d/memory.events: `tr '\n' ' ' < $d/memory.events`"
+  done
+  true
+help:
+  format: markdown
+  content: |
+    A probe for the technical note *BusyBox sort in biocontainers*. It runs
+    `seq N | sort -rn | awk 'END{print NR}'` in a BusyBox container and writes the number of lines that reached
+    the consumer. Mode `kill` SIGKILLs sort while it writes. Modes `oom-file` and `oom-pipe` size the input so sort
+    needs about 1.5 times the job's memory (at most 60 million lines), reading it from a file or a live producer,
+    and stop sort after 10 minutes. In every mode the script exits 0 unless the shell or Galaxy notices the kill.

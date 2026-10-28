@@ -1,0 +1,8 @@
+busybox-sort/paper/*.aux
+busybox-sort/paper/*.log
+busybox-sort/paper/*.out
+busybox-sort/paper/*.fls
+busybox-sort/paper/*.fdb_latexmk
+__pycache__/
+busybox-sort/paper/missfont.log
+.ruff_cache/
