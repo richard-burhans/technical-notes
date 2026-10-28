@@ -156,7 +156,10 @@ for them only the container itself decides.
 \code{coreutils}, would reach every tool author through \code{planemo lint}. We wrote a prototype that parses each
 tool with Galaxy's own parser. On the 2{,}061 tools in \code{galaxyproject/tools-iuc} (commit \code{ba9ee7d1}) it
 flags 6, 5 of them without a \code{coreutils} requirement. Only one sorts input whose size grows with the data: the
-Ensembl VEP wrapper's sort of a user-supplied annotation file. We have not tested whether that tool fails.
+Ensembl VEP wrapper's sort of a user-supplied annotation file, and that wrapper sets \code{pipefail}, so a kill
+would fail the job. The other four sort short lists. The collection is not exposed today, so the rule's value is in
+catching the next wrapper. (Its review shows the convention that makes this matter: ``sort is coreutils and I
+thought we do not normally require that''~\cite{iuc4533}.)
 \item \textbf{Teach Galaxy's Slurm runner the current message.} Treating \code{Detected N oom-kill event(s)} in a
 job's standard error as a failure, whatever the exit status, would have failed every Slurm job in
 Table~\ref{tab:outcomes} except the SIGKILL control. It fixes every tool at once on Slurm servers, though not on
@@ -197,6 +200,8 @@ dedicated to the public domain under CC0 1.0.
 lines requested'' (2021), fixed in pull request 12112. \url{https://github.com/galaxyproject/galaxy/issues/12093}
 \bibitem{iuc3920} galaxyproject/tools-iuc pull request 3920, ``Add coreutils requirement to vcfsort'' (2021).
 \url{https://github.com/galaxyproject/tools-iuc/pull/3920}
+\bibitem{iuc4533} galaxyproject/tools-iuc pull request 4533, ``Add Ensembl VEP (Variant Effect Predictor) tool and
+corresponding data manager'' (2022), review of \code{ensembl\_vep.xml}. \url{https://github.com/galaxyproject/tools-iuc/pull/4533}
 \bibitem{nfcore13033} nf-core/modules issue 13033, ``hmmer/eslsfetchindex: fails on large FASTA in containers (BusyBox
 sort in biocontainers image)'' (2026). \url{https://github.com/nf-core/modules/issues/13033}
 \end{thebibliography}

@@ -11,6 +11,7 @@ with an empty or truncated output. Each tool is parsed with Galaxy's own parser,
 A tool is reported in one of two groups:
   * BusyBox likely: no `coreutils` requirement, so a single-package biocontainer supplies BusyBox `sort`;
   * coreutils: a `coreutils` requirement, so the mulled container should put GNU `sort` first on PATH.
+and marked `pipefail` when its command sets `pipefail`, which turns a killed sort into a failed job.
 
 This reads the command TEXT, before Cheetah renders it: a sort inside an `#if` counts even if the branch is
 rarely taken, and a pipeline built across Cheetah lines is split on newlines. It is an estimate.
@@ -64,7 +65,11 @@ def self_test() -> int:
         "cut -f1 x \\\n  | sort \\\n  | uniq": 1,
         "a\nsort -o out in": 0,
     }
-    bad = [(c, n, len(midpipe_sorts(c))) for c, n in cases.items() if len(midpipe_sorts(c)) != n]
+    bad = [
+        (c, n, len(midpipe_sorts(c)))
+        for c, n in cases.items()
+        if len(midpipe_sorts(c)) != n
+    ]
     for c, want, got in bad:
         print(f"FAIL {c!r}: want {want}, got {got}")
     print("self-test", "FAILED" if bad else "passed")
@@ -72,9 +77,13 @@ def self_test() -> int:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("root", nargs="?", type=pathlib.Path)
-    ap.add_argument("--list", action="store_true", help="print every flagged tool and pipeline")
+    ap.add_argument(
+        "--list", action="store_true", help="print every flagged tool and pipeline"
+    )
     ap.add_argument("--self-test", action="store_true")
     args = ap.parse_args()
     if args.self_test or args.root is None:
@@ -85,6 +94,7 @@ def main() -> int:
     )
 
     tools = flagged_busybox = flagged_coreutils = errors = 0
+    unprotected = []
     for path in sorted(args.root.rglob("*.xml")):
         try:
             text = path.read_text(errors="replace")
@@ -101,19 +111,29 @@ def main() -> int:
         if not hits:
             continue
         coreutils = any(getattr(r, "name", "") == "coreutils" for r in reqs)
+        pipefail = "pipefail" in command
         if coreutils:
             flagged_coreutils += 1
         else:
             flagged_busybox += 1
+            if not pipefail:
+                unprotected.append(str(path.relative_to(args.root)))
         if args.list:
             group = "coreutils" if coreutils else "BusyBox likely"
-            print(f"{path.relative_to(args.root)}  [{group}]")
+            print(
+                f"{path.relative_to(args.root)}  [{group}{', pipefail' if pipefail else ''}]"
+            )
             for h in hits:
                 print(f"    {h}")
     print(f"tools parsed: {tools} (skipped {errors} that did not parse)")
-    print(f"sort before the end of a pipeline: {flagged_busybox + flagged_coreutils} tools")
+    print(
+        f"sort before the end of a pipeline: {flagged_busybox + flagged_coreutils} tools"
+    )
     print(f"  without a coreutils requirement (BusyBox likely): {flagged_busybox}")
     print(f"  with a coreutils requirement: {flagged_coreutils}")
+    print(
+        f"  BusyBox likely and no pipefail: {len(unprotected)}  {' '.join(unprotected)}"
+    )
     return 0
 
 
