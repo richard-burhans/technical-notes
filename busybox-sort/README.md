@@ -11,12 +11,13 @@ the job ends green.
 
 | server | how `sort` died | job | lines in the output |
 |---|---|---|---|
-| usegalaxy.org, vgp (Slurm, 512 MiB) | out-of-memory kill while reading | **green**, exit 0 | **0** of 16,434,823 |
-| usegalaxy.org, vgp (Slurm) | SIGKILL while writing | **green**, exit 0 | 235,008 and 262,656 of 2,000,000 |
+| usegalaxy.org, vgp (Pulsar → Slurm, 512 MiB) | out-of-memory kill while reading | **green**, exit 0 | **0** of 16,434,823 |
+| usegalaxy.org, vgp (Pulsar → Slurm) | SIGKILL while writing | **green**, exit 0 | 235,008 and 262,656 of 2,000,000 |
 | laila (Singularity) | SIGKILL while writing | **green**, exit 0 | 242,248 of 2,000,000 |
 
-Slurm wrote `slurmstepd: error: Detected 1 oom-kill event(s) ...` to each job's stderr. Galaxy's Slurm runner
-matches only the older "Exceeded job memory limit" wording, so it did not act.
+Slurm wrote `slurmstepd: error: Detected 1 oom-kill event(s) ...` to each job's stderr. These jobs ran through
+Pulsar, which does not read it. Galaxy's own Slurm runner would miss it too: it matches only the older "Exceeded job
+memory limit" wording, and only for cancelled jobs. Discussion: [galaxy#24545](https://github.com/galaxyproject/galaxy/issues/24545).
 
 ## Memory is not a fixed multiple of the input
 
@@ -33,7 +34,8 @@ length measured: **6 MB + 2.5 × input + 40 bytes × lines**.
 3. **For large sorts, require `coreutils`**, so GNU `sort`, which spills to disk, comes first on PATH.
 4. **Lint for it.** [`probe/check_midpipe_sort.py`](probe/check_midpipe_sort.py) flags `sort` before the end of a
    pipeline. In tools-iuc it finds 6 wrappers. The only one sorting data-sized input already sets `pipefail`.
-5. **Have Galaxy's Slurm runner recognise `Detected N oom-kill event(s)`.**
+5. **Have the job runners recognise the kill:** Pulsar and Galaxy's Slurm runner could treat `Detected N oom-kill
+   event(s)` as a memory failure, or read the job cgroup's `memory.events` (suggested on galaxy#24545).
 
 ## Reproduce
 

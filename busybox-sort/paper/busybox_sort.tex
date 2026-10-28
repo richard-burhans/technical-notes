@@ -33,7 +33,8 @@ such a \code{sort} in the middle of a shell pipeline, the next command receives 
 the pipeline still exits zero. Galaxy adds \code{set -e} to tool scripts but not \code{pipefail}, so the kill does
 not reach the job's exit status. We reproduced this on usegalaxy.org and two other Galaxy servers. When Slurm's
 memory limit killed \code{sort}, the job finished green with none of its 16.4 million lines in the output, even
-though Slurm reported the kill on the job's standard error. Galaxy's Slurm runner does not recognise that message.
+though Slurm reported the kill on the job's standard error. Neither Pulsar, which ran those jobs, nor Galaxy's own
+Slurm runner recognises that message.
 We measure BusyBox \code{sort}'s memory use, which depends on line length in a way no simple multiple of the input
 captures, and give five mitigations. The simplest is to sort to a file as a command of its own.
 \end{abstract}
@@ -97,9 +98,9 @@ Docker, 64\,MB, 2\,M lines from a file & its own growth while reading & 0 & 0 of
 Docker, same, with \code{pipefail} & its own growth while reading & 137 & 0 of 2{,}000{,}000 \\
 Docker, 200\,MB, 60\,MB allocated by another process once output began & another process's growth & 0 & 401{,}222 of 2{,}000{,}000 \\
 Galaxy (laila, Singularity), SIGKILL once output began & a signal & 0, job green & 242{,}248 of 2{,}000{,}000 \\
-usegalaxy.org and vgp (Slurm, 512\,MiB), input from a file & its own growth while reading & 0, job green & 0 of 16{,}434{,}823 \\
-usegalaxy.org and vgp (Slurm, 512\,MiB), live producer & its own growth while reading & 0, job green & 0 of 16{,}434{,}823 \\
-usegalaxy.org and vgp (Slurm), SIGKILL once output began & a signal & 0, job green & 235{,}008 and 262{,}656 of 2{,}000{,}000 \\
+usegalaxy.org and vgp (Pulsar to Slurm, 512\,MiB), input from a file & its own growth while reading & 0, job green & 0 of 16{,}434{,}823 \\
+usegalaxy.org and vgp (Pulsar to Slurm, 512\,MiB), live producer & its own growth while reading & 0, job green & 0 of 16{,}434{,}823 \\
+usegalaxy.org and vgp (Pulsar to Slurm), SIGKILL once output began & a signal & 0, job green & 235{,}008 and 262{,}656 of 2{,}000{,}000 \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -111,13 +112,13 @@ in the same pipe, Docker's out-of-memory handling ended the whole container in e
 
 The Galaxy rows are the result that matters. All three servers run Galaxy 26.1. On laila, a local server running
 the job in Singularity, the job finished in state \code{ok} with exit code 0 and empty standard error, and its output
-held 242{,}248 of 2{,}000{,}000 lines. On usegalaxy.org and vgp.usegalaxy.org, which run jobs under Slurm, the job
-was given 512\,MiB and asked to sort 16{,}434{,}823 lines. Slurm enforced the limit (peak 536.8\,MB, one
+held 242{,}248 of 2{,}000{,}000 lines. On usegalaxy.org and vgp.usegalaxy.org, user-defined tools run through Pulsar
+(\code{PulsarMQJobRunner}) on Jetstream2, which submits them to Slurm. There the job was given 512\,MiB and asked to sort 16{,}434{,}823 lines. Slurm enforced the limit (peak 536.8\,MB, one
 out-of-memory kill in the job's control group), \code{sort} died while reading, and the consumer received nothing.
 Every one of these jobs finished in state \code{ok} with exit code 0, and its output dataset held the single line
 ``0''. Slurm did notice: each job's standard error reads \code{slurmstepd: error: Detected 1 oom-kill event(s) in
-StepId=\ldots. Some of your processes may have been killed by the cgroup out-of-memory handler.} Galaxy did not
-act on it.
+StepId=\ldots. Some of your processes may have been killed by the cgroup out-of-memory handler.} Neither Pulsar
+nor Galaxy acted on it.
 
 \section{Why Galaxy does not catch it}
 
@@ -130,12 +131,13 @@ containerised scripts as \code{/bin/sh}, but in every biocontainer we checked, \
 \code{detect\_errors="exit\_code"} sees only the exit status, and a SIGKILL writes nothing to standard error, so
 \code{detect\_errors="aggressive"} would not catch it either.
 
-Galaxy's Slurm runner has its own out-of-memory detection, and it misses this case for two reasons
+The jobs above ran through Pulsar, which does not read Slurm's memory messages at all, a known gap~\cite{galaxy24545}.
+Galaxy's own Slurm runner, used where Galaxy submits to Slurm directly, has out-of-memory detection, but by its
+source it would miss this case too, for two reasons
 (\code{lib/galaxy/jobs/runners/slurm.py}, lines 29--42 and 210--226). It looks for Slurm's older wording,
 \code{Exceeded job memory limit}, not the \code{Detected N oom-kill event(s)} that current Slurm writes. It fails a job
 outright when Slurm reports the state \code{OUT\_OF\_MEMORY}, and reads the job's standard error for a memory
-message only when Slurm reports the job as cancelled. Since Galaxy marked these jobs \code{ok}, Slurm evidently
-reported neither for a job whose script exited 0. The message also lands in the job's standard error rather than the tool's, so a tool's own
+message only when Slurm reports the job as cancelled, and a job whose script exited 0 is reported as completed. The message also lands in the job's standard error rather than the tool's, so a tool's own
 standard-error checks would probably not see it (we did not test this).
 
 \section{Mitigations}
@@ -160,10 +162,11 @@ Ensembl VEP wrapper's sort of a user-supplied annotation file, and that wrapper 
 would fail the job. The other four sort short lists. The collection is not exposed today, so the rule's value is in
 catching the next wrapper. (Its review shows the convention that makes this matter: ``sort is coreutils and I
 thought we do not normally require that''~\cite{iuc4533}.)
-\item \textbf{Teach Galaxy's Slurm runner the current message.} Treating \code{Detected N oom-kill event(s)} in a
-job's standard error as a failure, whatever the exit status, would have failed every Slurm job in
-Table~\ref{tab:outcomes} except the SIGKILL control. It fixes every tool at once on Slurm servers, though not on
-servers that run jobs another way.
+\item \textbf{Have the job runners recognise the kill.} Treating \code{Detected N oom-kill event(s)} in a job's
+standard error as a memory failure, whatever the exit status, in Pulsar and in Galaxy's Slurm runner, would have
+failed every Slurm job in Table~\ref{tab:outcomes} except the SIGKILL control. A cleaner option, suggested in the
+Galaxy discussion~\cite{galaxy24545}, is a destination setting that reads the job's control-group
+\code{memory.events} directly. Either fixes every tool at once.
 \end{enumerate}
 
 \noindent Where none of these applies, size the job with the budget above, and check that a sort's output has as
@@ -198,6 +201,8 @@ dedicated to the public domain under CC0 1.0.
 \url{https://github.com/galaxyproject/galaxy/issues/5884}
 \bibitem{galaxy12093} galaxyproject/galaxy issue 12093, ``Show beginning1 fails on any file longer than the number of
 lines requested'' (2021), fixed in pull request 12112. \url{https://github.com/galaxyproject/galaxy/issues/12093}
+\bibitem{galaxy24545} galaxyproject/galaxy issue 24545, ``Slurm runner: an OOM-killed process can leave the job
+\code{ok}'' (2026), with the maintainers' replies. \url{https://github.com/galaxyproject/galaxy/issues/24545}
 \bibitem{iuc3920} galaxyproject/tools-iuc pull request 3920, ``Add coreutils requirement to vcfsort'' (2021).
 \url{https://github.com/galaxyproject/tools-iuc/pull/3920}
 \bibitem{iuc4533} galaxyproject/tools-iuc pull request 4533, ``Add Ensembl VEP (Variant Effect Predictor) tool and
