@@ -16,10 +16,10 @@ symbol for one block, symbol counts for the other, and counts of four gap classe
 
 At K = L = 128, `yama` itself ran about a thousand times faster (76.7 s to 0.06 s under `gprof`). The whole merge
 gained 63× because scoring the merged blocks (`mafScoreRange`), which still visits every row pair, now takes 94% of
-that synthetic run. On real data it is the larger of two remaining costs: 63% of the deep merge and 53% of a whole
-216-genome piece, against 35% and 45% for `yama`. That makes it the next target for deep merges. A grid of unequal
+that synthetic run. On real data it is the larger of two remaining costs, measured as shares of sampled CPU time in
+`multiz`: 63% of the deep merge and 53% of a whole 216-genome piece, against 35% and 45% for `yama`. That makes it the next target for deep merges. A grid of unequal
 depths shows the 11.3 time follows K × L, not K² ([`paper/figure3.png`](paper/figure3.png)). On that grid, pairs with
-the same K × L took times within about 20 percent of each other. Thinner shapes were not measured.
+the same K × L took times within about 20 percent of each other. Thinner shapes were not measured for this note.
 
 The idea is not new. Scoring a column from symbol counts is a profile (Gribskov et al. 1987), Gotoh (1994) counted gap
 states per column between groups of sequences, and Kececioglu and Zhang (1998) aligned two alignments under this gap
@@ -37,5 +37,5 @@ bash probe/profile_k128.sh /tmp/multiz-cc > measurements/gprof_k128.txt   # need
 python3 probe/swap_order.py /tmp/multiz-cc measurements/swap_order.csv      # default pairs 4x16 and 4x64, needs the grid
 python3 probe/swap_order.py /tmp/multiz-cc measurements/swap_order_rep1.csv --pairs 4x16,4x64,16x64   # rep2, rep3 the same
 bash probe/profile_wholepiece.sh /tmp/multiz-cc INPUT_DIR measurements/wholepiece_tree.txt cs10_NCBI_RefSeq_softmasked \
-    > measurements/gprof_wholepiece_v11.4.txt   # inputs listed in measurements/wholepiece_inputs.sha256, not re-run
+    > /tmp/gprof_wholepiece_rerun.txt   # INPUT_DIR holds the files in measurements/wholepiece_inputs.sha256, not re-run
 ```

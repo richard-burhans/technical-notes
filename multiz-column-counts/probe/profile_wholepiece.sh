@@ -3,7 +3,7 @@
 # is built -O2 -pg and reached through a wrapper that sets GMON_OUT_PREFIX, so each multiz process (one per merge)
 # writes its own gmon file and no other program writes one. The files are then summed with gprof -s.
 #
-#   bash profile_wholepiece.sh BUILD_DIR INPUT_DIR TREE_FILE REF > ../measurements/gprof_wholepiece_v11.4.txt
+#   bash profile_wholepiece.sh BUILD_DIR INPUT_DIR TREE_FILE REF > gprof_wholepiece_rerun.txt
 #
 # INPUT_DIR holds the pairwise REF.*.sing.maf inputs of one piece and TREE_FILE the roast guide tree. For the
 # measured piece (cs10 NC_044376.1, piece 02, 216 assemblies, REF cs10_NCBI_RefSeq_softmasked) the inputs are listed
@@ -12,7 +12,7 @@
 # The committed profiles were made by two runs that built every program -pg and summed the 215 gmon files written by
 # multiz, one per merge. This script profiles only multiz, which should give the same multiz samples, but it has not itself been run.
 set -euo pipefail
-B=${1:?usage}; IN=${2:?usage}; TREE=${3:?usage}; REF=${4:?usage}
+B=$(realpath "${1:?usage}"); IN=$(realpath "${2:?usage}"); TREE=$(realpath "${3:?usage}"); REF=${4:?usage}
 R="$B/rel-wholepiece"; P="$B/prof-wholepiece"; W="$B/run-wholepiece"
 rm -rf "$R" "$P" "$W" && cp -r "$B/src-v11.4" "$R" && cp -r "$B/src-v11.4" "$P"
 make -s -C "$R" clean > /dev/null 2>&1 || true; make -s -C "$R" CFLAGS="-O2" > /dev/null 2>&1

@@ -158,15 +158,16 @@ In 11.4, \code{yama} took 0.06\,s, about a thousand times less, while \code{mafS
 94 percent of the run. \code{mafScoreRange} scores each merged block by summing over all pairs of its
 $K + L - 1$ rows, so it grows with the square of the total depth. The speed-up therefore levels off in this
 sweep, at 60-fold at $K = 64$ and 63-fold at 128, and it is lower for a deep block merged with a shallow one. Counting
-would also make \code{mafScoreRange} exact and linear in depth. Symbols and the four dash classes are counted per
-column as in \code{yama}, but its pairs lie within one block, so each class is also paired with itself and each row's
-pair with itself is left out. Its gap model also looks back one column, so per-column counting is again the
+would also make \code{mafScoreRange} linear in depth and exact, in the sense that it would equal the function's own
+pair-by-pair sum. Symbols and the four dash classes are counted per column as in \code{yama}, but its pairs lie
+within one block. So each class is also paired with itself, each row's pair with itself is left out, and each
+unordered pair is counted once. Its gap model also looks back one column, so per-column counting is again the
 pessimistic count of Kececioglu and Zhang~\cite{kececioglu1998}. Ranwez computes the substitution part from per-site
 counts, and even the exact affine sum-of-pairs score, in time linear in the number of rows times the number of
 columns~\cite{ranwez2016}. On real merges, too, \code{mafScoreRange} is now the larger cost in deep merges. A
 \code{gprof} build of 11.4 spent 63 percent of the deep merge below in \code{mafScoreRange} and 35 percent in
 \code{yama} (\code{measurements/gprof\_deepmerge\_v11.4.txt}). That makes it the next target for deep merges, though
-removing it entirely would speed that merge at most about 2.7-fold.
+removing it entirely would cut that merge's sampled \code{multiz} time at most about 2.7-fold.
 
 \begin{figure}[t]
 \centering
@@ -192,11 +193,13 @@ sequences.
 build of 11.4 ran the whole piece, all 215 merges, with output identical to the production alignment apart from
 \code{\#} lines. It spent 53 percent of the sampled \code{multiz} time in \code{mafScoreRange} and 45 percent in
 \code{yama} (\code{measurements/gprof\_wholepiece\_v11.4.txt}), and a second run agreed within 0.1 percentage points.
-\code{mafScoreRange} led in 29 of the 215 merges, the deep ones near the root, and \code{yama} in the other 186
-(\code{measurements/wholepiece\_permerge\_v11.4.tsv}). So both explanations hold: shallow merges, where the
-speed-up is small and \code{yama} still leads, and \code{mafScoreRange} in the deep merges. Removing
-\code{mafScoreRange} entirely would speed this run at most about 1.75-fold. How the rest of the wall time divides,
-including library and system time that \code{gprof} does not sample, was not measured.
+Per merge, from the second run (\code{measurements/wholepiece\_permerge\_v11.4.tsv}, one row per \code{multiz}
+process in the order they ran), \code{mafScoreRange} led in 29 of the 215 merges and \code{yama} in the other 186.
+All 29 are among the last 36 merges, where a few genomes join an alignment that already holds most of the panel. So
+the total depth of the merged block decides which function leads. These shares cover \code{multiz} alone.
+\code{roast} also runs \code{maf\_project}, which calls \code{mafScoreRange} too and was not profiled, and how the
+rest of the wall time divides, including library and system time that \code{gprof} does not sample, was not
+measured.
 
 \section{Prior work}
 
@@ -250,8 +253,8 @@ Miller~\cite{chao1994} or the MultiPipMaker papers, which also use quasi-natural
 \item The profiles are \code{gprof} samples at 0.01\,s, so the 0.06\,s for \code{yama} in 11.4 is coarse. It
   supports ``about a thousandfold'', not a precise ratio.
 \item The deep-merge and whole-piece timings are taken from the pull request and were not rerun for this note. The
-  profiles were made with \code{-pg} builds on a loaded host, so their shares are of sampled CPU time in
-  \code{multiz}, not of wall time. The
+  profiles come from \code{-pg} builds, so their shares are of sampled CPU time in \code{multiz}, not of wall time.
+  The whole-piece and 11.4 deep-merge profiles ran on a host with other load. The
   deep merge is one run per release, on a host whose other load was not recorded.
 \item Output identity was checked on the seven synthetic pairs, the deep merge, the whole piece and the hg38 5-way
   recipe. It is an empirical check of the exactness argument, not a proof.
