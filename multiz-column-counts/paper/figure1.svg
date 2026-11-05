@@ -79,9 +79,9 @@
 <text x="360.0" y="91.0" font-size="6" text-anchor="middle" font-weight="normal" fill="#000000">w(G)</text>
 <rect x="372.0" y="78.0" width="20.0" height="20.0" fill="#CCE3F0" stroke="#0072B2" stroke-width="0.6"/>
 <text x="382.0" y="91.0" font-size="6" text-anchor="middle" font-weight="normal" fill="#000000">w(T)</text>
-<text x="306.0" y="110.0" font-size="6.5" text-anchor="start" font-weight="bold" fill="#0072B2">K work, per column of A</text>
+<text x="306.0" y="110.0" font-size="6.5" text-anchor="start" font-weight="bold" fill="#0072B2">K per symbol, per column of A</text>
 <line x1="281.0" y1="157.0" x2="303.0" y2="157.0" stroke="#000000" stroke-width="0.7" marker-end="url(#arrow)"/>
-<text x="306.0" y="138.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">count B's symbols</text>
+<text x="306.0" y="138.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">count B's symbols (dash too)</text>
 <rect x="306.0" y="146.0" width="20.0" height="20.0" fill="#FAECCC" stroke="#E69F00" stroke-width="0.6"/>
 <text x="316.0" y="159.0" font-size="6" text-anchor="middle" font-weight="normal" fill="#000000">A:2</text>
 <rect x="328.0" y="146.0" width="20.0" height="20.0" fill="#FAECCC" stroke="#E69F00" stroke-width="0.6"/>
@@ -96,8 +96,8 @@
 <rect x="414.0" y="110.0" width="92.0" height="28.0" fill="#CCECE3" stroke="#009E73" stroke-width="0.6"/>
 <text x="460.0" y="122.0" font-size="7.5" text-anchor="middle" font-weight="bold" fill="#009E73">2·w(A) + 2·w(G)</text>
 <text x="460.0" y="132.0" font-size="6" text-anchor="middle" font-weight="normal" fill="#000000">the DP cell</text>
-<text x="460.0" y="172.0" font-size="8" text-anchor="middle" font-weight="bold" fill="#009E73">K + L = 9 counts</text>
-<text x="460.0" y="183.0" font-size="6.5" text-anchor="middle" font-weight="normal" fill="#000000">once per column, not per cell</text>
+<text x="460.0" y="172.0" font-size="8" text-anchor="middle" font-weight="bold" fill="#009E73">K + L = 9 rows</text>
+<text x="460.0" y="183.0" font-size="6.5" text-anchor="middle" font-weight="normal" fill="#000000">summarised once per column</text>
 <text x="460.0" y="192.0" font-size="6.5" text-anchor="middle" font-weight="normal" fill="#000000">then a short dot product per cell</text>
 <rect x="8.0" y="204.0" width="494.0" height="30.0" fill="#F2F2F2" stroke="none" stroke-width="0.6"/>
 <text x="16.0" y="216.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">Gap sums are counted the same way. A row's gap cost depends only on whether it holds a dash in this column</text>
@@ -106,7 +106,7 @@
 <text x="22.0" y="254.0" font-size="8" text-anchor="start" font-weight="bold" fill="#000000">One deep merge, as recorded in multiz#28</text>
 <text x="262.0" y="254.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">Blocks of about K = 35 rows against L = 43:</text>
 <text x="262.0" y="265.0" font-size="7" text-anchor="start" font-weight="bold" fill="#D55E00">K × L = 1,505 row pairs per cell</text>
-<text x="262.0" y="276.0" font-size="7" text-anchor="start" font-weight="bold" fill="#009E73">K + L = 78 counts per column</text>
+<text x="262.0" y="276.0" font-size="7" text-anchor="start" font-weight="bold" fill="#009E73">K + L = 78 rows summarised per column</text>
 <text x="262.0" y="296.0" font-size="8" text-anchor="start" font-weight="bold" fill="#000000">33.8× faster on this merge,</text>
 <text x="262.0" y="307.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">identical output (single upstream runs)</text>
 <rect x="50.0" y="266.0" width="186.4" height="12.0" fill="#D55E00" stroke="none" stroke-width="0.6"/>

@@ -5,3 +5,4 @@ compiler: gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
 builds: v11.3 645ab55, v11.4 6bfe6a4, both -O2 -Wall -Wextra (build_multiz.sh)
 load: unrelated single-threaded alignment jobs (lastz) ran on this host during the sweep, load average about 4.8 on 32 vCPU. Each multiz run is single-threaded.
 loadavg at end: 4.82 4.77 4.44
+provenance: sweep.csv was written by an earlier revision of run_sweep.py that named inputs k{K}.1.maf; the committed revision names them k{K}l{L}.1.maf. The inputs are byte-identical under both names.

@@ -10,7 +10,7 @@ for tag in v11.3 v11.4; do
   rm -rf "$B/prof-$tag" && cp -r "$B/src-$tag" "$B/prof-$tag"
   make -s -C "$B/prof-$tag" clean > /dev/null 2>&1 || true
   make -s -C "$B/prof-$tag" multiz CFLAGS="-O2 -pg" > /dev/null 2>&1
-  (cd "$B/prof-$tag" && ./multiz ../sweep/k128.1.maf ../sweep/k128.2.maf 0 > /dev/null 2>&1)
+  (cd "$B/prof-$tag" && ./multiz ../sweep/k128l128.1.maf ../sweep/k128l128.2.maf 0 > /dev/null 2>&1)
   echo "## $tag"
   gprof -b -p "$B/prof-$tag/multiz" "$B/prof-$tag/gmon.out" | sed -n 1,12p
   echo

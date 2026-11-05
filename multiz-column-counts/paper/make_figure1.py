@@ -95,10 +95,10 @@ text(vx, y0 + 12, "fold A: one score per symbol", 6.5)
 for i, s in enumerate(["A", "C", "G", "T"]):
     rect(vx + i * 22, y0 + 20, 20, 20, BLUE_T, BLUE)
     text(vx + i * 22 + 10, y0 + 33, f"w({s})", 6, "middle")
-text(vx, y0 + 52, "K work, per column of A", 6.5, fill=BLUE, weight="bold")
+text(vx, y0 + 52, "K per symbol, per column of A", 6.5, fill=BLUE, weight="bold")
 # B reduced to counts
 line(X + 19, y0 + 99, vx - 3, y0 + 99, INK, 0.7, marker=True)
-text(vx, y0 + 80, "count B's symbols", 6.5)
+text(vx, y0 + 80, "count B's symbols (dash too)", 6.5)
 for i, (s, n) in enumerate([("A", 2), ("C", 0), ("G", 2), ("T", 0)]):
     rect(vx + i * 22, y0 + 88, 20, 20, ORANGE_T, ORANGE)
     text(vx + i * 22 + 10, y0 + 101, f"{s}:{n}", 6, "middle")
@@ -110,8 +110,8 @@ line(vx + 90, y0 + 99, cx, y0 + 74, INK, 0.7, marker=True)
 rect(cx + 2, y0 + 52, 92, 28, GREEN_T, GREEN)
 text(cx + 48, y0 + 64, "2·w(A) + 2·w(G)", 7.5, "middle", "bold", GREEN)
 text(cx + 48, y0 + 74, "the DP cell", 6, "middle")
-text(cx + 48, 172, "K + L = 9 counts", 8, "middle", "bold", GREEN)
-text(cx + 48, 183, "once per column, not per cell", 6.5, "middle")
+text(cx + 48, 172, "K + L = 9 rows", 8, "middle", "bold", GREEN)
+text(cx + 48, 183, "summarised once per column", 6.5, "middle")
 text(cx + 48, 192, "then a short dot product per cell", 6.5, "middle")
 
 # ---- the gap sums, which tie A and B together ------------------------------------------------------------------
@@ -126,7 +126,7 @@ text(22, CY, "One deep merge, as recorded in multiz#28", 8, weight="bold")
 kl, kpl = MERGE_ROWS_A * MERGE_ROWS_B, MERGE_ROWS_A + MERGE_ROWS_B
 text(262, CY, f"Blocks of about K = {MERGE_ROWS_A} rows against L = {MERGE_ROWS_B}:", 6.5)
 text(262, CY + 11, f"K × L = {kl:,} row pairs per cell", 7, weight="bold", fill=VERMILION)
-text(262, CY + 22, f"K + L = {kpl} counts per column", 7, weight="bold", fill=GREEN)
+text(262, CY + 22, f"K + L = {kpl} rows summarised per column", 7, weight="bold", fill=GREEN)
 text(262, CY + 42, f"{MERGE_S_113 / MERGE_S_114:.1f}× faster on this merge,", 8, weight="bold")
 text(262, CY + 53, "identical output (single upstream runs)", 6.5)
 bx0, bw, top = 50, 190, CY + 12                          # zero baseline at bx0, bw points = 1000 s

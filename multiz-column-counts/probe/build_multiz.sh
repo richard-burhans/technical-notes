@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Build multiz from the v11.3 and v11.4 release tags with IDENTICAL flags, so any speed difference is the code.
-# The upstream Makefile defaults to -O0, so both are built at -O2 here.
+# Both tags' Makefiles already use -O2; the flags are passed explicitly so the two builds cannot differ.
 #
 #   bash build_multiz.sh BUILD_DIR      # writes BUILD_DIR/multiz-v11.3 and BUILD_DIR/multiz-v11.4
 set -euo pipefail

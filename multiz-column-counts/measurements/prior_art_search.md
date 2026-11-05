@@ -1,5 +1,8 @@
 # Prior-art search, 2026-11-05
 
+This is a rewritten public copy of the author's working search record, revised after a review the same day. The
+revision is recorded in the addendum at the end.
+
 The change was found by profiling (`yama` took 98% of one deep merge), and no literature search was run before it
 shipped in multiz 11.4. This is the first. Web search (US), the Europe PMC REST API, and CrossRef for every DOI.
 
@@ -32,3 +35,24 @@ shipped in multiz 11.4. This is the first. Web search (US), the Europe PMC REST 
   Release 11.4 computes `yama`'s quasi-natural objective and does not touch that problem.
 
 No publication applying this reduction to MULTIZ or the threaded blockset aligner was found.
+
+## Addendum, 2026-11-05: what a review of this note found
+
+An adversarial review of the note re-ran and extended this search on the same day. Its additions:
+
+* **Kececioglu and Zhang (1998), CPM, LNCS pp. 189–208, doi:10.1007/BFb0030790.** The 2004 paper's §7.2 says their
+  "pessimistic" gap counts are Altschul's quasi-natural counts, and the 1998 abstract lists alignment versus alignment
+  among algorithms that "run in essentially O(mn) time". This search had found the record but not acted on its abstract.
+  It is the direct precedent for the combination, and the note now credits it. The full text was not read (it is behind
+  a login).
+* **Wheeler and Kececioglu (2007), Bioinformatics 23:i559–i568, doi:10.1093/bioinformatics/btm226.** States the cost of
+  merging two alignments this way as O(kn + n²).
+* **Ma, Wang and Zhang (2003), CPM, LNCS pp. 254–265, doi:10.1007/3-540-44888-8_19.** Proved the exact-gap problem
+  NP-complete independently of Kececioglu and Starrett.
+* **Ranwez (2016), PLOS ONE 11:e0160043, doi:10.1371/journal.pone.0160043.** Computes the exact affine sum-of-pairs score
+  of an alignment in O(nL), relevant to `mafScoreRange`.
+* Minmei Hou's 2007 thesis and three of her papers were checked. None describes this reduction.
+
+Not covered by any search so far: Chao, Hardison and Miller (1994), which the note cites for `yama`'s recurrence, and the
+MultiPipMaker papers (Schwartz et al. 2003), which use quasi-natural gaps. The search had one open-ended query and no
+forward-citation search.
