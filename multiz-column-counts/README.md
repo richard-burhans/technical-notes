@@ -39,3 +39,12 @@ python3 probe/swap_order.py /tmp/multiz-cc measurements/swap_order_rep1.csv --pa
 bash probe/profile_wholepiece.sh /tmp/multiz-cc INPUT_DIR measurements/wholepiece_tree.txt cs10_NCBI_RefSeq_softmasked \
     > /tmp/gprof_wholepiece_rerun.txt   # INPUT_DIR holds the files in measurements/wholepiece_inputs.sha256, not re-run
 ```
+
+## Experimental: counting in `mafScoreRange` (not part of any release)
+
+`probe/mafScoreRange_counts.patch` applies the same per-column counting to `mafScoreRange` in v11.4's `mz_scores.c`,
+regrouped within one block: each symbol and dash class is also paired with itself, and each row's pair with itself is
+left out. Built with `-DMSR_CHECK`, every call computes both the original pair-by-pair score and the counted one and
+stops on any difference. In review (round 16), that check never fired on 13 synthetic pairs, three hg38 5-way chunks
+and a whole 216-genome piece, whose output was identical apart from `#` lines. `probe/msr_check.py` recomputes both
+scores in Python from a MAF's blocks. Neither is part of MULTIZ until a release says so.
