@@ -1,0 +1,7 @@
+date: 2026-11-05T08:25Z
+host: 32 vCPU, 15 GiB, 7.0.14
+cpu: Intel(R) Xeon(R) Processor
+compiler: gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+builds: v11.3 645ab55, v11.4 6bfe6a4, both -O2 -Wall -Wextra (build_multiz.sh)
+load: unrelated single-threaded alignment jobs (lastz) ran on this host during the sweep, load average about 4.8 on 32 vCPU. Each multiz run is single-threaded.
+loadavg at end: 4.82 4.77 4.44

@@ -1,0 +1,29 @@
+# gprof flat profiles, multiz built -O2 -pg from the v11.3 and v11.4 tags, merging the K = L = 128 sweep pair (seed 1)
+## v11.3
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 98.61     76.72    76.72       20     3.84     3.84  yama
+  1.39     77.80     1.08       10     0.11     0.11  mafScoreRange
+  0.00     77.80     0.00    15334     0.00     0.00  copy_string
+  0.00     77.80     0.00     7855     0.00     0.00  ckalloc
+  0.00     77.80     0.00     5110     0.00     0.00  mafCompFree
+  0.00     77.80     0.00     2602     0.00     0.00  get_line
+  0.00     77.80     0.00     2600     0.00     0.00  get_maf_line
+
+## v11.4
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 93.86      1.07     1.07       10     0.11     0.11  mafScoreRange
+  5.26      1.13     0.06       20     0.00     0.00  yama
+  0.88      1.14     0.01                             _init
+  0.00      1.14     0.00    15334     0.00     0.00  copy_string
+  0.00      1.14     0.00     7995     0.00     0.00  ckalloc
+  0.00      1.14     0.00     5110     0.00     0.00  mafCompFree
+  0.00      1.14     0.00     2602     0.00     0.00  get_line
+

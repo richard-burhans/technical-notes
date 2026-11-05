@@ -6,3 +6,9 @@ busybox-sort/paper/*.fdb_latexmk
 __pycache__/
 busybox-sort/paper/missfont.log
 .ruff_cache/
+*/paper/*.aux
+*/paper/*.log
+*/paper/*.out
+*/paper/*.fls
+*/paper/*.fdb_latexmk
+*/paper/missfont.log

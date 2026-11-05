@@ -6,6 +6,7 @@ scripts that reproduce its numbers.
 | note | one line |
 |---|---|
 | [`busybox-sort/`](busybox-sort/) | BusyBox `sort` in biocontainers holds its whole input in memory and ignores `-S`/`-T`. Killed in the middle of a pipe, it can leave a Galaxy job green with an empty or truncated output. |
+| [`multiz-column-counts/`](multiz-column-counts/) | MULTIZ 11.4 aligns two alignment blocks from per-column counts, so the work per cell no longer grows with K × L. Up to 63 times faster on deep blocks, with identical output. Neither half of the idea is new. |
 
 Each note has:
 
