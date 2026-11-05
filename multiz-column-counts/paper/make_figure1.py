@@ -92,16 +92,16 @@ vx = X + 44
 # A folded into a weight vector: one score per symbol of B
 line(X + 19, y0 + 31, vx - 3, y0 + 31, INK, 0.7, marker=True)
 text(vx, y0 + 12, "fold A: one score per symbol", 6.5)
-for i, s in enumerate(["A", "C", "G", "T"]):
-    rect(vx + i * 22, y0 + 20, 20, 20, BLUE_T, BLUE)
-    text(vx + i * 22 + 10, y0 + 33, f"w({s})", 6, "middle")
+for i, s in enumerate(["A", "C", "G", "T", "-"]):
+    rect(vx + i * 18, y0 + 20, 16, 20, BLUE_T, BLUE)
+    text(vx + i * 18 + 8, y0 + 33, f"w({s})", 5.5, "middle")
 text(vx, y0 + 52, "K per symbol, per column of A", 6.5, fill=BLUE, weight="bold")
 # B reduced to counts
 line(X + 19, y0 + 99, vx - 3, y0 + 99, INK, 0.7, marker=True)
 text(vx, y0 + 80, "count B's symbols (dash too)", 6.5)
-for i, (s, n) in enumerate([("A", 2), ("C", 0), ("G", 2), ("T", 0)]):
-    rect(vx + i * 22, y0 + 88, 20, 20, ORANGE_T, ORANGE)
-    text(vx + i * 22 + 10, y0 + 101, f"{s}:{n}", 6, "middle")
+for i, (s, n) in enumerate([("A", 2), ("C", 0), ("G", 2), ("T", 0), ("-", 0)]):
+    rect(vx + i * 18, y0 + 88, 16, 20, ORANGE_T, ORANGE)
+    text(vx + i * 18 + 8, y0 + 101, f"{s}:{n}", 5.5, "middle")
 text(vx, y0 + 120, "L work, per column of B", 6.5, fill="#9C6A00", weight="bold")
 # the cell
 cx = X + 150

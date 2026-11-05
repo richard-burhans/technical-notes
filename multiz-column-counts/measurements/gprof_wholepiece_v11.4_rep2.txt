@@ -1,0 +1,18 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 52.98   1637.64  1637.64   752786     0.00     0.00  mafScoreRange
+ 44.86   3024.42  1386.78   666769     0.00     0.00  yama
+  0.87   3051.30    26.88   386372     0.00     0.01  pre_yama
+  0.37   3062.72    11.42   384884     0.00     0.00  mafBuild
+  0.31   3072.15     9.43                             _init
+  0.19   3078.11     5.96 34300132     0.00     0.00  get_line
+  0.09   3080.79     2.68   948654     0.00     0.00  smooth
+  0.07   3083.02     2.23  1232488     0.00     0.00  rmColDash
+  0.06   3084.98     1.96   563770     0.00     0.00  mapping
+  0.05   3086.65     1.67   588025     0.00     0.00  mafNext
+  0.05   3088.08     1.43   276292     0.00     0.00  keep_ali
+  0.03   3089.02     0.94   522262     0.00     0.00  mafWrite
+  0.03   3089.91     0.89  3110214     0.00     0.00  mafPos2Col

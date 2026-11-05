@@ -1,0 +1,24 @@
+	Command being timed: "multiz M=1 in/left.maf in/right.maf 0 U1.maf U2.maf"
+	User time (seconds): 950.63
+	System time (seconds): 1.71
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 15:52.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7684
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 94208
+	Voluntary context switches: 66
+	Involuntary context switches: 11502
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 468277
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+11.3 release: 981.41 s 7768 KB

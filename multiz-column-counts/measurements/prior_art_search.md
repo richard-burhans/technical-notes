@@ -14,7 +14,7 @@ shipped in multiz 11.4. This is the first. Web search (US), the Europe PMC REST 
 | Altschul 1989 "Gap costs for multiple sequence alignment" | Altschul (1989), the gap model `mz_yama.c` cites, read in full |
 | Gribskov profile analysis 1987 | Gribskov, McLachlan and Eisenberg (1987), read in full |
 | Kececioglu Zhang 1998 "Aligning alignments" | Kececioglu and Zhang (CPM 1998), record and the 2004 paper's summary of it only |
-| MUSCLE profile sum of pairs | Edgar (2004): profile-profile scoring, a different objective. Not cited |
+| MUSCLE profile sum of pairs | Edgar (2004): profile-profile scoring, a different objective. Not cited. Ranwez (2016), cited, computes the substitution part of the sum-of-pairs score from per-site counts and quotes Edgar that no O(nL) method was then known (added after review, round 16) |
 | multiz / TBA / yama speed-up by column counts | nothing beyond the TBA paper (Blanchette et al. 2004) |
 
 ## What each source establishes

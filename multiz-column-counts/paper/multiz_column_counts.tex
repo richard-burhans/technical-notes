@@ -36,8 +36,8 @@ synthetic blocks of $K = L = 128$ rows, \code{yama} itself ran about a thousand 
 times faster, with identical output. On these blocks the rest of the time is now spent scoring the merged blocks,
 which still visits every row pair. The idea is not new. Scoring a column from symbol counts is a profile, Gotoh
 counted gap states per column to make aligning groups of sequences much less dependent on their sizes, and Kececioglu
-and Zhang aligned two alignments under this gap model with work per cell that does not grow with their depth. We reached it by
-profiling, not from their papers. This note records how the change was found,
+and Zhang aligned two alignments under this gap model with work per cell that does not grow with their depth. The idea came from
+profile aligners. A profile of one deep merge showed where it would pay, and we found their papers afterwards. This note records how the change was found,
 what it computes, where it comes from, and what it measured.
 \end{abstract}
 
@@ -54,9 +54,10 @@ sum and its three gap sums with loops over all $K \times L$ row pairs.
 That cost grows with the product of the depths. Deep blocks are what a large panel produces. In a 216-genome
 alignment of \emph{Cannabis sativa} assemblies to the cs10 reference, one merge aligned 2,303 blocks of about 35
 rows to 4,359 blocks of about 43, so each cell visited about 1,505 row pairs, four times. The pull request records
-that \code{yama} took 98 percent of that merge's run time~\cite{multiz28}. The profile output was not kept, and the
-host and its other load were not recorded. The change described here came from that profile, not from the
-literature.
+that \code{yama} took 98 percent of that merge's run time~\cite{multiz28}. That profile was kept: a \code{gprof} build of 11.3 spent
+98.1 percent of 950\,s in \code{yama} (\code{measurements/gprof\_deepmerge\_v11.3.txt}). The host and its other load
+were not recorded. The idea of counting per column came from profile aligners, and the profile showed that
+\code{yama} was where it would pay.
 
 \section{The change}
 
@@ -67,8 +68,8 @@ entry in the previous column are dashes. So each sum can be rebuilt from counts 
 \paragraph{Substitution.} For each column of $A$, release 11.4 computes once a score for every symbol $s$,
 \[ w_A(s) = \sum_{i=1}^{K} \sigma(a_i, s), \]
 where $\sigma$ is the substitution matrix. For each column of $B$ it counts the rows holding each symbol, $n_B(s)$.
-The cell's substitution sum is then $\sum_s n_B(s)\, w_A(s)$, a dot product over the distinct symbols of $B$'s
-column, the dash included. The dash matters: a base against a dash is where \code{yama} charges gap extension, so a
+The cell's substitution sum is then $\sum_s n_B(s)\, w_A(s)$, a dot product over the symbols that occur anywhere
+in block $B$ (five in the synthetic blocks below), the dash included, and symbols absent from this column count zero. The dash matters: a base against a dash is where \code{yama} charges gap extension, so a
 version that counted only A, C, G, T and N would not be exact. Preparing $w_A$ costs $K$ steps per column of $A$ for
 each symbol, and $n_B$ costs $L$ per column of $B$. Neither is repeated per cell, and the number of symbols is
 bounded by the alphabet, not by the depth.
@@ -141,13 +142,14 @@ the speed-up. Below $K = 4$ both releases spend their time outside \code{yama}.}
 \end{figure}
 
 \paragraph{Product, not square.} With $K = L$ the sweep cannot tell $K \times L$ from $K^2$. A grid of unequal depths,
-$K$ and $L$ each 4, 16 or 64, separates them (Fig.~\ref{fig:grid}). Over this grid the 11.3 time followed
-$K \times L$ to within about 20 percent. At $K \times L = 64$ the $4 \times 16$ and $16 \times 4$ pairs took 0.33
+$K$ and $L$ each 4, 16 or 64, separates them (Fig.~\ref{fig:grid}). Over this grid, pairs with the same
+$K \times L$ took 11.3 times within about 20 percent of each other. At $K \times L = 64$ the $4 \times 16$ and $16 \times 4$ pairs took 0.33
 and 0.39\,s. At 256, the $4 \times 64$, $16 \times 16$ and $64 \times 4$ pairs took 1.27, 1.25 and 1.46\,s. At
 1,024 the $16 \times 64$ and $64 \times 16$ pairs took 4.83 and 4.80\,s, against 4.84\,s for $32 \times 32$. The
 shape is not irrelevant. On identical files, putting the deeper alignment first made 11.3 18 to 20 percent slower at
-$4 \times 16$ and 12 to 15 percent slower at $4 \times 64$, but changed $16 \times 64$ by under 1 percent (four runs of
-five per order, \code{measurements/swap\_order*.csv}). The order matters only when one side is very shallow. Shapes thinner than the grid's were not measured here. All nine outputs were identical.
+$4 \times 16$ and 12 to 15 percent slower at $4 \times 64$, and no difference was detected at $16 \times 64$ (medians within 1 percent). Each run is a median of five
+per order, with four runs at $4 \times 16$ and $4 \times 64$, three of them in one session, and three at $16 \times 64$
+(\code{measurements/swap\_order*.csv}). In these three shapes the order mattered only when one side had 4 rows. Shapes thinner than the grid's were not measured here. All nine outputs were identical.
 
 \paragraph{Where the time goes now.} The 11.4 time does not stay proportional to $K + L$ at depth. From
 $K = L = 64$ to 128 it rose 3.8-fold. A \code{gprof} profile of the $K = L = 128$ merge shows why
@@ -155,10 +157,16 @@ $K = L = 64$ to 128 it rose 3.8-fold. A \code{gprof} profile of the $K = L = 128
 In 11.4, \code{yama} took 0.06\,s, about a thousand times less, while \code{mafScoreRange} still took 1.1\,s, now
 94 percent of the run. \code{mafScoreRange} scores each merged block by summing over all pairs of its
 $K + L - 1$ rows, so it grows with the square of the total depth. The speed-up therefore levels off in this
-sweep, at 60-fold at $K = 64$ and 63-fold at 128, and it is lower for a deep block merged with a shallow one. The same
-counting would apply to \code{mafScoreRange}, which makes it the next target. Its gap model also looks back one
-column, so per-column counting is again the pessimistic count of Kececioglu and Zhang~\cite{kececioglu1998}. Ranwez
-computes even the exact affine sum-of-pairs score in $O(nL)$~\cite{ranwez2016}.
+sweep, at 60-fold at $K = 64$ and 63-fold at 128, and it is lower for a deep block merged with a shallow one. Counting
+would also make \code{mafScoreRange} exact and linear in depth. Symbols and the four dash classes are counted per
+column as in \code{yama}, but its pairs lie within one block, so each class is also paired with itself and each row's
+pair with itself is left out. Its gap model also looks back one column, so per-column counting is again the
+pessimistic count of Kececioglu and Zhang~\cite{kececioglu1998}. Ranwez computes the substitution part from per-site
+counts, and even the exact affine sum-of-pairs score, in time linear in the number of rows times the number of
+columns~\cite{ranwez2016}. On real merges, too, \code{mafScoreRange} is now the larger cost in deep merges. A
+\code{gprof} build of 11.4 spent 63 percent of the deep merge below in \code{mafScoreRange} and 35 percent in
+\code{yama} (\code{measurements/gprof\_deepmerge\_v11.4.txt}). That makes it the next target for deep merges, though
+removing it entirely would speed that merge at most about 2.7-fold.
 
 \begin{figure}[t]
 \centering
@@ -180,11 +188,15 @@ one 4.4\,Mb \emph{Cannabis} piece took a median 14,085\,s with 11.3 and 2,873\,s
 apart from \code{\#} lines. UCSC's hg38 \code{multiz5way} recipe still reproduced the published alignment, 7 of 7
 sequences.
 
-\paragraph{Why a whole run gains less is not measured.} One deep merge gained 33.8-fold and a whole piece 4.9-fold.
-We did not profile a whole run, so how its remaining 2,873\,s divides among \code{yama}, block scoring, projection
-and file handling is not known. Two candidates follow from the measurements above: merges where one side is shallow,
-where the speed-up is smaller, and \code{mafScoreRange}, which grows with the square of the depth in the deep merges
-near the root.
+\paragraph{Where a whole run's time goes.} One deep merge gained 33.8-fold and a whole piece 4.9-fold. A \code{gprof}
+build of 11.4 ran the whole piece, all 215 merges, with output identical to the production alignment apart from
+\code{\#} lines. It spent 53 percent of the sampled \code{multiz} time in \code{mafScoreRange} and 45 percent in
+\code{yama} (\code{measurements/gprof\_wholepiece\_v11.4.txt}), and a second run agreed within 0.1 percentage points.
+\code{mafScoreRange} led in 29 of the 215 merges, the deep ones near the root, and \code{yama} in the other 186
+(\code{measurements/wholepiece\_permerge\_v11.4.tsv}). So both explanations hold: shallow merges, where the
+speed-up is small and \code{yama} still leads, and \code{mafScoreRange} in the deep merges. Removing
+\code{mafScoreRange} entirely would speed this run at most about 1.75-fold. How the rest of the wall time divides,
+including library and system time that \code{gprof} does not sample, was not measured.
 
 \section{Prior work}
 
@@ -208,7 +220,7 @@ so the states reduce to four classes.
 For quasi-natural gap counts, which Kececioglu and Zhang call pessimistic, the combination is not new either. They
 gave algorithms that align two alignments under them in essentially $O(mn)$ time~\cite{kececioglu1998}, and Wheeler
 and Kececioglu state the bound as $O(kn + n^2)$~\cite{wheeler2007}. Release 11.4 computes that objective, up to
-\code{yama}'s free end gaps. We arrived at it by profiling and did not take it from their paper.
+\code{yama}'s free end gaps. We did not take it from their paper, which we found only afterwards.
 
 Exact gap counting is what makes the general problem hard. With linear gap costs counted exactly, aligning two
 alignments under the sum-of-pairs objective is NP-complete~\cite{kececioglu2004,ma2003}. Release 11.4 does not touch
@@ -216,8 +228,10 @@ that problem. It computes \code{yama}'s existing objective, quasi-natural gaps i
 objective is itself an approximation. Kececioglu and Starrett found the pessimistic recurrence's own score up to 1.02
 percent and its gap count up to 31.63 percent from the exact optimum (0.52 and 20.04 percent for the alignment it
 returns), on four 12-sequence protein benchmarks, each split every way into two alignments (their Tables~3 and~4). The
-error is not measured for DNA. On deeper protein benchmarks, Wheeler and Kececioglu found exact and pessimistic
-merges nearly as accurate (average accuracy 71.6 against 70.9)~\cite{wheeler2007}. Release 11.4 inherits that approximation
+error is not measured for DNA. Within a progressive aligner that merges along a minimum spanning tree, Wheeler and Kececioglu found exact and
+pessimistic merging nearly as accurate on three protein benchmark suites, BAliBASE (up to 40 sequences), SABmark (up
+to 25) and PALI (at least 7). Their SPS accuracy, averaged over the three suites, was 71.6 against
+70.9~\cite{wheeler2007}. Release 11.4 inherits that approximation
 unchanged.
 
 A search on 5 November 2026 (\code{measurements/prior\_art\_search.md}) found no publication that applies this
@@ -236,6 +250,8 @@ Miller~\cite{chao1994} or the MultiPipMaker papers, which also use quasi-natural
 \item The profiles are \code{gprof} samples at 0.01\,s, so the 0.06\,s for \code{yama} in 11.4 is coarse. It
   supports ``about a thousandfold'', not a precise ratio.
 \item The deep-merge and whole-piece timings are taken from the pull request and were not rerun for this note. The
+  profiles were made with \code{-pg} builds on a loaded host, so their shares are of sampled CPU time in
+  \code{multiz}, not of wall time. The
   deep merge is one run per release, on a host whose other load was not recorded.
 \item Output identity was checked on the seven synthetic pairs, the deep merge, the whole piece and the hg38 5-way
   recipe. It is an empirical check of the exactness argument, not a proof.
@@ -251,7 +267,11 @@ compares outputs, writing \code{measurements/sweep.csv} ($K = L$) and \code{meas
 (\code{-{}-sizes 4x4,4x16,\ldots,64x64}). The script \code{probe/profile\_k128.sh} builds both releases with
 \code{-pg} and writes \code{measurements/gprof\_k128.txt}. The file \code{sweep.csv} was written by an earlier
 revision of \code{run\_sweep.py} that named its inputs \code{k\{K\}} instead of \code{k\{K\}l\{L\}}, and the inputs
-are byte-identical under both names. The host is recorded in \code{measurements/sweep\_env.txt}. Figures are made by
+are byte-identical under both names. The file \code{gprof\_k128.txt} was written by the matching earlier revision of
+\code{profile\_k128.sh}, which read the old names. The deep-merge profiles (\code{gprof\_deepmerge\_v11.3.txt} and
+\code{gprof\_deepmerge\_v11.4.txt}) and the whole-piece profile (\code{gprof\_wholepiece\_v11.4.txt}) come with
+checksums of their inputs (\code{measurements/*\_inputs.sha256}). The script \code{probe/profile\_wholepiece.sh} is
+the whole-piece recipe, written after the run and not itself run. The host is recorded in \code{measurements/sweep\_env.txt}. Figures are made by
 \code{paper/make\_figure1.py}, \code{paper/make\_figure2.py} and \code{paper/make\_figure3.py}. MULTIZ is at
 \url{https://github.com/multiz/multiz}. Text, figures and code are CC0 1.0.
 
@@ -282,7 +302,7 @@ related proteins. \emph{Proceedings of the National Academy of Sciences USA} 84:
 doi:10.1073/pnas.84.13.4355.
 
 \bibitem{kececioglu1998} J.~Kececioglu and W.~Zhang. Aligning alignments. In \emph{Combinatorial Pattern Matching
-(CPM 1998)}, Lecture Notes in Computer Science, 189--208, 1998. doi:10.1007/BFb0030790.
+(CPM 1998)}, Lecture Notes in Computer Science 1448, 189--208, 1998. doi:10.1007/BFb0030790.
 
 \bibitem{kececioglu2004} J.~Kececioglu and D.~Starrett. Aligning alignments exactly. In \emph{Proceedings of the
 Eighth Annual International Conference on Research in Computational Molecular Biology (RECOMB 2004)}, 85--96, 2004.
