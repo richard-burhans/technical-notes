@@ -274,7 +274,8 @@ are byte-identical under both names. The file \code{gprof\_k128.txt} was written
 \code{profile\_k128.sh}, which read the old names. The deep-merge profiles (\code{gprof\_deepmerge\_v11.3.txt} and
 \code{gprof\_deepmerge\_v11.4.txt}) and the whole-piece profile (\code{gprof\_wholepiece\_v11.4.txt}) come with
 checksums of their inputs (\code{measurements/*\_inputs.sha256}). The script \code{probe/profile\_wholepiece.sh} is
-the whole-piece recipe, written after the run and not itself run. The host is recorded in \code{measurements/sweep\_env.txt}. Figures are made by
+the whole-piece recipe, written after the runs. Run once since, it gave the same call counts, shares of 54 and 44
+percent, and output identical to production (\code{gprof\_wholepiece\_v11.4\_rep3.txt}). The host is recorded in \code{measurements/sweep\_env.txt}. Figures are made by
 \code{paper/make\_figure1.py}, \code{paper/make\_figure2.py} and \code{paper/make\_figure3.py}. MULTIZ is at
 \url{https://github.com/multiz/multiz}. Text, figures and code are CC0 1.0.
 

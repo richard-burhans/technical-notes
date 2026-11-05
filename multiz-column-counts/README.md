@@ -37,7 +37,7 @@ bash probe/profile_k128.sh /tmp/multiz-cc > measurements/gprof_k128.txt   # need
 python3 probe/swap_order.py /tmp/multiz-cc measurements/swap_order.csv      # default pairs 4x16 and 4x64, needs the grid
 python3 probe/swap_order.py /tmp/multiz-cc measurements/swap_order_rep1.csv --pairs 4x16,4x64,16x64   # rep2, rep3 the same
 bash probe/profile_wholepiece.sh /tmp/multiz-cc INPUT_DIR measurements/wholepiece_tree.txt cs10_NCBI_RefSeq_softmasked \
-    > /tmp/gprof_wholepiece_rerun.txt   # INPUT_DIR holds the files in measurements/wholepiece_inputs.sha256, not re-run
+    > /tmp/gprof_wholepiece_rerun.txt   # INPUT_DIR holds the files in measurements/wholepiece_inputs.sha256, about 1 h
 ```
 
 ## Experimental: counting in `mafScoreRange` (not part of any release)

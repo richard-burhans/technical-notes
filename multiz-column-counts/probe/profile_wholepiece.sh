@@ -10,7 +10,8 @@
 # with checksums in ../measurements/wholepiece_inputs.sha256 and the tree is ../measurements/wholepiece_tree.txt.
 # Needs build_multiz.sh to have run with BUILD_DIR first.
 # The committed profiles were made by two runs that built every program -pg and summed the 215 gmon files written by
-# multiz, one per merge. This script profiles only multiz, which should give the same multiz samples, but it has not itself been run.
+# multiz, one per merge. This script profiles only multiz. Its first run (2026-11-05, 54 min) gave the same 215 profiles and call
+# counts, shares of 54.4 and 43.5 percent, and output identical to production apart from # lines (gprof_wholepiece_v11.4_rep3.txt).
 set -euo pipefail
 B=$(realpath "${1:?usage}"); IN=$(realpath "${2:?usage}"); TREE=$(realpath "${3:?usage}"); REF=${4:?usage}
 R="$B/rel-wholepiece"; P="$B/prof-wholepiece"; W="$B/run-wholepiece"
