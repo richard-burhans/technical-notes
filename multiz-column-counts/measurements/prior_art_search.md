@@ -53,6 +53,14 @@ An adversarial review of the note re-ran and extended this search on the same da
   of an alignment in O(nL), relevant to `mafScoreRange`.
 * Minmei Hou's 2007 thesis and three of her papers were checked. None describes this reduction.
 
+Run by the round 15 review (attack-L6, queries 6 to 8, Europe PMC, 2026-11-05) and recorded here afterwards:
+
+| query | what it found |
+|---|---|
+| `"quasi-natural gap"` | 3 hits: Notredame 1996 (SAGA), Schwartz 2003 (MultiPipMaker), Lipman, Altschul and Kececioglu 1989 (MSA) |
+| `"pessimistic gap"` | 5 hits, including Ranwez 2016 and MACSE 2011 |
+| `"aligning alignments"` | 9 hits, Wheeler and Kececioglu 2007 second |
+
 Not covered by any search so far: Chao, Hardison and Miller (1994), which the note cites for `yama`'s recurrence, and the
-MultiPipMaker papers (Schwartz et al. 2003), which use quasi-natural gaps. The search had one open-ended query and no
+MultiPipMaker papers (Schwartz et al. 2003), which use quasi-natural gaps. The review's query found MultiPipMaker but did not read it. The search had one open-ended query and no
 forward-citation search.
