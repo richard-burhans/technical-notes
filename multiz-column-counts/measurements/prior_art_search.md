@@ -23,7 +23,7 @@ shipped in multiz 11.4. This is the first. Web search (US), the Europe PMC REST 
   (Gribskov et al, 1987). However, there has been no way to evaluate the accurate gap-opening costs with computation
   steps less than O(M x N)." His contribution is the gap half, through gap-state variables computed once per column.
   He reports about 10-fold speed-ups at M × N ≈ 200 and over 100-fold at M × N > 2500.
-* **Gotoh (1993).** Four group-to-group algorithms, the rigorous one close to O(MNL²).
+* **Gotoh (1993).** Four group-to-group algorithms. The rigorous one, D, has "average performance … close to O(MNL²)" on four protein families. He says its worst case is not known, so this is not a bound.
 * **Altschul (1989).** Quasi-natural costs add one gap in the case natural costs would need more history, so "the
   preceding edge completely determines the number of gaps a new edge introduces". That is why four dash classes
   suffice.

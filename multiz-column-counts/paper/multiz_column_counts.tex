@@ -184,19 +184,22 @@ symbol $a$ at position $p$ as $M(p,a) = \sum_b W(p,b)\, Y(a,b)$, with $Y$ the su
 weight $W(p,b)$ the count of residue $b$ in that column divided by the number of sequences~\cite{gribskov1987}. The
 fold $w_A$ above is the same sum without the division.
 
-Counting gap states per column to escape the $K \times L$ loop is Gotoh's. Gotoh gave exact sum-of-pairs algorithms
+Counting gap states per column to escape the $K \times L$ loop is Gotoh's. Gotoh gave rigorous sum-of-pairs algorithms
 for aligning two groups of sequences~\cite{gotoh1993}, and then removed their cost in proportion to the product of
 the group sizes. In his words, profile vectors could already reduce the work, but ``there has been no way to
 evaluate the accurate gap-opening costs with computation steps less than $O(M \times N)$''~\cite{gotoh1994}. He did
-it with gap-state variables computed once per column and combined during the recursion, and reported speed-ups of
-about 10-fold when $M \times N \approx 200$ and over 100-fold when $M \times N > 2{,}500$. His gap states track runs
-of any length, because his objective counts gaps exactly. \code{yama}'s quasi-natural costs look back one column,
+it with gap-state variables computed once per column and combined during the recursion, and reported speed-ups over his
+earlier algorithm of about 10-fold when $M \times N \approx 200$ and over 100-fold when $M \times N > 2{,}500$. His gap
+states record runs of nulls of any length, because his objective charges every gap opening. \code{yama}'s quasi-natural costs look back one column,
 so the states reduce to four classes.
 
 Exact gap counting is what makes the general problem hard. With linear gap costs counted exactly, aligning two
 alignments under the sum-of-pairs objective is NP-complete~\cite{kececioglu2004}, and Kececioglu and Zhang had
 earlier relaxed it with optimistic and pessimistic gap counts~\cite{kececioglu1998}. Release 11.4 does not touch that
-problem. It computes \code{yama}'s existing objective, quasi-natural gaps included, exactly and faster.
+problem. It computes \code{yama}'s existing objective, quasi-natural gaps included, exactly and faster. That objective
+is itself an approximation. On protein benchmarks, Kececioglu and Starrett found the quasi-natural (pessimistic) count
+off from the exact one by up to 1.02 percent of the alignment score and 31.63 percent of the gap count (their Tables~3
+and~4). Release 11.4 inherits that approximation unchanged.
 
 A search on 5 November 2026 (\code{measurements/prior\_art\_search.md}) found no publication that applies this
 reduction to MULTIZ or the threaded blockset aligner.
