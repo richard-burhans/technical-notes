@@ -1,6 +1,6 @@
 # Column counts in MULTIZ: `yama` no longer costs K × L per cell
 
-**[Read the technical note (PDF, 6 pages)](paper/multiz_column_counts.pdf)** · Richard Burhans · 5 November 2026 · CC0
+**[Read the technical note (PDF, 7 pages)](paper/multiz_column_counts.pdf)** · Richard Burhans · 5 November 2026 · CC0
 
 MULTIZ's `yama` aligns two alignment blocks by dynamic programming, and release 11.3 scored every cell by summing
 over all K × L pairs of rows. Release 11.4 scores each cell from summaries made once per column: one score per
@@ -32,4 +32,5 @@ python3 probe/run_sweep.py /tmp/multiz-cc measurements/sweep.csv  # about 5 minu
 python3 probe/run_sweep.py /tmp/multiz-cc measurements/grid.csv \
     --sizes 4x4,4x16,4x64,16x4,16x16,16x64,64x4,64x16,64x64
 bash probe/profile_k128.sh /tmp/multiz-cc > measurements/gprof_k128.txt   # needs the k128l128 pair from the sweep
+python3 probe/swap_order.py /tmp/multiz-cc measurements/swap_order_rep1.csv --pairs 4x16,4x64,16x64   # needs the grid
 ```

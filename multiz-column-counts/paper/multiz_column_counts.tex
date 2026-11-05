@@ -36,7 +36,7 @@ synthetic blocks of $K = L = 128$ rows, \code{yama} itself ran about a thousand 
 times faster, with identical output. On these blocks the rest of the time is now spent scoring the merged blocks,
 which still visits every row pair. The idea is not new. Scoring a column from symbol counts is a profile, Gotoh
 counted gap states per column to make aligning groups of sequences much less dependent on their sizes, and Kececioglu
-and Zhang aligned two alignments under this gap model in time that does not grow with their depth. We reached it by
+and Zhang aligned two alignments under this gap model with work per cell that does not grow with their depth. We reached it by
 profiling, not from their papers. This note records how the change was found,
 what it computes, where it comes from, and what it measured.
 \end{abstract}
@@ -145,8 +145,9 @@ $K$ and $L$ each 4, 16 or 64, separates them (Fig.~\ref{fig:grid}). Over this gr
 $K \times L$ to within about 20 percent. At $K \times L = 64$ the $4 \times 16$ and $16 \times 4$ pairs took 0.33
 and 0.39\,s. At 256, the $4 \times 64$, $16 \times 16$ and $64 \times 4$ pairs took 1.27, 1.25 and 1.46\,s. At
 1,024 the $16 \times 64$ and $64 \times 16$ pairs took 4.83 and 4.80\,s, against 4.84\,s for $32 \times 32$. The
-shape is not irrelevant. On identical files, putting the deeper alignment first made 11.3 19 percent slower at
-$4 \times 16$ and 15 percent slower at $4 \times 64$ (\code{measurements/swap\_order.csv}, median of five runs per order). Shapes thinner than the grid's were not measured here. All nine outputs were identical.
+shape is not irrelevant. On identical files, putting the deeper alignment first made 11.3 18 to 20 percent slower at
+$4 \times 16$ and 12 to 15 percent slower at $4 \times 64$, but changed $16 \times 64$ by under 1 percent (four runs of
+five per order, \code{measurements/swap\_order*.csv}). The order matters only when one side is very shallow. Shapes thinner than the grid's were not measured here. All nine outputs were identical.
 
 \paragraph{Where the time goes now.} The 11.4 time does not stay proportional to $K + L$ at depth. From
 $K = L = 64$ to 128 it rose 3.8-fold. A \code{gprof} profile of the $K = L = 128$ merge shows why
@@ -215,7 +216,8 @@ that problem. It computes \code{yama}'s existing objective, quasi-natural gaps i
 objective is itself an approximation. Kececioglu and Starrett found the pessimistic recurrence's own score up to 1.02
 percent and its gap count up to 31.63 percent from the exact optimum (0.52 and 20.04 percent for the alignment it
 returns), on four 12-sequence protein benchmarks, each split every way into two alignments (their Tables~3 and~4). The
-error is not measured for DNA or for merges deeper than about 12 rows. Release 11.4 inherits that approximation
+error is not measured for DNA. On deeper protein benchmarks, Wheeler and Kececioglu found exact and pessimistic
+merges nearly as accurate (average accuracy 71.6 against 70.9)~\cite{wheeler2007}. Release 11.4 inherits that approximation
 unchanged.
 
 A search on 5 November 2026 (\code{measurements/prior\_art\_search.md}) found no publication that applies this

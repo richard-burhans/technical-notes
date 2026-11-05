@@ -1,0 +1,2 @@
+# swap_order repeats: 2026-11-05T10:40Z, 32 vCPU, loadavg at start 2.11 2.43 2.86; unrelated single-threaded alignment jobs were running
+loadavg at end 3.26 2.84 2.95

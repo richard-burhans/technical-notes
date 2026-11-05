@@ -1,0 +1,4 @@
+pair,KxL,shallow_first_s,deep_first_s,deep_first_extra_pct,shallow_first_range_s,deep_first_range_s
+4x16,64,0.293,0.352,19.9,0.292-0.298,0.347-0.357
+4x64,256,1.153,1.297,12.5,1.139-1.155,1.291-1.340
+16x64,1024,4.420,4.386,-0.8,4.308-4.425,4.270-4.427

@@ -3,8 +3,8 @@
 
     python3 make_figure1.py
 
-Writes `figure1.svg` and `.pdf` beside this script (PDF by rsvg-convert). Minmei Hou suggested the framing, K x L work
-per cell becoming K + L per column.
+Writes `figure1.svg` and `.pdf` beside this script (PDF by rsvg-convert). The figure shows K x L work per cell becoming
+K + L work per column. Thanks to Minmei Hou for discussion.
 
 Design rules (writing repo, papers/rules/figure_design.md): 510 pt canvas = 180 mm, Okabe-Ito colours,
 Helvetica throughout (panel letters 11 pt, titles 8 pt, labels 6.5 to 7 pt), zero baseline on the bar panel.
@@ -63,7 +63,7 @@ def column(x, y0, letters, fill, tint, cell=16):
 
 
 # ---- headline -------------------------------------------------------------------------------------------------
-text(8, 14, "MULTIZ 11.4 scores each cell from column counts: K × L becomes K + L", 9, weight="bold")
+text(8, 14, "MULTIZ 11.4 scores each yama cell from column counts, not K × L row pairs", 9, weight="bold")
 
 # ---- A: release 11.3, every row pair -------------------------------------------------------------------------
 text(8, 36, "A", 11, weight="bold")

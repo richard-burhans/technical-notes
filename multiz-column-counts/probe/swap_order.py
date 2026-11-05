@@ -36,6 +36,8 @@ def main() -> int:
     rows = []
     for pair in a.pairs.split(","):
         k, l = (int(x) for x in pair.split("x"))
+        if k >= l:
+            raise SystemExit(f"{pair}: give the shallow side first (K < L), so the order labels are right")
         f1 = a.build / "sweep" / f"k{k}l{l}.1.maf"      # K rows
         f2 = a.build / "sweep" / f"k{k}l{l}.2.maf"      # L rows
         shallow_first, deep_first = [], []
