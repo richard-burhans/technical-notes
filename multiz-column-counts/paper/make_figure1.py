@@ -125,9 +125,9 @@ CY = 254
 text(8, CY, "C", 11, weight="bold")
 text(22, CY, "One deep merge, as recorded in multiz#28", 8, weight="bold")
 
-text(262, CY, f"Blocks of about K = {MERGE_ROWS_A} rows against L = {MERGE_ROWS_B}:", 6.5)
-text(262, CY + 11, "11.3: all K × L row pairs, in every cell", 7, weight="bold", fill=VERMILION)
-text(262, CY + 22, "11.4: K + L rows summarised once per column", 7, weight="bold", fill=GREEN)
+text(262, CY, f"Blocks of about {MERGE_ROWS_A} rows against {MERGE_ROWS_B}, cs10 included:", 6.5)
+text(262, CY + 11, "11.3: every pair of the rows yama aligns, in every cell", 7, weight="bold", fill=VERMILION)
+text(262, CY + 22, "11.4: those rows summarised once per column", 7, weight="bold", fill=GREEN)
 text(262, CY + 42, f"{MERGE_S_113 / MERGE_S_114:.1f}× faster on this merge,", 8, weight="bold")
 text(262, CY + 53, "identical output (single upstream runs)", 6.5)
 bx0, bw, top = 50, 190, CY + 12                          # zero baseline at bx0, bw points = 1000 s

@@ -23,7 +23,7 @@ the same K × L took times within about 20 percent of each other. Thinner shapes
 
 The idea is not new. Scoring a column from symbol counts is a profile (Gribskov et al. 1987), Gotoh (1994) counted gap
 states per column between groups of sequences, and Kececioglu and Zhang (1998) aligned two alignments under this gap
-model in essentially O(mn) time. Scoring columns from symbol counts came from profile aligners and exact gap sums from reading how `yama` charges gaps. A profile of one deep merge showed where it would pay, and the literature was checked afterwards ([`measurements/prior_art_search.md`](measurements/prior_art_search.md)).
+model in essentially O(mn) time. Scoring columns from symbol counts came from profile aligners and gap sums equal to 11.3's from reading how `yama` charges gaps. A profile of one deep merge showed where it would pay, and the literature was checked afterwards ([`measurements/prior_art_search.md`](measurements/prior_art_search.md)).
 
 ## Reproduce
 

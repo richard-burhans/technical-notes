@@ -108,9 +108,9 @@
 <text x="16.0" y="226.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">and in the previous one, so each row falls into one of 4 dash classes. All terms are integers: the totals equal the pair sums exactly.</text>
 <text x="8.0" y="254.0" font-size="11" text-anchor="start" font-weight="bold" fill="#000000">C</text>
 <text x="22.0" y="254.0" font-size="8" text-anchor="start" font-weight="bold" fill="#000000">One deep merge, as recorded in multiz#28</text>
-<text x="262.0" y="254.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">Blocks of about K = 35 rows against L = 43:</text>
-<text x="262.0" y="265.0" font-size="7" text-anchor="start" font-weight="bold" fill="#D55E00">11.3: all K × L row pairs, in every cell</text>
-<text x="262.0" y="276.0" font-size="7" text-anchor="start" font-weight="bold" fill="#009E73">11.4: K + L rows summarised once per column</text>
+<text x="262.0" y="254.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">Blocks of about 35 rows against 43, cs10 included:</text>
+<text x="262.0" y="265.0" font-size="7" text-anchor="start" font-weight="bold" fill="#D55E00">11.3: every pair of the rows yama aligns, in every cell</text>
+<text x="262.0" y="276.0" font-size="7" text-anchor="start" font-weight="bold" fill="#009E73">11.4: those rows summarised once per column</text>
 <text x="262.0" y="296.0" font-size="8" text-anchor="start" font-weight="bold" fill="#000000">33.8× faster on this merge,</text>
 <text x="262.0" y="307.0" font-size="6.5" text-anchor="start" font-weight="normal" fill="#000000">identical output (single upstream runs)</text>
 <rect x="50.0" y="266.0" width="186.4" height="12.0" fill="#D55E00" stroke="none" stroke-width="0.6"/>

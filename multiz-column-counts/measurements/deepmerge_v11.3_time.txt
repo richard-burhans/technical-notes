@@ -22,4 +22,4 @@
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 0
-# 11.3 release build, a separate run: 981.41 s, 7768 KB maximum resident.
+# 11.3 release build, a separate run: 981.41 s, 7768 KB.

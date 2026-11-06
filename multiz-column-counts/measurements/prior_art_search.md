@@ -3,7 +3,7 @@
 This is a rewritten public copy of the author's working search record, revised after a review the same day. The
 revision is recorded in the addendum at the end.
 
-Scoring columns from symbol counts came from profile aligners, and keeping the gap sums exact came from reading how `yama` charges gaps. A profile (`yama` took 98% of one deep merge) showed where it would pay. No literature search was run before the change shipped in multiz 11.4. This is the first. Web search (US), the Europe PMC REST API, and CrossRef for every DOI.
+Scoring columns from symbol counts came from profile aligners, and keeping the gap sums equal to 11.3's came from reading how `yama` charges gaps. A profile (`yama` took 98% of one deep merge) showed where it would pay. No literature search was run before the change shipped in multiz 11.4. This is the first. Web search (US), the Europe PMC REST API, and CrossRef for every DOI.
 
 | query | what it found |
 |---|---|

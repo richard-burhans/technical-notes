@@ -36,7 +36,7 @@ synthetic blocks of $K = L = 128$ rows, \code{yama} itself ran about a thousand 
 times faster, with identical output. On these blocks the rest of the time is now spent scoring the merged blocks,
 which still visits every row pair. The idea is not new. Scoring a column from symbol counts is a profile, Gotoh
 counted gap states per column to make aligning groups of sequences much less dependent on their sizes, and Kececioglu
-and Zhang aligned two alignments under this gap model with work per cell that does not grow with their depth. Scoring columns from symbol counts came from profile aligners, and keeping the gap sums exact came from reading how \code{yama} charges gaps. A profile of one deep merge showed where it would pay. We found the papers of Gribskov and colleagues, Gotoh, and Kececioglu and Zhang only afterwards. This note records how the change was found,
+and Zhang aligned two alignments under this gap model with work per cell that does not grow with their depth. Scoring columns from symbol counts came from profile aligners, and keeping the gap sums equal to 11.3's came from reading how \code{yama} charges gaps. A profile of one deep merge showed where it would pay. We found the papers of Gribskov and colleagues, Gotoh, and Kececioglu and Zhang only afterwards. This note records how the change was found,
 what it computes, where it comes from, and what it measured.
 \end{abstract}
 
@@ -50,10 +50,10 @@ substitution scores of all $K \times L$ row pairs. Gaps are charged by Altschul'
 graph model of Myers and Miller~\cite{myers1989} as Chao, Hardison and Miller modified it for those costs~\cite{chao1994}. Release 11.3 computed each cell's substitution
 sum and its three gap sums with loops over all $K \times L$ row pairs.
 
-That cost grows with the product of the depths. Deep blocks are what a large panel produces. In a 217-genome alignment of \emph{Cannabis sativa}, the cs10 reference and 216 other assemblies, one merge aligned 2,303 blocks of about 35 rows to 4,359 blocks of about 43~\cite{multiz28}. In 11.3, every cell visited each pair of rows it aligned, four times. \code{yama} sets the shared cs10 row aside and aligns it to the result in a second call. The pull request records
+That cost grows with the product of the depths. Deep blocks are what a large panel produces. In a 217-genome alignment of \emph{Cannabis sativa} assemblies, cs10 and 216 others, one merge aligned 2,303 blocks of about 35 rows to 4,359 blocks of about 43~\cite{multiz28}. The pull request counts the 216 queries. In 11.3, every cell visited each pair of rows it aligned, four times. Its caller, \code{pre\_yama}, sets the shared cs10 row aside, so the first call aligns one row fewer from each block, and a second call aligns cs10 to the result. The pull request records
 that \code{yama} took 98 percent of that merge's run time~\cite{multiz28}. That profile was kept: a \code{gprof} build of 11.3 spent
 98.1 percent of 950\,s in \code{yama} (\code{measurements/gprof\_deepmerge\_v11.3.txt}). The host and its other load
-were not recorded. Scoring columns from symbol counts came from profile aligners, and keeping the gap sums exact came from reading how \code{yama} charges gaps. The profile showed that \code{yama} was where it would pay.
+were not recorded. Scoring columns from symbol counts came from profile aligners, and keeping the gap sums equal to 11.3's came from reading how \code{yama} charges gaps. The profile showed that \code{yama} was where it would pay.
 
 \section{The change}
 
@@ -190,7 +190,7 @@ build of 11.4 ran the whole piece, all 215 merges, with output identical to the 
 \code{yama} (\code{measurements/gprof\_wholepiece\_v11.4.txt}). A second run agreed within 0.1 percentage points, and a third, from the recipe in Methods, gave 54 and 43 percent.
 Per merge, from the second run (\code{measurements/wholepiece\_permerge\_v11.4.tsv}, one row per \code{multiz}
 process in the order they ran), \code{mafScoreRange} led in 29 of the 215 merges and \code{yama} in the other 186.
-All 29 are among the last 36 merges. These shares cover \code{multiz} alone.
+All 29 are among the last 36 of the 215 merges to run. These shares cover \code{multiz} alone.
 \code{roast} also runs \code{maf\_project}, which calls \code{mafScoreRange} too and was not profiled, and how the
 rest of the wall time divides, including library and system time that \code{gprof} does not sample, was not
 measured.
@@ -222,7 +222,7 @@ and Kececioglu state the bound as $O(kn + n^2)$~\cite{wheeler2007}. Release 11.4
 Exact gap counting is what makes the general problem hard. With linear gap costs counted exactly, aligning two
 alignments under the sum-of-pairs objective is NP-complete~\cite{kececioglu2004,ma2003}. Release 11.4 does not touch
 that problem. It computes \code{yama}'s existing objective, quasi-natural gaps included, exactly and faster. That
-objective is itself an approximation. Kececioglu and Starrett found the pessimistic recurrence's own score up to 1.02 percent and its gap count up to 31.63 percent from the exact optimum (0.52 and 20.04 percent for the alignment it returns), on four 12-sequence protein benchmarks, each split every way into two alignments (their Tables~3 and~4). All four maxima are on rh12, the benchmark they call the toughest, where the means were 0.78 and 16.51 percent for the recurrence and 0.04 and 0.63 percent for the alignment it returns. We know of no measurement of this error for DNA or under \code{yama}'s scores, which charge 400 to open a gap, about four times a match, and we did not search for one. Within a progressive aligner that merges along a minimum spanning tree, Wheeler and Kececioglu found pessimistic merging nearly as accurate as exact merging on three protein benchmark suites, BAliBASE (up to 40 sequences), SABmark (up
+objective is itself an approximation. Kececioglu and Starrett found the pessimistic recurrence's own score up to 1.02 percent and its gap count up to 31.63 percent from the exact optimum (0.52 and 20.04 percent for the alignment it returns), on four 12-sequence protein benchmarks, each split every way into two alignments (their Tables~3 and~4). All four maxima are on rh12, whose 20.04 percent is the error they report on ``the toughest benchmark''. There the means were 0.78 and 16.51 percent for the recurrence and 0.04 and 0.63 percent for the alignment it returns. We know of no measurement of this error for DNA or under \code{yama}'s scores, which charge 400 to open a gap, about four times a match, and we did not search for one. Within a progressive aligner that merges along a minimum spanning tree, Wheeler and Kececioglu found pessimistic merging nearly as accurate as exact merging on three protein benchmark suites, BAliBASE (up to 40 sequences), SABmark (up
 to 25) and PALI (at least 7). Their SPS accuracy, averaged over the three suites, was 71.6 for exact merging and 70.9 for pessimistic merging~\cite{wheeler2007}. Release 11.4 inherits that approximation
 unchanged.
 
