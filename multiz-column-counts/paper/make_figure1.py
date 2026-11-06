@@ -23,7 +23,8 @@ FONT = 'font-family="Helvetica,Arial,sans-serif"'
 BLUE, ORANGE, GREEN, VERMILION, GREY, INK = "#0072B2", "#E69F00", "#009E73", "#D55E00", "#9A9A9A", "#000000"
 BLUE_T, ORANGE_T, GREEN_T = "#CCE3F0", "#FAECCC", "#CCECE3"   # ~20% tints on white (rsvg has no opacity issue)
 
-# multiz#28 (merged 2026-10-21), "Measured": one deep merge from a 216-genome roast, single upstream runs.
+# multiz#28 (merged 2026-10-21), "Measured": one deep merge from a
+#   217-genome roast (the PR says 216, counting queries), single upstream runs.
 MERGE_BLOCKS_A, MERGE_ROWS_A = 2303, 35      # "2,303 blocks of ~35 rows"
 MERGE_BLOCKS_B, MERGE_ROWS_B = 4359, 43      # "against 4,359 of ~43"
 MERGE_S_113, MERGE_S_114 = 981, 29           # "981 s -> 29 s against the 11.3 release build"
@@ -123,10 +124,10 @@ text(16, 226, "and in the previous one, so each row falls into one of 4 dash cla
 CY = 254
 text(8, CY, "C", 11, weight="bold")
 text(22, CY, "One deep merge, as recorded in multiz#28", 8, weight="bold")
-kl, kpl = MERGE_ROWS_A * MERGE_ROWS_B, MERGE_ROWS_A + MERGE_ROWS_B
+
 text(262, CY, f"Blocks of about K = {MERGE_ROWS_A} rows against L = {MERGE_ROWS_B}:", 6.5)
-text(262, CY + 11, f"K × L = {kl:,} row pairs per cell", 7, weight="bold", fill=VERMILION)
-text(262, CY + 22, f"K + L = {kpl} rows summarised per column", 7, weight="bold", fill=GREEN)
+text(262, CY + 11, "11.3: all K × L row pairs, in every cell", 7, weight="bold", fill=VERMILION)
+text(262, CY + 22, "11.4: K + L rows summarised once per column", 7, weight="bold", fill=GREEN)
 text(262, CY + 42, f"{MERGE_S_113 / MERGE_S_114:.1f}× faster on this merge,", 8, weight="bold")
 text(262, CY + 53, "identical output (single upstream runs)", 6.5)
 bx0, bw, top = 50, 190, CY + 12                          # zero baseline at bx0, bw points = 1000 s

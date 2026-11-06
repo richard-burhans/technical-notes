@@ -1,3 +1,4 @@
+# GNU time -v of the 11.3 -pg build (multiz-src/prof-build), the run that wrote gprof_deepmerge_v11.3.txt.
 	Command being timed: "multiz M=1 in/left.maf in/right.maf 0 U1.maf U2.maf"
 	User time (seconds): 950.63
 	System time (seconds): 1.71
@@ -21,4 +22,4 @@
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 0
-11.3 release: 981.41 s 7768 KB
+# 11.3 release build, a separate run: 981.41 s, 7768 KB maximum resident.

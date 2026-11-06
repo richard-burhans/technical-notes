@@ -28,7 +28,7 @@
 \begin{abstract}
 \noindent MULTIZ builds genome-wide multiple alignments by repeatedly aligning one alignment to another. Its dynamic
 programming routine, \code{yama}, scored every cell by summing over all $K \times L$ pairs of rows, where $K$ and $L$
-are the depths of the two blocks. On one deep merge from a 216-genome alignment, \code{yama} took 98 percent of the
+are the depths of the two blocks. On one deep merge from a 217-genome alignment, \code{yama} took 98 percent of the
 run time. Release 11.4 scores each cell from summaries made once per column instead: a score per symbol for one block
 and symbol counts for the other, plus counts of four gap classes. The work per cell no longer depends on the depths.
 Every score is an integer, so each total is the same as the pair-by-pair sum, and the output does not change. On
@@ -36,8 +36,7 @@ synthetic blocks of $K = L = 128$ rows, \code{yama} itself ran about a thousand 
 times faster, with identical output. On these blocks the rest of the time is now spent scoring the merged blocks,
 which still visits every row pair. The idea is not new. Scoring a column from symbol counts is a profile, Gotoh
 counted gap states per column to make aligning groups of sequences much less dependent on their sizes, and Kececioglu
-and Zhang aligned two alignments under this gap model with work per cell that does not grow with their depth. The idea came from
-profile aligners. A profile of one deep merge showed where it would pay, and we found their papers afterwards. This note records how the change was found,
+and Zhang aligned two alignments under this gap model with work per cell that does not grow with their depth. Scoring columns from symbol counts came from profile aligners, and keeping the gap sums exact came from reading how \code{yama} charges gaps. A profile of one deep merge showed where it would pay. We found the papers of Gribskov and colleagues, Gotoh, and Kececioglu and Zhang only afterwards. This note records how the change was found,
 what it computes, where it comes from, and what it measured.
 \end{abstract}
 
@@ -51,13 +50,10 @@ substitution scores of all $K \times L$ row pairs. Gaps are charged by Altschul'
 graph model of Myers and Miller~\cite{myers1989} as Chao, Hardison and Miller modified it for those costs~\cite{chao1994}. Release 11.3 computed each cell's substitution
 sum and its three gap sums with loops over all $K \times L$ row pairs.
 
-That cost grows with the product of the depths. Deep blocks are what a large panel produces. In a 216-genome
-alignment of \emph{Cannabis sativa} assemblies to the cs10 reference, one merge aligned 2,303 blocks of about 35
-rows to 4,359 blocks of about 43, so each cell visited about 1,505 row pairs, four times. The pull request records
+That cost grows with the product of the depths. Deep blocks are what a large panel produces. In a 217-genome alignment of \emph{Cannabis sativa}, the cs10 reference and 216 other assemblies, one merge aligned 2,303 blocks of about 35 rows to 4,359 blocks of about 43~\cite{multiz28}. In 11.3, every cell visited each pair of rows it aligned, four times. \code{yama} sets the shared cs10 row aside and aligns it to the result in a second call. The pull request records
 that \code{yama} took 98 percent of that merge's run time~\cite{multiz28}. That profile was kept: a \code{gprof} build of 11.3 spent
 98.1 percent of 950\,s in \code{yama} (\code{measurements/gprof\_deepmerge\_v11.3.txt}). The host and its other load
-were not recorded. The idea of counting per column came from profile aligners, and the profile showed that
-\code{yama} was where it would pay.
+were not recorded. Scoring columns from symbol counts came from profile aligners, and keeping the gap sums exact came from reading how \code{yama} charges gaps. The profile showed that \code{yama} was where it would pay.
 
 \section{The change}
 
@@ -93,8 +89,7 @@ a toy column pair of $K = 5$ and $L = 4$ rows by visiting all 20 row pairs, once
 each of three gap sums. In panel B, release 11.4 folds the column of $A$ into one score per symbol, at a cost of $K$ per symbol, and
 counts the symbols of $B$'s column, the dash included, each once per column. The cell is their dot product, here $2 w(\mathrm{A}) + 2 w(\mathrm{G})$. Gap sums
 are counted by four dash classes. Blue marks $A$, orange $B$, green the 11.4 cell and vermilion the 11.3 row-pair
-work. Panels A and B are a toy example, not data. Panel C is the deep merge recorded in \code{multiz\#28}, one run per
-release: 1,505 row pairs per cell, against $35 + 43 = 78$ rows summarised once per column.}
+work. Panels A and B are a toy example, not data. Panel C is the deep merge recorded in \code{multiz\#28}, one run per release, with blocks of about 35 and 43 rows.}
 \label{fig:explainer}
 \end{figure}
 
@@ -183,7 +178,7 @@ spent aligning, and grows faster than $K + L$ at large depths, where \code{mafSc
 \paragraph{Real merges.} The pull request that introduced the change records three more
 measurements~\cite{multiz28}. The deep merge above took 981\,s with the 11.3 release build and 29\,s with 11.4, one run each on a host
 whose other load was not recorded, and
-its output and both files of unused blocks were identical apart from the header line. A whole 216-genome roast of
+its output and both files of unused blocks were identical apart from the header line. A whole 217-genome roast of
 one 4.4\,Mb \emph{Cannabis} piece took a median 14,085\,s with 11.3 and 2,873\,s with 11.4 (4.9-fold, 4.5- to
 5.2-fold across single-run pairings), three interleaved runs per release on one host, all six outputs identical
 apart from \code{\#} lines. UCSC's hg38 \code{multiz5way} recipe still reproduced the published alignment, 7 of 7
@@ -192,11 +187,10 @@ sequences.
 \paragraph{Where a whole run's time goes.} One deep merge gained 33.8-fold and a whole piece 4.9-fold. A \code{gprof}
 build of 11.4 ran the whole piece, all 215 merges, with output identical to the production alignment apart from
 \code{\#} lines. It spent 53 percent of the sampled \code{multiz} time in \code{mafScoreRange} and 45 percent in
-\code{yama} (\code{measurements/gprof\_wholepiece\_v11.4.txt}), and a second run agreed within 0.1 percentage points.
+\code{yama} (\code{measurements/gprof\_wholepiece\_v11.4.txt}). A second run agreed within 0.1 percentage points, and a third, from the recipe in Methods, gave 54 and 43 percent.
 Per merge, from the second run (\code{measurements/wholepiece\_permerge\_v11.4.tsv}, one row per \code{multiz}
 process in the order they ran), \code{mafScoreRange} led in 29 of the 215 merges and \code{yama} in the other 186.
-All 29 are among the last 36 merges, where a few genomes join an alignment that already holds most of the panel. So
-the total depth of the merged block decides which function leads. These shares cover \code{multiz} alone.
+All 29 are among the last 36 merges. These shares cover \code{multiz} alone.
 \code{roast} also runs \code{maf\_project}, which calls \code{mafScoreRange} too and was not profiled, and how the
 rest of the wall time divides, including library and system time that \code{gprof} does not sample, was not
 measured.
@@ -223,18 +217,13 @@ so the states reduce to four classes.
 For quasi-natural gap counts, which Kececioglu and Zhang call pessimistic, the combination is not new either. They
 gave algorithms that align two alignments under them in essentially $O(mn)$ time~\cite{kececioglu1998}, and Wheeler
 and Kececioglu state the bound as $O(kn + n^2)$~\cite{wheeler2007}. Release 11.4 computes that objective, up to
-\code{yama}'s free end gaps. We did not take it from their paper, which we found only afterwards.
+\code{yama}'s free end gaps. We did not take it from their paper, which we found only afterwards. We have read only its abstract.
 
 Exact gap counting is what makes the general problem hard. With linear gap costs counted exactly, aligning two
 alignments under the sum-of-pairs objective is NP-complete~\cite{kececioglu2004,ma2003}. Release 11.4 does not touch
 that problem. It computes \code{yama}'s existing objective, quasi-natural gaps included, exactly and faster. That
-objective is itself an approximation. Kececioglu and Starrett found the pessimistic recurrence's own score up to 1.02
-percent and its gap count up to 31.63 percent from the exact optimum (0.52 and 20.04 percent for the alignment it
-returns), on four 12-sequence protein benchmarks, each split every way into two alignments (their Tables~3 and~4). The
-error is not measured for DNA. Within a progressive aligner that merges along a minimum spanning tree, Wheeler and Kececioglu found exact and
-pessimistic merging nearly as accurate on three protein benchmark suites, BAliBASE (up to 40 sequences), SABmark (up
-to 25) and PALI (at least 7). Their SPS accuracy, averaged over the three suites, was 71.6 against
-70.9~\cite{wheeler2007}. Release 11.4 inherits that approximation
+objective is itself an approximation. Kececioglu and Starrett found the pessimistic recurrence's own score up to 1.02 percent and its gap count up to 31.63 percent from the exact optimum (0.52 and 20.04 percent for the alignment it returns), on four 12-sequence protein benchmarks, each split every way into two alignments (their Tables~3 and~4). All four maxima are on rh12, the benchmark they call the toughest, where the means were 0.78 and 16.51 percent for the recurrence and 0.04 and 0.63 percent for the alignment it returns. We know of no measurement of this error for DNA or under \code{yama}'s scores, which charge 400 to open a gap, about four times a match, and we did not search for one. Within a progressive aligner that merges along a minimum spanning tree, Wheeler and Kececioglu found pessimistic merging nearly as accurate as exact merging on three protein benchmark suites, BAliBASE (up to 40 sequences), SABmark (up
+to 25) and PALI (at least 7). Their SPS accuracy, averaged over the three suites, was 71.6 for exact merging and 70.9 for pessimistic merging~\cite{wheeler2007}. Release 11.4 inherits that approximation
 unchanged.
 
 A search on 5 November 2026 (\code{measurements/prior\_art\_search.md}) found no publication that applies this
@@ -274,8 +263,7 @@ are byte-identical under both names. The file \code{gprof\_k128.txt} was written
 \code{profile\_k128.sh}, which read the old names. The deep-merge profiles (\code{gprof\_deepmerge\_v11.3.txt} and
 \code{gprof\_deepmerge\_v11.4.txt}) and the whole-piece profile (\code{gprof\_wholepiece\_v11.4.txt}) come with
 checksums of their inputs (\code{measurements/*\_inputs.sha256}). The script \code{probe/profile\_wholepiece.sh} is
-the whole-piece recipe, written after the runs. Run once since, it gave the same call counts, shares of 54 and 44
-percent, and output identical to production (\code{gprof\_wholepiece\_v11.4\_rep3.txt}). The host is recorded in \code{measurements/sweep\_env.txt}. Figures are made by
+the whole-piece recipe, written after the runs. Run once since, it gave the same call counts, shares of 54 and 43 percent, and output identical to production (\code{gprof\_wholepiece\_v11.4\_rep3.txt}). The host is recorded in \code{measurements/sweep\_env.txt}. Figures are made by
 \code{paper/make\_figure1.py}, \code{paper/make\_figure2.py} and \code{paper/make\_figure3.py}. MULTIZ is at
 \url{https://github.com/multiz/multiz}. Text, figures and code are CC0 1.0.
 

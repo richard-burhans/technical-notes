@@ -17,14 +17,13 @@ symbol for one block, symbol counts for the other, and counts of four gap classe
 At K = L = 128, `yama` itself ran about a thousand times faster (76.7 s to 0.06 s under `gprof`). The whole merge
 gained 63× because scoring the merged blocks (`mafScoreRange`), which still visits every row pair, now takes 94% of
 that synthetic run. On real data it is the larger of two remaining costs, measured as shares of sampled CPU time in
-`multiz`: 63% of the deep merge and 53% of a whole 216-genome piece, against 35% and 45% for `yama`. That makes it the next target for deep merges. A grid of unequal
+`multiz`: 63% of the deep merge and 53% of a whole 217-genome piece, against 35% and 45% for `yama`. That makes it the next target for deep merges. A grid of unequal
 depths shows the 11.3 time follows K × L, not K² ([`paper/figure3.png`](paper/figure3.png)). On that grid, pairs with
 the same K × L took times within about 20 percent of each other. Thinner shapes were not measured for this note.
 
 The idea is not new. Scoring a column from symbol counts is a profile (Gribskov et al. 1987), Gotoh (1994) counted gap
 states per column between groups of sequences, and Kececioglu and Zhang (1998) aligned two alignments under this gap
-model in essentially O(mn) time. The idea came from profile aligners, a profile of one deep merge
-showed where it would pay, and the literature was checked afterwards ([`measurements/prior_art_search.md`](measurements/prior_art_search.md)).
+model in essentially O(mn) time. Scoring columns from symbol counts came from profile aligners and exact gap sums from reading how `yama` charges gaps. A profile of one deep merge showed where it would pay, and the literature was checked afterwards ([`measurements/prior_art_search.md`](measurements/prior_art_search.md)).
 
 ## Reproduce
 
@@ -46,5 +45,5 @@ bash probe/profile_wholepiece.sh /tmp/multiz-cc INPUT_DIR measurements/wholepiec
 regrouped within one block: each symbol and dash class is also paired with itself, and each row's pair with itself is
 left out. Built with `-DMSR_CHECK`, every call computes both the original pair-by-pair score and the counted one and
 stops on any difference. In review (round 16), that check never fired on 13 synthetic pairs, three hg38 5-way chunks
-and a whole 216-genome piece, whose output was identical apart from `#` lines. `probe/msr_check.py` recomputes both
+and a whole 217-genome piece, whose output was identical apart from `#` lines. `probe/msr_check.py` recomputes both
 scores in Python from a MAF's blocks. Neither is part of MULTIZ until a release says so.
