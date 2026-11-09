@@ -22,8 +22,8 @@ depths shows the 11.3 time follows K × L, not K² ([`paper/figure3.png`](paper/
 the same K × L took times within about 20 percent of each other. Thinner shapes were not measured for this note.
 
 The idea is not new. Scoring a column from symbol counts is a profile (Gribskov et al. 1987), Gotoh (1994) counted gap
-states per column between groups of sequences, and Kececioglu and Zhang (1998) rewrote the interior recurrences for aligning two alignments under the same
-pessimistic gap counts in terms of four per-column counts, in essentially O(mn) time. Scoring columns from symbol counts came from profile aligners and gap sums equal to 11.3's from reading how `yama` charges gaps. A profile of one deep merge showed where it would pay, and the literature was checked afterwards ([`measurements/prior_art_search.md`](measurements/prior_art_search.md)).
+states per column between groups of sequences, and Kececioglu and Zhang (1998) rewrote the interior recurrences for aligning two alignments under the pessimistic gap counts `yama` uses (apart
+from the opens it waives at the edges of the matrix) in terms of four per-column counts, in essentially O(mn) time. Scoring columns from symbol counts came from profile aligners and gap sums equal to 11.3's from reading how `yama` charges gaps. A profile of one deep merge showed where it would pay, and the literature was checked afterwards ([`measurements/prior_art_search.md`](measurements/prior_art_search.md)).
 
 ## Reproduce
 

@@ -178,16 +178,25 @@ Files: `probe/kz98_yama/kz_vs_yama.py` and `probe/kz98_yama/main.c`. `probe/kz98
 2. On random paths it compares each interior step's opens from the transcribed closed forms (42)-(44) with the pair-by-pair Gamma sum.
 3. On random blocks (K, L up to 4 rows, M, N up to 5 columns, bytes `ACGTacgtN-`, no all-dash column) it enumerates every path. It asks whether yama's output reaches the brute-force optimum under several models of which opens are free. Model Y is my reading. It uses pessimistic Gamma everywhere and frees opens on I at rows 0 and M, C at column 1, and D at columns 0 and N. Y0 is the claim as worded, with only the boundary free. P frees nothing. The other models change one drop of Y.
 
-Output, seed 7, both releases:
+Output, seed 7 (`measurements/kz98_yama_seed7.txt`):
 
 ```
-[1] gop[16] vs gap_open*Gamma_pess(1-s 1-u, 1-t 1-v): 16/16 equal
+[1] yama_v11.4: gop[16] vs gap_open*Gamma_pess(1-s 1-u, 1-t 1-v): 16/16 equal
+[1] yama_v11.9: gop[16] vs gap_open*Gamma_pess(1-s 1-u, 1-t 1-v): 16/16 equal
 [2] interior steps checked: 8740, closed form != Gamma sum: 0
-[3] yama_v114: 1000 random cases, yama output optimal under Y: 1000/1000, Y0: 214/1000, Y-noIrowM: 621/1000, Y-noCcol1: 805/1000, Y-noDcolN: 521/1000, Y+Crow1: 830/1000, P: 235/1000
-[3] yama_up119: 1000 random cases, yama output optimal under Y: 1000/1000, Y0: 214/1000, Y-noIrowM: 621/1000, Y-noCcol1: 805/1000, Y-noDcolN: 521/1000, Y+Crow1: 830/1000, P: 235/1000
+[3] yama_v11.4: 1000 random cases, yama output optimal under Y: 1000/1000, Y0: 214/1000, Y-noIrowM: 621/1000, Y-noCcol1: 805/1000, Y-noDcolN: 521/1000, Y+Crow1: 830/1000, P: 235/1000
+[3] yama_v11.9: 1000 random cases, yama output optimal under Y: 1000/1000, Y0: 214/1000, Y-noIrowM: 621/1000, Y-noCcol1: 805/1000, Y-noDcolN: 521/1000, Y+Crow1: 830/1000, P: 235/1000
 ```
 
-Seed 11, v11.9: Y 1000/1000, Y0 220/1000, Y-noIrowM 581, Y-noCcol1 812, Y-noDcolN 573, Y+Crow1 853, P 250. Steps [1] and [2] were the same as for seed 7 (8870 steps, 0 mismatches).
+Output, seed 11 (`measurements/kz98_yama_seed11.txt`):
+
+```
+[1] yama_v11.4: gop[16] vs gap_open*Gamma_pess(1-s 1-u, 1-t 1-v): 16/16 equal
+[1] yama_v11.9: gop[16] vs gap_open*Gamma_pess(1-s 1-u, 1-t 1-v): 16/16 equal
+[2] interior steps checked: 8870, closed form != Gamma sum: 0
+[3] yama_v11.4: 1000 random cases, yama output optimal under Y: 1000/1000, Y0: 220/1000, Y-noIrowM: 581/1000, Y-noCcol1: 812/1000, Y-noDcolN: 573/1000, Y+Crow1: 853/1000, P: 250/1000
+[3] yama_v11.9: 1000 random cases, yama output optimal under Y: 1000/1000, Y0: 220/1000, Y-noIrowM: 581/1000, Y-noCcol1: 812/1000, Y-noDcolN: 573/1000, Y+Crow1: 853/1000, P: 250/1000
+```
 
 Reading: the transcribed closed forms equal the Gamma sums. yama's output is optimal under Y in every case. Removing any one of the three interior drops, or adding a row-1 drop for symmetry, breaks that. The claim as worded (Y0) matches only about a fifth of cases.
 
@@ -210,4 +219,4 @@ Derived from v11.4 mz_yama.c:
 - Blocks larger than 4 x 5, or bytes outside `ACGTacgtN-`.
 - The six-class bound for 11.5 and later, and the per-cell operation counts, which come from reading the code and were not measured.
 - KZ's proofs. The paper omits them.
-- Whether the tex Gaps paragraph needs a change. It says "Release 11.4 computes that objective, up to yama's free end gaps" (multiz_column_counts.tex:223). That is consistent with this result if "free end gaps" covers the three interior lines. I did not edit it.
+- The tex wording. Round 24 rewrote the note's sentence to state the waivers per step type ("Release 11.4 computes that objective except where yama waives gap opens", multiz_column_counts.tex), which is model Y.

@@ -12,7 +12,7 @@ Scoring columns from symbol counts came from profile aligners, and keeping the g
 | Gotoh 1994 "Further improvement … generalized profile operations" | Gotoh (1994), PMID 7804871, read in full |
 | Altschul 1989 "Gap costs for multiple sequence alignment" | Altschul (1989), the gap model `mz_yama.c` cites, read in full |
 | Gribskov profile analysis 1987 | Gribskov, McLachlan and Eisenberg (1987), read in full |
-| Kececioglu Zhang 1998 "Aligning alignments" | Kececioglu and Zhang (CPM 1998), record and the 2004 paper's summary of it only |
+| Kececioglu Zhang 1998 "Aligning alignments" | Kececioglu and Zhang (CPM 1998), record and the 2004 paper's summary of it only at the time; full text read since (see the addendum) |
 | MUSCLE profile sum of pairs | Edgar (2004): profile-profile scoring, a different objective. Not cited. Ranwez (2016), cited, computes the substitution part of the sum-of-pairs score from per-site counts and quotes Edgar that no O(nL) method was then known (added after review, round 16) |
 | multiz / TBA / yama speed-up by column counts | nothing beyond the TBA paper (Blanchette et al. 2004) |
 
@@ -43,7 +43,7 @@ An adversarial review of the note re-ran and extended this search on the same da
   "pessimistic" gap counts are Altschul's quasi-natural counts, and the 1998 abstract lists alignment versus alignment
   among algorithms that "run in essentially O(mn) time". This search had found the record but not acted on its abstract.
   It is the direct precedent for the combination, and the note now credits it. The full text was not read (it is behind
-  a login). The user later deposited the full text, read on 2026-11-07 apart from its appendix of recurrences (pp. 205-208): its recurrences are rewritten in terms of the
+  a login). The user later deposited the full text, read on 2026-11-07 apart from its appendix of recurrences (pp. 205-208), whose Section A (pp. 205-206, the alignment-against-alignment recurrences) was read on 2026-11-09 for round 24: its recurrences are rewritten in terms of the
   four per-column counts f00, f01, f10 and f11, and it says four integers per profile position recover the alignment's
   descriptive power under optimistic or pessimistic gap counts. The note quotes this (2026-11-09).
 * **Wheeler and Kececioglu (2007), Bioinformatics 23:i559–i568, doi:10.1093/bioinformatics/btm226.** States the cost of
