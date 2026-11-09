@@ -148,14 +148,16 @@ def kz_opens(A, B, prev_op, op, i, j):
 def main():
     rng = random.Random(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
     ncase = int(sys.argv[2]) if len(sys.argv) > 2 else 400
-    gop = subprocess.run([sys.argv[3], '-g'], capture_output=True, text=True).stdout.split()
-    gop = list(map(int, gop[:16]))
-    bad = 0
-    for s, t, u, v in itertools.product((0, 1), repeat=4):
-        g = gop[(s << 3) + (t << 2) + (u << 1) + v]
-        k = GO * gamma(1-s, 1-u, 1-t, 1-v)
-        bad += g != k
-    print(f"[1] gop[16] vs gap_open*Gamma_pess(1-s 1-u, 1-t 1-v): {16-bad}/16 equal")
+    for binary in sys.argv[3:]:
+        gop = subprocess.run([binary, '-g'], capture_output=True, text=True).stdout.split()
+        gop = list(map(int, gop[:16]))
+        bad = 0
+        for s, t, u, v in itertools.product((0, 1), repeat=4):
+            g = gop[(s << 3) + (t << 2) + (u << 1) + v]
+            k = GO * gamma(1-s, 1-u, 1-t, 1-v)
+            bad += g != k
+        name = binary.rsplit('/', 1)[-1]
+        print(f"[1] {name}: gop[16] vs gap_open*Gamma_pess(1-s 1-u, 1-t 1-v): {16-bad}/16 equal")
 
     # [2] per-step closed forms vs pair-by-pair Gamma, interior steps i>=1, j>=1
     steps = mism = 0

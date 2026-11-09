@@ -35,8 +35,9 @@ Every score is an integer, so each total is the same as the pair-by-pair sum, an
 synthetic blocks of $K = L = 128$ rows, \code{yama} itself ran about a thousand times faster and the whole merge 63
 times faster, with identical output. On these blocks the rest of the time is now spent scoring the merged blocks,
 which still visits every row pair. The idea is not new. Scoring a column from symbol counts is a profile, Gotoh
-counted gap states per column to make aligning groups of sequences much less dependent on their sizes, and Kececioglu
-and Zhang aligned two alignments under this gap model with work per cell that does not grow with their depth. Scoring columns from symbol counts came from profile aligners, and keeping the gap sums equal to 11.3's came from reading how \code{yama} charges gaps. A profile of one deep merge showed where it would pay. We found the papers of Gribskov and colleagues, Gotoh, and Kececioglu and Zhang only afterwards. This note records how the change was found,
+counted gap states per column to make aligning groups of sequences much less dependent on their sizes. Kececioglu
+and Zhang gave algorithms that align two alignments under the pessimistic gap counts \code{yama} uses, apart from the
+opens it waives at the edges of the matrix, with work per cell bounded independently of depth. Scoring columns from symbol counts came from profile aligners, and keeping the gap sums equal to 11.3's came from reading how \code{yama} charges gaps. A profile of one deep merge showed where it would pay. We found the papers of Gribskov and colleagues, Gotoh, and Kececioglu and Zhang only afterwards. This note records how the change was found,
 what it computes, where it comes from, and what it measured.
 \end{abstract}
 
@@ -212,7 +213,11 @@ evaluate the accurate gap-opening costs with computation steps less than $O(M \t
 it with gap-state variables computed once per column and combined during the recursion, and reported speed-ups over his
 earlier algorithm of about 10-fold when $M \times N \approx 200$ and over 100-fold when $M \times N > 2{,}500$. His gap
 states record runs of nulls of any length, because his objective charges every gap opening. \code{yama}'s quasi-natural costs look back one column,
-so the states reduce to four classes. Kececioglu and Zhang already rewrote their recurrences in terms of these four per-column
+so the states reduce to four classes. Gotoh's own algorithm B had already scored gap openings from the preceding column
+alone. It weights the ambiguous case by $\gamma$ from 0 to 1, where $\gamma = 1$ gives the pessimistic count, and Gotoh
+stated that with both groups converted to profiles it takes fixed steps per cell. It allowed seven of the nine transitions and
+used $\gamma = 0.65$, and the version he timed ran about 10 percent faster than his $O(MNL^2)$ algorithm
+C~\cite{gotoh1993}. Kececioglu and Zhang already rewrote their recurrences in terms of these four per-column
 counts, $f_{00}$, $f_{01}$, $f_{10}$ and $f_{11}$, where $f_{xy}$ counts rows whose entries in the previous and
 current columns are a character ($1$) or a dash ($0$). For the boundary conditions they add a count of rows whose
 first character falls in the column. They noted that under optimistic or pessimistic counts, ``by storing just four
@@ -223,10 +228,14 @@ For quasi-natural gap counts, which Kececioglu and Zhang call pessimistic, the c
 gave algorithms that align two alignments under them in essentially $O(mn)$ time~\cite{kececioglu1998}. Their
 Theorem 4 gives $O(km + \ell n + \min\{s^2, k\ell\}\,mn)$ for alignments of $k$ and $\ell$ rows and lengths $m$ and
 $n$ over an alphabet of size $s$~\cite{kececioglu1998}. Wheeler and Kececioglu state the bound as
-$O(kn + n^2)$~\cite{wheeler2007}, which is Theorem 4's for a fixed alphabet with $k = \ell$ and $m = n$. Release 11.4 computes that objective, up to
-\code{yama}'s free end gaps, which also waive gap opens on three interior lines of the matrix: the last row, the first
-column and the last column (\code{measurements/kz98\_yama\_gap\_terms.md}). We did not take it from their paper, which we found only afterwards and have since read, apart from the appendix that
-holds the remaining recurrences. Their paper is a conference paper that omits its proofs, with recurrences and time
+$O(kn + n^2)$~\cite{wheeler2007}, which is Theorem 4's for a fixed alphabet with $k = \ell$ and $m = n$. Release 11.4 computes that objective except where
+\code{yama} waives gap opens. It charges none on row 0 or column 0. It also drops every gap open charged on an insertion
+step (a column of $B$ against dashes in $A$) in the last row, on a deletion step (a column of $A$ against dashes in $B$)
+in the last column, and on a substitution step in the first column. The first two are end gaps. The third has no
+counterpart in the first row and can free an interior gap in a row of $A$ (\code{measurements/kz98\_yama\_gap\_terms.md}).
+We did not take the objective or its counts from their paper, which we found only afterwards and have since read,
+including Section A of its appendix (pp. 205--206), which holds the alignment-against-alignment recurrences. We have
+not read Sections B and C (pp. 206--208), on profiles. Their paper is a conference paper that omits its proofs, with recurrences and time
 bounds but no timing or accuracy measurements. It reports one application of its sequence-against-alignment
 algorithm, whose study is in a technical report.
 
@@ -240,8 +249,10 @@ unchanged.
 A search on 5 November 2026 (\code{measurements/prior\_art\_search.md}) found no publication that applies this
 reduction to MULTIZ or the threaded blockset aligner. It was narrow: one open-ended query and no forward-citation
 search, and it missed Kececioglu and Zhang's result until a review found it. Three papers read since all use
-quasi-natural gaps. Chao, Hardison and Miller, who describe \code{yama} itself, precompute each input column's
-pairwise gap starts and ends, but each cell of the dynamic program still costs one term per row pair~\cite{chao1994}.
+quasi-natural gaps. Chao, Hardison and Miller describe an earlier \code{yama}, a linear-space program that allowed a
+different substitution matrix and gap cost for each pair of sequences. It precomputes, per column, each input's
+within-input pair scores and gap starts and ends, and each cell still costs one term per cross pair of
+rows~\cite{chao1994}.
 Our copy lacks two of its pages, 272 and 273. The MSA implementation paper keeps a loop over all sequence
 pairs~\cite{gupta1995}, and the MultiPipMaker paper names the gap model without a recurrence or cost
 bound~\cite{schwartz2003}. The MultiPipMaker protocol chapters (2005, 2010) were not read.

@@ -164,13 +164,15 @@ So the boundary part of the claim is right: (45)-(50) do not apply. yama keeps t
 2. `if (col > 1)` (274): every D-state open at j = 1, for all i.
 3. `if (0 < col && col < N)` (306): every V open at j = n, the trailing deletions after B ends.
 
+Guard 2 is not only an end-gap rule. At C(i,1) for i > 1 it waives opens of interior gaps in A's rows (round 24 L1 F2 has an example where it changes yama's output). Guards 1 and 3 free only trailing gaps.
+
 So yama equals pessimistic (42)-(44) on 1 <= i < m for H, 2 <= j for D, and 1 <= j < n for V, with all opens dropped on the three lines above and the extension-only boundary.
 
 The second call, `yama(A2, 1, M3, AL_new, ...)` (mz_preyama.c:340 at v11.9), passes one dash-free row (`rmColDash`, mz_preyama.c:282). This is the k = 1 case of the same equations. With f1^A = 1 and f0^A = f01^A = 0, (42) reduces to KZ's (16).
 
 ## Executable check
 
-Files: `probe/kz98_yama/kz_vs_yama.py` and `probe/kz98_yama/main.c`. `probe/kz98_yama/build_and_run.sh WORKDIR [SEED]` clones multiz v11.4 and v11.9, builds both harnesses and runs the script; outputs are `measurements/kz98_yama_seed7.txt` and `kz98_yama_seed11.txt` (seed 7 re-run from fresh clones on 2026-11-09 gave identical counts). The harness links the real `mz_yama.c`, `mz_scores.c` and `util.c` of v11.4 and of v11.9 with `init_scores70()` and a full band, and prints yama's output alignment. The script does three things:
+Files: `probe/kz98_yama/kz_vs_yama.py` and `probe/kz98_yama/main.c`. `probe/kz98_yama/build_and_run.sh WORKDIR [SEED]` clones multiz v11.4 and v11.9, builds both harnesses and runs the script; outputs are `measurements/kz98_yama_seed7.txt` and `kz98_yama_seed11.txt` (regenerated on 2026-11-09 by the committed script from fresh clones pinned to 6bfe6a4 and 077e847; step [1] runs on both binaries; step [3] is a random sample of 1000 blocks per seed, not an exhaustive enumeration of blocks, though each block's paths are enumerated exhaustively). The harness links the real `mz_yama.c`, `mz_scores.c` and `util.c` of v11.4 and of v11.9 with `init_scores70()` and a full band, and prints yama's output alignment. The script does three things:
 
 1. It compares `gop[16]` from the binary with gamma x pessimistic Gamma.
 2. On random paths it compares each interior step's opens from the transcribed closed forms (42)-(44) with the pair-by-pair Gamma sum.
@@ -197,7 +199,7 @@ Derived from v11.4 mz_yama.c:
 - **What s counts.** The loop runs over `nsym` symbols. `nsym` is the number of distinct byte values anywhere in block B as passed to yama (124-131). That block has its all-dash columns removed (mz_preyama.c:183 at v11.9). It does not count the whole alphabet, and it does not count only the current column. It is case-sensitive in 11.4. It includes the dash whenever any row of B has one. In KZ's terms, nsym = |Sigma_B| + [eps occurs in B], where Sigma_B is the part of Sigma present in B. KZ's Theorem 4 uses s = the alphabet size (p. 201) and sums over Sigma U {eps}. In 11.4 a symbol absent from column j still costs one loop step and a zero test. 11.5 and later merge symbols whose `ss` columns are identical (v11.9 mz_yama.c:141-156). Under HOXD70 and HOXD85 that leaves at most six classes: A, C, G, T in either case, the dash, and one class for every other byte. I found this by reading `init_scores`, not by running it.
 - **The dash.** It is KZ's eps. It enters the substitution sum with `ss = -gap_extend` against a base and 0 against a dash. So the C node's sum charges lambda for every base-against-null pair in a substitution column, as KZ's (44) does through delta(a,eps) = lambda. A count that left out the dash would drop those lambda terms.
 - **Gaps.** These are per-cell dot products against precomputed per-row tables: I has 4 + 4 + 2, C has 4 + 4 + 2, and D has 2 + 1 + 2 multiply-adds. That makes 25, plus 2 for extension. The count does not depend on k, l or s.
-- **Totals.** Precomputation is O(l n) for the B classes and symbol counts, O(n nsym) to clear `hist`, and O(k m nsym) for `wA`. The class tables are O(1) per column of A. The DP is O(nsym) per cell over the band, at most (m+1)(n+1) cells. For a full band that is O(nsym km + l n + nsym mn). KZ's Theorem 4 is O(km + l n + min{s^2, kl} mn). 11.4 pays nsym per cell, not min{s^2, kl}, and pays nsym per row entry of A once.
+- **Totals.** Precomputation is O(l n) for the B classes and symbol counts, O(n nsym) to clear `hist`, and O(k m nsym) for `wA`. The class tables are O(1) per column of A. The DP is O(nsym) per cell over the band, at most (m+1)(n+1) cells. For a full band that is O(nsym km + l n + nsym mn), plus O((m+n)(k+l)) to write the output block, an output-size term every method pays rather than a per-cell cost (round 24 L1 F4). KZ's Theorem 4 is O(km + l n + min{s^2, kl} mn). 11.4 pays nsym per cell, not min{s^2, kl}, and pays nsym per row entry of A once.
 
 ## What I did not check
 
