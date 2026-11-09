@@ -222,8 +222,8 @@ original multiple alignment''~\cite{kececioglu1998}.
 For quasi-natural gap counts, which Kececioglu and Zhang call pessimistic, the combination is not new either. They
 gave algorithms that align two alignments under them in essentially $O(mn)$ time~\cite{kececioglu1998}. Their
 Theorem 4 gives $O(km + \ell n + \min\{s^2, k\ell\}\,mn)$ for alignments of $k$ and $\ell$ rows and lengths $m$ and
-$n$ over an alphabet of size $s$~\cite{kececioglu1998}, and Wheeler and Kececioglu state the bound as
-$O(kn + n^2)$~\cite{wheeler2007}. Release 11.4 computes that objective, up to
+$n$ over an alphabet of size $s$~\cite{kececioglu1998}. Wheeler and Kececioglu state the bound as
+$O(kn + n^2)$~\cite{wheeler2007}, which is Theorem 4's for a fixed alphabet with $k = \ell$ and $m = n$. Release 11.4 computes that objective, up to
 \code{yama}'s free end gaps. We did not take it from their paper, which we found only afterwards and have since read, apart from the appendix that
 holds the remaining recurrences. Their paper is a conference paper that omits its proofs, with recurrences and time
 bounds but no timing or accuracy measurements. It reports one application of its sequence-against-alignment
