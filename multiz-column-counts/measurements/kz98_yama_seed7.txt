@@ -1,0 +1,4 @@
+[1] gop[16] vs gap_open*Gamma_pess(1-s 1-u, 1-t 1-v): 16/16 equal
+[2] interior steps checked: 8740, closed form != Gamma sum: 0
+[3] yama_v114: 1000 random cases, yama output optimal under Y: 1000/1000, Y0: 214/1000, Y-noIrowM: 621/1000, Y-noCcol1: 805/1000, Y-noDcolN: 521/1000, Y+Crow1: 830/1000, P: 235/1000
+[3] yama_up119: 1000 random cases, yama output optimal under Y: 1000/1000, Y0: 214/1000, Y-noIrowM: 621/1000, Y-noCcol1: 805/1000, Y-noDcolN: 521/1000, Y+Crow1: 830/1000, P: 235/1000
