@@ -224,7 +224,8 @@ gave algorithms that align two alignments under them in essentially $O(mn)$ time
 Theorem 4 gives $O(km + \ell n + \min\{s^2, k\ell\}\,mn)$ for alignments of $k$ and $\ell$ rows and lengths $m$ and
 $n$ over an alphabet of size $s$~\cite{kececioglu1998}. Wheeler and Kececioglu state the bound as
 $O(kn + n^2)$~\cite{wheeler2007}, which is Theorem 4's for a fixed alphabet with $k = \ell$ and $m = n$. Release 11.4 computes that objective, up to
-\code{yama}'s free end gaps. We did not take it from their paper, which we found only afterwards and have since read, apart from the appendix that
+\code{yama}'s free end gaps, which also waive gap opens on three interior lines of the matrix: the last row, the first
+column and the last column (\code{measurements/kz98\_yama\_gap\_terms.md}). We did not take it from their paper, which we found only afterwards and have since read, apart from the appendix that
 holds the remaining recurrences. Their paper is a conference paper that omits its proofs, with recurrences and time
 bounds but no timing or accuracy measurements. It reports one application of its sequence-against-alignment
 algorithm, whose study is in a technical report.
@@ -238,8 +239,12 @@ unchanged.
 
 A search on 5 November 2026 (\code{measurements/prior\_art\_search.md}) found no publication that applies this
 reduction to MULTIZ or the threaded blockset aligner. It was narrow: one open-ended query and no forward-citation
-search, it missed Kececioglu and Zhang's result until a review found it, and it did not read Chao, Hardison and
-Miller~\cite{chao1994} or the MultiPipMaker papers, which also use quasi-natural gaps.
+search, and it missed Kececioglu and Zhang's result until a review found it. Three papers read since all use
+quasi-natural gaps. Chao, Hardison and Miller, who describe \code{yama} itself, precompute each input column's
+pairwise gap starts and ends, but each cell of the dynamic program still costs one term per row pair~\cite{chao1994}.
+Our copy lacks two of its pages, 272 and 273. The MSA implementation paper keeps a loop over all sequence
+pairs~\cite{gupta1995}, and the MultiPipMaker paper names the gap model without a recurrence or cost
+bound~\cite{schwartz2003}. The MultiPipMaker protocol chapters (2005, 2010) were not read.
 
 \section{Limits}
 
@@ -292,6 +297,10 @@ threaded blockset aligner. \emph{Genome Research} 14:708--715, 2004. doi:10.1101
 \bibitem{chao1994} K.-M. Chao, R.~C. Hardison and W.~Miller. Recent developments in linear-space alignment
 methods: a survey. \emph{Journal of Computational Biology} 1:271--291, 1994. doi:10.1089/cmb.1994.1.271.
 
+\bibitem{gupta1995} S.~K. Gupta, J.~D. Kececioglu and A.~A. Sch\"affer. Improving the practical space and time
+efficiency of the shortest-paths approach to sum-of-pairs multiple sequence alignment. \emph{Journal of
+Computational Biology} 2:459--472, 1995. doi:10.1089/cmb.1995.2.459.
+
 \bibitem{gotoh1993} O.~Gotoh. Optimal alignment between groups of sequences and its application to multiple sequence
 alignment. \emph{Computer Applications in the Biosciences} 9:361--370, 1993. doi:10.1093/bioinformatics/9.3.361.
 
@@ -315,6 +324,10 @@ Pattern Matching (CPM 2003)}, Lecture Notes in Computer Science, 254--265, 2003.
 
 \bibitem{ranwez2016} V.~Ranwez. Two simple and efficient algorithms to compute the SP-score objective function of a
 multiple sequence alignment. \emph{PLOS ONE} 11(8):e0160043, 2016. doi:10.1371/journal.pone.0160043.
+
+\bibitem{schwartz2003} S.~Schwartz, L.~Elnitski, M.~Li, M.~Weirauch, C.~Riemer, A.~Smit, NISC Comparative Sequencing
+Program, E.~D. Green, R.~C. Hardison and W.~Miller. MultiPipMaker and supporting tools: alignments and analysis of
+multiple genomic DNA sequences. \emph{Nucleic Acids Research} 31:3518--3524, 2003. doi:10.1093/nar/gkg579.
 
 \bibitem{wheeler2007} T.~Wheeler and J.~Kececioglu. Multiple alignment by aligning alignments.
 \emph{Bioinformatics} 23(13):i559--i568, 2007. doi:10.1093/bioinformatics/btm226.
