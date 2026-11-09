@@ -43,7 +43,9 @@ An adversarial review of the note re-ran and extended this search on the same da
   "pessimistic" gap counts are Altschul's quasi-natural counts, and the 1998 abstract lists alignment versus alignment
   among algorithms that "run in essentially O(mn) time". This search had found the record but not acted on its abstract.
   It is the direct precedent for the combination, and the note now credits it. The full text was not read (it is behind
-  a login).
+  a login). The user later deposited the full text, read on 2026-11-07 apart from its appendix of recurrences (pp. 205-208): its recurrences are rewritten in terms of the
+  four per-column counts f00, f01, f10 and f11, and it says four integers per profile position recover the alignment's
+  descriptive power under optimistic or pessimistic gap counts. The note quotes this (2026-11-09).
 * **Wheeler and Kececioglu (2007), Bioinformatics 23:i559–i568, doi:10.1093/bioinformatics/btm226.** States the cost of
   merging two alignments this way as O(kn + n²).
 * **Ma, Wang and Zhang (2003), CPM, LNCS pp. 254–265, doi:10.1007/3-540-44888-8_19.** Proved the exact-gap problem

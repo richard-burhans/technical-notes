@@ -212,12 +212,22 @@ evaluate the accurate gap-opening costs with computation steps less than $O(M \t
 it with gap-state variables computed once per column and combined during the recursion, and reported speed-ups over his
 earlier algorithm of about 10-fold when $M \times N \approx 200$ and over 100-fold when $M \times N > 2{,}500$. His gap
 states record runs of nulls of any length, because his objective charges every gap opening. \code{yama}'s quasi-natural costs look back one column,
-so the states reduce to four classes.
+so the states reduce to four classes. Kececioglu and Zhang already rewrote their recurrences in terms of these four per-column
+counts, $f_{00}$, $f_{01}$, $f_{10}$ and $f_{11}$, where $f_{xy}$ counts rows whose entries in the previous and
+current columns are a character ($1$) or a dash ($0$). For the boundary conditions they add a count of rows whose
+first character falls in the column. They noted that under optimistic or pessimistic counts, ``by storing just four
+additional integers at each position in a profile'', profiles ``become equivalent in descriptive power to the
+original multiple alignment''~\cite{kececioglu1998}.
 
 For quasi-natural gap counts, which Kececioglu and Zhang call pessimistic, the combination is not new either. They
-gave algorithms that align two alignments under them in essentially $O(mn)$ time~\cite{kececioglu1998}, and Wheeler
-and Kececioglu state the bound as $O(kn + n^2)$~\cite{wheeler2007}. Release 11.4 computes that objective, up to
-\code{yama}'s free end gaps. We did not take it from their paper, which we found only afterwards. We have read only its abstract.
+gave algorithms that align two alignments under them in essentially $O(mn)$ time~\cite{kececioglu1998}. Their
+Theorem 4 gives $O(km + \ell n + \min\{s^2, k\ell\}\,mn)$ for alignments of $k$ and $\ell$ rows and lengths $m$ and
+$n$ over an alphabet of size $s$~\cite{kececioglu1998}, and Wheeler and Kececioglu state the bound as
+$O(kn + n^2)$~\cite{wheeler2007}. Release 11.4 computes that objective, up to
+\code{yama}'s free end gaps. We did not take it from their paper, which we found only afterwards and have since read, apart from the appendix that
+holds the remaining recurrences. Their paper is a conference paper that omits its proofs, with recurrences and time
+bounds but no timing or accuracy measurements. It reports one application of its sequence-against-alignment
+algorithm, whose study is in a technical report.
 
 Exact gap counting is what makes the general problem hard. With linear gap costs counted exactly, aligning two
 alignments under the sum-of-pairs objective is NP-complete~\cite{kececioglu2004,ma2003}. Release 11.4 does not touch
