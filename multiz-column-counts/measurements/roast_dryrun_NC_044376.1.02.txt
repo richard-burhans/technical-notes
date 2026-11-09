@@ -1,0 +1,2133 @@
+rm -f out.maf
+echo "##maf version=1 scoring=multiz.3" > TMP/_MZ_830233_head
+echo "##maf version=1 scoring=roast.v3.3" > out.maf
+echo "# roast.v3 - T=TMP E=cs10_NCBI_RefSeq_softmasked (ASM209043v1 (ASM5191171v1 (ASM5191173v1 (ASM1303036v1 ((CNBv1a CNBv1b) (cannabis_hap2_GWHISUP00000000_1 ((CSLZ_hapA_GWHGZJI00000000_1 CSLZ_hapB_GWHGZJJ00000000_1) ((((ITLv1a ITLv1b) ((ASM341772v2 (H3S1b ((GERv1a GERv1b) (H3S7b (FCS1b (SN1v3b (SN1v3a (SAN2b (SAN2a SGVA))))))))) (KOMPa (KCDv1a KCDv1b)))) ((((BCMa (WIv1a WIv1b)) (BCMb (FIMv1a FIMv1b))) ((WFv1a WFv1b) (TURv1b (TURv1a (BLCv1a BLCv1b))))) (KOMPb (TIBv1a TIBv1b)))) (cannabis_hap1_GWHISUO00000000_1 ((YMv2a (YMv2b (YMMv1a YMMv1b))) (CANU_GWHCAYE00000000 (BOAXa ((cs10_NCBI_RefSeq_softmasked (FL02_coge60295 (FL49_coge60294 (FL18_coge60292 FL48_coge60293)))) ((T2T_GCA_054642775_1_IMPD T2T_GCA_054642815_1_IMPD) ((FMv1a FMv1b) ((ANC_1 (ASM5191178v1 (ANC_2 ASM5191176v1))) (BOAXb ((H3S1a (TWFBa (TRWR TWSVa))) ((AH3Mb GRMa) (Cherry_Pie (Punto_Rojo ((MM3v1a MM3v1b) (ABC (PTK32 (ASM2916894v1 (((ASM23057v5 (H3S7a ((MBSVa (MBFBa MNDB)) ((Csat_AbacusV2 (ASM5191164v1 (((UFBa URKL) (OFBa OFP5)) ((ASM5191170v1 (LP10 LP6)) ((FCS1a GSC) ((SDFBa SUNDR) ((SKTZ SZFBa) (ASM151000v1 ((CHM9 ((WC WCFBa) (TK10 (BBKH (BLYS (TK7 TKFBa)))))) (PURD ((FOG GMO) (CHMD5 (CHMD3 SDI))))))))))))) (((W19LR (W103 WLR)) (WH96 (WH72 (WH106 WH94)))) (SODLb (PPFBa PURP))))))) ((ACBD (SSA1 (SVA6b (SSA2 SVA12b)))) (((PPFBb (COFBa (((TKFBb WCFBb) (SKFBb (MBFBb SCFB))) ((DPFBb TWFBb) (SDFBb ((FBHO UFBb) (OFBb (FB191 SZFBb)))))))) (((EH23a S8H2LR) (BH55 (S8Hb (SHH5b (HO40 STHb))))) (SHH24 ((MBSVb (((DPSVb SSV) (SVA6a WHLR)) ((COSVb SSH) (SSHS SV2)))) (USV (SVA12a (TWSVb WCSV))))))) (((Chemdog91_175268 ((AH3Ma (SK88 SKFBa)) (((CST53 CST8) (STHa STLR)) (TS13 (TST192 TST58))))) ((((DPSVa DRBP) (DPFBa SKSV)) (WHWa Cannbio_2)) (GRMb (((S8LR (S8Ha SUV8)) (SSLR (SHLR (SH50 SHH5a)))) (ASM186575v1 (ACDC DCHCC)))))) (((NLv1b (SMSQ WHWb)) (g79X NLv1a)) (((BH4 FB30) (BH44 ((I75 (I53 (I52 (I78 (I59 I68))))) (I3 I61)))) (SG123 ((P20 P22) (EH23b ERB))))))))) (SODLa ((COFBb (CALO COSVa)) (JL_Father (JL5 (JL_DASH JL_Mother))))))))))))))))))))))))))))))) cs10_NCBI_RefSeq_softmasked.ABC.sing.maf cs10_NCBI_RefSeq_softmasked.ACBD.sing.maf cs10_NCBI_RefSeq_softmasked.ACDC.sing.maf cs10_NCBI_RefSeq_softmasked.AH3Ma.sing.maf cs10_NCBI_RefSeq_softmasked.AH3Mb.sing.maf cs10_NCBI_RefSeq_softmasked.ANC_1.sing.maf cs10_NCBI_RefSeq_softmasked.ANC_2.sing.maf cs10_NCBI_RefSeq_softmasked.ASM1303036v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM151000v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM186575v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM209043v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM23057v5.sing.maf cs10_NCBI_RefSeq_softmasked.ASM2916894v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM341772v2.sing.maf cs10_NCBI_RefSeq_softmasked.ASM5191164v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM5191170v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM5191171v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM5191173v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM5191176v1.sing.maf cs10_NCBI_RefSeq_softmasked.ASM5191178v1.sing.maf cs10_NCBI_RefSeq_softmasked.BBKH.sing.maf cs10_NCBI_RefSeq_softmasked.BCMa.sing.maf cs10_NCBI_RefSeq_softmasked.BCMb.sing.maf cs10_NCBI_RefSeq_softmasked.BH4.sing.maf cs10_NCBI_RefSeq_softmasked.BH44.sing.maf cs10_NCBI_RefSeq_softmasked.BH55.sing.maf cs10_NCBI_RefSeq_softmasked.BLCv1a.sing.maf cs10_NCBI_RefSeq_softmasked.BLCv1b.sing.maf cs10_NCBI_RefSeq_softmasked.BLYS.sing.maf cs10_NCBI_RefSeq_softmasked.BOAXa.sing.maf cs10_NCBI_RefSeq_softmasked.BOAXb.sing.maf cs10_NCBI_RefSeq_softmasked.CALO.sing.maf cs10_NCBI_RefSeq_softmasked.CANU_GWHCAYE00000000.sing.maf cs10_NCBI_RefSeq_softmasked.CHM9.sing.maf cs10_NCBI_RefSeq_softmasked.CHMD3.sing.maf cs10_NCBI_RefSeq_softmasked.CHMD5.sing.maf cs10_NCBI_RefSeq_softmasked.CNBv1a.sing.maf cs10_NCBI_RefSeq_softmasked.CNBv1b.sing.maf cs10_NCBI_RefSeq_softmasked.COFBa.sing.maf cs10_NCBI_RefSeq_softmasked.COFBb.sing.maf cs10_NCBI_RefSeq_softmasked.COSVa.sing.maf cs10_NCBI_RefSeq_softmasked.COSVb.sing.maf cs10_NCBI_RefSeq_softmasked.CSLZ_hapA_GWHGZJI00000000_1.sing.maf cs10_NCBI_RefSeq_softmasked.CSLZ_hapB_GWHGZJJ00000000_1.sing.maf cs10_NCBI_RefSeq_softmasked.CST53.sing.maf cs10_NCBI_RefSeq_softmasked.CST8.sing.maf cs10_NCBI_RefSeq_softmasked.Cannbio_2.sing.maf cs10_NCBI_RefSeq_softmasked.Chemdog91_175268.sing.maf cs10_NCBI_RefSeq_softmasked.Cherry_Pie.sing.maf cs10_NCBI_RefSeq_softmasked.Csat_AbacusV2.sing.maf cs10_NCBI_RefSeq_softmasked.DCHCC.sing.maf cs10_NCBI_RefSeq_softmasked.DPFBa.sing.maf cs10_NCBI_RefSeq_softmasked.DPFBb.sing.maf cs10_NCBI_RefSeq_softmasked.DPSVa.sing.maf cs10_NCBI_RefSeq_softmasked.DPSVb.sing.maf cs10_NCBI_RefSeq_softmasked.DRBP.sing.maf cs10_NCBI_RefSeq_softmasked.EH23a.sing.maf cs10_NCBI_RefSeq_softmasked.EH23b.sing.maf cs10_NCBI_RefSeq_softmasked.ERB.sing.maf cs10_NCBI_RefSeq_softmasked.FB191.sing.maf cs10_NCBI_RefSeq_softmasked.FB30.sing.maf cs10_NCBI_RefSeq_softmasked.FBHO.sing.maf cs10_NCBI_RefSeq_softmasked.FCS1a.sing.maf cs10_NCBI_RefSeq_softmasked.FCS1b.sing.maf cs10_NCBI_RefSeq_softmasked.FIMv1a.sing.maf cs10_NCBI_RefSeq_softmasked.FIMv1b.sing.maf cs10_NCBI_RefSeq_softmasked.FL02_coge60295.sing.maf cs10_NCBI_RefSeq_softmasked.FL18_coge60292.sing.maf cs10_NCBI_RefSeq_softmasked.FL48_coge60293.sing.maf cs10_NCBI_RefSeq_softmasked.FL49_coge60294.sing.maf cs10_NCBI_RefSeq_softmasked.FMv1a.sing.maf cs10_NCBI_RefSeq_softmasked.FMv1b.sing.maf cs10_NCBI_RefSeq_softmasked.FOG.sing.maf cs10_NCBI_RefSeq_softmasked.GERv1a.sing.maf cs10_NCBI_RefSeq_softmasked.GERv1b.sing.maf cs10_NCBI_RefSeq_softmasked.GMO.sing.maf cs10_NCBI_RefSeq_softmasked.GRMa.sing.maf cs10_NCBI_RefSeq_softmasked.GRMb.sing.maf cs10_NCBI_RefSeq_softmasked.GSC.sing.maf cs10_NCBI_RefSeq_softmasked.H3S1a.sing.maf cs10_NCBI_RefSeq_softmasked.H3S1b.sing.maf cs10_NCBI_RefSeq_softmasked.H3S7a.sing.maf cs10_NCBI_RefSeq_softmasked.H3S7b.sing.maf cs10_NCBI_RefSeq_softmasked.HO40.sing.maf cs10_NCBI_RefSeq_softmasked.I3.sing.maf cs10_NCBI_RefSeq_softmasked.I52.sing.maf cs10_NCBI_RefSeq_softmasked.I53.sing.maf cs10_NCBI_RefSeq_softmasked.I59.sing.maf cs10_NCBI_RefSeq_softmasked.I61.sing.maf cs10_NCBI_RefSeq_softmasked.I68.sing.maf cs10_NCBI_RefSeq_softmasked.I75.sing.maf cs10_NCBI_RefSeq_softmasked.I78.sing.maf cs10_NCBI_RefSeq_softmasked.ITLv1a.sing.maf cs10_NCBI_RefSeq_softmasked.ITLv1b.sing.maf cs10_NCBI_RefSeq_softmasked.JL5.sing.maf cs10_NCBI_RefSeq_softmasked.JL_DASH.sing.maf cs10_NCBI_RefSeq_softmasked.JL_Father.sing.maf cs10_NCBI_RefSeq_softmasked.JL_Mother.sing.maf cs10_NCBI_RefSeq_softmasked.KCDv1a.sing.maf cs10_NCBI_RefSeq_softmasked.KCDv1b.sing.maf cs10_NCBI_RefSeq_softmasked.KOMPa.sing.maf cs10_NCBI_RefSeq_softmasked.KOMPb.sing.maf cs10_NCBI_RefSeq_softmasked.LP10.sing.maf cs10_NCBI_RefSeq_softmasked.LP6.sing.maf cs10_NCBI_RefSeq_softmasked.MBFBa.sing.maf cs10_NCBI_RefSeq_softmasked.MBFBb.sing.maf cs10_NCBI_RefSeq_softmasked.MBSVa.sing.maf cs10_NCBI_RefSeq_softmasked.MBSVb.sing.maf cs10_NCBI_RefSeq_softmasked.MM3v1a.sing.maf cs10_NCBI_RefSeq_softmasked.MM3v1b.sing.maf cs10_NCBI_RefSeq_softmasked.MNDB.sing.maf cs10_NCBI_RefSeq_softmasked.NLv1a.sing.maf cs10_NCBI_RefSeq_softmasked.NLv1b.sing.maf cs10_NCBI_RefSeq_softmasked.OFBa.sing.maf cs10_NCBI_RefSeq_softmasked.OFBb.sing.maf cs10_NCBI_RefSeq_softmasked.OFP5.sing.maf cs10_NCBI_RefSeq_softmasked.P20.sing.maf cs10_NCBI_RefSeq_softmasked.P22.sing.maf cs10_NCBI_RefSeq_softmasked.PPFBa.sing.maf cs10_NCBI_RefSeq_softmasked.PPFBb.sing.maf cs10_NCBI_RefSeq_softmasked.PTK32.sing.maf cs10_NCBI_RefSeq_softmasked.PURD.sing.maf cs10_NCBI_RefSeq_softmasked.PURP.sing.maf cs10_NCBI_RefSeq_softmasked.Punto_Rojo.sing.maf cs10_NCBI_RefSeq_softmasked.S8H2LR.sing.maf cs10_NCBI_RefSeq_softmasked.S8Ha.sing.maf cs10_NCBI_RefSeq_softmasked.S8Hb.sing.maf cs10_NCBI_RefSeq_softmasked.S8LR.sing.maf cs10_NCBI_RefSeq_softmasked.SAN2a.sing.maf cs10_NCBI_RefSeq_softmasked.SAN2b.sing.maf cs10_NCBI_RefSeq_softmasked.SCFB.sing.maf cs10_NCBI_RefSeq_softmasked.SDFBa.sing.maf cs10_NCBI_RefSeq_softmasked.SDFBb.sing.maf cs10_NCBI_RefSeq_softmasked.SDI.sing.maf cs10_NCBI_RefSeq_softmasked.SG123.sing.maf cs10_NCBI_RefSeq_softmasked.SGVA.sing.maf cs10_NCBI_RefSeq_softmasked.SH50.sing.maf cs10_NCBI_RefSeq_softmasked.SHH24.sing.maf cs10_NCBI_RefSeq_softmasked.SHH5a.sing.maf cs10_NCBI_RefSeq_softmasked.SHH5b.sing.maf cs10_NCBI_RefSeq_softmasked.SHLR.sing.maf cs10_NCBI_RefSeq_softmasked.SK88.sing.maf cs10_NCBI_RefSeq_softmasked.SKFBa.sing.maf cs10_NCBI_RefSeq_softmasked.SKFBb.sing.maf cs10_NCBI_RefSeq_softmasked.SKSV.sing.maf cs10_NCBI_RefSeq_softmasked.SKTZ.sing.maf cs10_NCBI_RefSeq_softmasked.SMSQ.sing.maf cs10_NCBI_RefSeq_softmasked.SN1v3a.sing.maf cs10_NCBI_RefSeq_softmasked.SN1v3b.sing.maf cs10_NCBI_RefSeq_softmasked.SODLa.sing.maf cs10_NCBI_RefSeq_softmasked.SODLb.sing.maf cs10_NCBI_RefSeq_softmasked.SSA1.sing.maf cs10_NCBI_RefSeq_softmasked.SSA2.sing.maf cs10_NCBI_RefSeq_softmasked.SSH.sing.maf cs10_NCBI_RefSeq_softmasked.SSHS.sing.maf cs10_NCBI_RefSeq_softmasked.SSLR.sing.maf cs10_NCBI_RefSeq_softmasked.SSV.sing.maf cs10_NCBI_RefSeq_softmasked.STHa.sing.maf cs10_NCBI_RefSeq_softmasked.STHb.sing.maf cs10_NCBI_RefSeq_softmasked.STLR.sing.maf cs10_NCBI_RefSeq_softmasked.SUNDR.sing.maf cs10_NCBI_RefSeq_softmasked.SUV8.sing.maf cs10_NCBI_RefSeq_softmasked.SV2.sing.maf cs10_NCBI_RefSeq_softmasked.SVA12a.sing.maf cs10_NCBI_RefSeq_softmasked.SVA12b.sing.maf cs10_NCBI_RefSeq_softmasked.SVA6a.sing.maf cs10_NCBI_RefSeq_softmasked.SVA6b.sing.maf cs10_NCBI_RefSeq_softmasked.SZFBa.sing.maf cs10_NCBI_RefSeq_softmasked.SZFBb.sing.maf cs10_NCBI_RefSeq_softmasked.T2T_GCA_054642775_1_IMPD.sing.maf cs10_NCBI_RefSeq_softmasked.T2T_GCA_054642815_1_IMPD.sing.maf cs10_NCBI_RefSeq_softmasked.TIBv1a.sing.maf cs10_NCBI_RefSeq_softmasked.TIBv1b.sing.maf cs10_NCBI_RefSeq_softmasked.TK10.sing.maf cs10_NCBI_RefSeq_softmasked.TK7.sing.maf cs10_NCBI_RefSeq_softmasked.TKFBa.sing.maf cs10_NCBI_RefSeq_softmasked.TKFBb.sing.maf cs10_NCBI_RefSeq_softmasked.TRWR.sing.maf cs10_NCBI_RefSeq_softmasked.TS13.sing.maf cs10_NCBI_RefSeq_softmasked.TST192.sing.maf cs10_NCBI_RefSeq_softmasked.TST58.sing.maf cs10_NCBI_RefSeq_softmasked.TURv1a.sing.maf cs10_NCBI_RefSeq_softmasked.TURv1b.sing.maf cs10_NCBI_RefSeq_softmasked.TWFBa.sing.maf cs10_NCBI_RefSeq_softmasked.TWFBb.sing.maf cs10_NCBI_RefSeq_softmasked.TWSVa.sing.maf cs10_NCBI_RefSeq_softmasked.TWSVb.sing.maf cs10_NCBI_RefSeq_softmasked.UFBa.sing.maf cs10_NCBI_RefSeq_softmasked.UFBb.sing.maf cs10_NCBI_RefSeq_softmasked.URKL.sing.maf cs10_NCBI_RefSeq_softmasked.USV.sing.maf cs10_NCBI_RefSeq_softmasked.W103.sing.maf cs10_NCBI_RefSeq_softmasked.W19LR.sing.maf cs10_NCBI_RefSeq_softmasked.WC.sing.maf cs10_NCBI_RefSeq_softmasked.WCFBa.sing.maf cs10_NCBI_RefSeq_softmasked.WCFBb.sing.maf cs10_NCBI_RefSeq_softmasked.WCSV.sing.maf cs10_NCBI_RefSeq_softmasked.WFv1a.sing.maf cs10_NCBI_RefSeq_softmasked.WFv1b.sing.maf cs10_NCBI_RefSeq_softmasked.WH106.sing.maf cs10_NCBI_RefSeq_softmasked.WH72.sing.maf cs10_NCBI_RefSeq_softmasked.WH94.sing.maf cs10_NCBI_RefSeq_softmasked.WH96.sing.maf cs10_NCBI_RefSeq_softmasked.WHLR.sing.maf cs10_NCBI_RefSeq_softmasked.WHWa.sing.maf cs10_NCBI_RefSeq_softmasked.WHWb.sing.maf cs10_NCBI_RefSeq_softmasked.WIv1a.sing.maf cs10_NCBI_RefSeq_softmasked.WIv1b.sing.maf cs10_NCBI_RefSeq_softmasked.WLR.sing.maf cs10_NCBI_RefSeq_softmasked.YMMv1a.sing.maf cs10_NCBI_RefSeq_softmasked.YMMv1b.sing.maf cs10_NCBI_RefSeq_softmasked.YMv2a.sing.maf cs10_NCBI_RefSeq_softmasked.YMv2b.sing.maf cs10_NCBI_RefSeq_softmasked.cannabis_hap1_GWHISUO00000000_1.sing.maf cs10_NCBI_RefSeq_softmasked.cannabis_hap2_GWHISUP00000000_1.sing.maf cs10_NCBI_RefSeq_softmasked.g79X.sing.maf out.maf" >> out.maf
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ0
+cp cs10_NCBI_RefSeq_softmasked.CNBv1a.sing.maf TMP/_MZ_830233_left.maf0
+cp cs10_NCBI_RefSeq_softmasked.CNBv1b.sing.maf TMP/_MZ_830233_right.maf0
+maf_project TMP/_MZ_830233_left.maf0 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf0 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf0
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf0
+multiz M=1  TMP/_MZ_830233_left.maf0 TMP/_MZ_830233_right.maf0 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ0
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ0
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ1
+cp cs10_NCBI_RefSeq_softmasked.CSLZ_hapA_GWHGZJI00000000_1.sing.maf TMP/_MZ_830233_left.maf1
+cp cs10_NCBI_RefSeq_softmasked.CSLZ_hapB_GWHGZJJ00000000_1.sing.maf TMP/_MZ_830233_right.maf1
+maf_project TMP/_MZ_830233_left.maf1 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf1 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf1
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf1
+multiz M=1  TMP/_MZ_830233_left.maf1 TMP/_MZ_830233_right.maf1 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ1
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ1
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ2
+cp cs10_NCBI_RefSeq_softmasked.ITLv1a.sing.maf TMP/_MZ_830233_left.maf2
+cp cs10_NCBI_RefSeq_softmasked.ITLv1b.sing.maf TMP/_MZ_830233_right.maf2
+maf_project TMP/_MZ_830233_left.maf2 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf2 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf2
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf2
+multiz M=1  TMP/_MZ_830233_left.maf2 TMP/_MZ_830233_right.maf2 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ2
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ2
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ3
+cp cs10_NCBI_RefSeq_softmasked.GERv1a.sing.maf TMP/_MZ_830233_left.maf3
+cp cs10_NCBI_RefSeq_softmasked.GERv1b.sing.maf TMP/_MZ_830233_right.maf3
+maf_project TMP/_MZ_830233_left.maf3 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf3 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf3
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf3
+multiz M=1  TMP/_MZ_830233_left.maf3 TMP/_MZ_830233_right.maf3 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ3
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ3
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ4
+cp cs10_NCBI_RefSeq_softmasked.SAN2a.sing.maf TMP/_MZ_830233_left.maf4
+cp cs10_NCBI_RefSeq_softmasked.SGVA.sing.maf TMP/_MZ_830233_right.maf4
+maf_project TMP/_MZ_830233_left.maf4 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf4 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf4
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf4
+multiz M=1  TMP/_MZ_830233_left.maf4 TMP/_MZ_830233_right.maf4 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ4
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ4
+mv TMP/_MZ_830233_MZ4 TMP/_MZ_830233_right.maf5
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ5
+cp cs10_NCBI_RefSeq_softmasked.SAN2b.sing.maf TMP/_MZ_830233_left.maf5
+maf_project TMP/_MZ_830233_left.maf5 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf5 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf5
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf5
+multiz M=1  TMP/_MZ_830233_left.maf5 TMP/_MZ_830233_right.maf5 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ5
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf5
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf5
+mv TMP/_MZ_830233_MZ5 TMP/_MZ_830233_right.maf6
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ6
+cp cs10_NCBI_RefSeq_softmasked.SN1v3a.sing.maf TMP/_MZ_830233_left.maf6
+maf_project TMP/_MZ_830233_left.maf6 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf6 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf6
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf6
+multiz M=1  TMP/_MZ_830233_left.maf6 TMP/_MZ_830233_right.maf6 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ6
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf6
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf6
+mv TMP/_MZ_830233_MZ6 TMP/_MZ_830233_right.maf7
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ7
+cp cs10_NCBI_RefSeq_softmasked.SN1v3b.sing.maf TMP/_MZ_830233_left.maf7
+maf_project TMP/_MZ_830233_left.maf7 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf7 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf7
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf7
+multiz M=1  TMP/_MZ_830233_left.maf7 TMP/_MZ_830233_right.maf7 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ7
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf7
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf7
+mv TMP/_MZ_830233_MZ7 TMP/_MZ_830233_right.maf8
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ8
+cp cs10_NCBI_RefSeq_softmasked.FCS1b.sing.maf TMP/_MZ_830233_left.maf8
+maf_project TMP/_MZ_830233_left.maf8 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf8 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf8
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf8
+multiz M=1  TMP/_MZ_830233_left.maf8 TMP/_MZ_830233_right.maf8 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ8
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf8
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf8
+mv TMP/_MZ_830233_MZ8 TMP/_MZ_830233_right.maf9
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ9
+cp cs10_NCBI_RefSeq_softmasked.H3S7b.sing.maf TMP/_MZ_830233_left.maf9
+maf_project TMP/_MZ_830233_left.maf9 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf9 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf9
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf9
+multiz M=1  TMP/_MZ_830233_left.maf9 TMP/_MZ_830233_right.maf9 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ9
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf9
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf9
+mv TMP/_MZ_830233_MZ3 TMP/_MZ_830233_left.maf10
+mv TMP/_MZ_830233_MZ9 TMP/_MZ_830233_right.maf10
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ10
+maf_project TMP/_MZ_830233_left.maf10 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf10 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf10
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf10
+multiz M=1  TMP/_MZ_830233_left.maf10 TMP/_MZ_830233_right.maf10 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ10
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf10
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf10
+mv TMP/_MZ_830233_MZ10 TMP/_MZ_830233_right.maf11
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ11
+cp cs10_NCBI_RefSeq_softmasked.H3S1b.sing.maf TMP/_MZ_830233_left.maf11
+maf_project TMP/_MZ_830233_left.maf11 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf11 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf11
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf11
+multiz M=1  TMP/_MZ_830233_left.maf11 TMP/_MZ_830233_right.maf11 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ11
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf11
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf11
+mv TMP/_MZ_830233_MZ11 TMP/_MZ_830233_right.maf12
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ12
+cp cs10_NCBI_RefSeq_softmasked.ASM341772v2.sing.maf TMP/_MZ_830233_left.maf12
+maf_project TMP/_MZ_830233_left.maf12 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf12 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf12
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf12
+multiz M=1  TMP/_MZ_830233_left.maf12 TMP/_MZ_830233_right.maf12 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ12
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf12
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf12
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ13
+cp cs10_NCBI_RefSeq_softmasked.KCDv1a.sing.maf TMP/_MZ_830233_left.maf13
+cp cs10_NCBI_RefSeq_softmasked.KCDv1b.sing.maf TMP/_MZ_830233_right.maf13
+maf_project TMP/_MZ_830233_left.maf13 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf13 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf13
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf13
+multiz M=1  TMP/_MZ_830233_left.maf13 TMP/_MZ_830233_right.maf13 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ13
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ13
+mv TMP/_MZ_830233_MZ13 TMP/_MZ_830233_right.maf14
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ14
+cp cs10_NCBI_RefSeq_softmasked.KOMPa.sing.maf TMP/_MZ_830233_left.maf14
+maf_project TMP/_MZ_830233_left.maf14 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf14 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf14
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf14
+multiz M=1  TMP/_MZ_830233_left.maf14 TMP/_MZ_830233_right.maf14 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ14
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf14
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf14
+mv TMP/_MZ_830233_MZ12 TMP/_MZ_830233_left.maf15
+mv TMP/_MZ_830233_MZ14 TMP/_MZ_830233_right.maf15
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ15
+maf_project TMP/_MZ_830233_left.maf15 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf15 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf15
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf15
+multiz M=1  TMP/_MZ_830233_left.maf15 TMP/_MZ_830233_right.maf15 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ15
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf15
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf15
+mv TMP/_MZ_830233_MZ2 TMP/_MZ_830233_left.maf16
+mv TMP/_MZ_830233_MZ15 TMP/_MZ_830233_right.maf16
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ16
+maf_project TMP/_MZ_830233_left.maf16 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf16 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf16
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf16
+multiz M=1  TMP/_MZ_830233_left.maf16 TMP/_MZ_830233_right.maf16 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ16
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf16
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf16
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ17
+cp cs10_NCBI_RefSeq_softmasked.WIv1a.sing.maf TMP/_MZ_830233_left.maf17
+cp cs10_NCBI_RefSeq_softmasked.WIv1b.sing.maf TMP/_MZ_830233_right.maf17
+maf_project TMP/_MZ_830233_left.maf17 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf17 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf17
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf17
+multiz M=1  TMP/_MZ_830233_left.maf17 TMP/_MZ_830233_right.maf17 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ17
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ17
+mv TMP/_MZ_830233_MZ17 TMP/_MZ_830233_right.maf18
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ18
+cp cs10_NCBI_RefSeq_softmasked.BCMa.sing.maf TMP/_MZ_830233_left.maf18
+maf_project TMP/_MZ_830233_left.maf18 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf18 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf18
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf18
+multiz M=1  TMP/_MZ_830233_left.maf18 TMP/_MZ_830233_right.maf18 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ18
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf18
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf18
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ19
+cp cs10_NCBI_RefSeq_softmasked.FIMv1a.sing.maf TMP/_MZ_830233_left.maf19
+cp cs10_NCBI_RefSeq_softmasked.FIMv1b.sing.maf TMP/_MZ_830233_right.maf19
+maf_project TMP/_MZ_830233_left.maf19 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf19 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf19
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf19
+multiz M=1  TMP/_MZ_830233_left.maf19 TMP/_MZ_830233_right.maf19 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ19
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ19
+mv TMP/_MZ_830233_MZ19 TMP/_MZ_830233_right.maf20
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ20
+cp cs10_NCBI_RefSeq_softmasked.BCMb.sing.maf TMP/_MZ_830233_left.maf20
+maf_project TMP/_MZ_830233_left.maf20 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf20 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf20
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf20
+multiz M=1  TMP/_MZ_830233_left.maf20 TMP/_MZ_830233_right.maf20 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ20
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf20
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf20
+mv TMP/_MZ_830233_MZ18 TMP/_MZ_830233_left.maf21
+mv TMP/_MZ_830233_MZ20 TMP/_MZ_830233_right.maf21
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ21
+maf_project TMP/_MZ_830233_left.maf21 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf21 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf21
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf21
+multiz M=1  TMP/_MZ_830233_left.maf21 TMP/_MZ_830233_right.maf21 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ21
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf21
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf21
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ22
+cp cs10_NCBI_RefSeq_softmasked.WFv1a.sing.maf TMP/_MZ_830233_left.maf22
+cp cs10_NCBI_RefSeq_softmasked.WFv1b.sing.maf TMP/_MZ_830233_right.maf22
+maf_project TMP/_MZ_830233_left.maf22 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf22 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf22
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf22
+multiz M=1  TMP/_MZ_830233_left.maf22 TMP/_MZ_830233_right.maf22 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ22
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ22
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ23
+cp cs10_NCBI_RefSeq_softmasked.BLCv1a.sing.maf TMP/_MZ_830233_left.maf23
+cp cs10_NCBI_RefSeq_softmasked.BLCv1b.sing.maf TMP/_MZ_830233_right.maf23
+maf_project TMP/_MZ_830233_left.maf23 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf23 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf23
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf23
+multiz M=1  TMP/_MZ_830233_left.maf23 TMP/_MZ_830233_right.maf23 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ23
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ23
+mv TMP/_MZ_830233_MZ23 TMP/_MZ_830233_right.maf24
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ24
+cp cs10_NCBI_RefSeq_softmasked.TURv1a.sing.maf TMP/_MZ_830233_left.maf24
+maf_project TMP/_MZ_830233_left.maf24 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf24 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf24
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf24
+multiz M=1  TMP/_MZ_830233_left.maf24 TMP/_MZ_830233_right.maf24 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ24
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf24
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf24
+mv TMP/_MZ_830233_MZ24 TMP/_MZ_830233_right.maf25
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ25
+cp cs10_NCBI_RefSeq_softmasked.TURv1b.sing.maf TMP/_MZ_830233_left.maf25
+maf_project TMP/_MZ_830233_left.maf25 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf25 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf25
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf25
+multiz M=1  TMP/_MZ_830233_left.maf25 TMP/_MZ_830233_right.maf25 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ25
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf25
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf25
+mv TMP/_MZ_830233_MZ22 TMP/_MZ_830233_left.maf26
+mv TMP/_MZ_830233_MZ25 TMP/_MZ_830233_right.maf26
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ26
+maf_project TMP/_MZ_830233_left.maf26 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf26 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf26
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf26
+multiz M=1  TMP/_MZ_830233_left.maf26 TMP/_MZ_830233_right.maf26 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ26
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf26
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf26
+mv TMP/_MZ_830233_MZ21 TMP/_MZ_830233_left.maf27
+mv TMP/_MZ_830233_MZ26 TMP/_MZ_830233_right.maf27
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ27
+maf_project TMP/_MZ_830233_left.maf27 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf27 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf27
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf27
+multiz M=1  TMP/_MZ_830233_left.maf27 TMP/_MZ_830233_right.maf27 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ27
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf27
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf27
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ28
+cp cs10_NCBI_RefSeq_softmasked.TIBv1a.sing.maf TMP/_MZ_830233_left.maf28
+cp cs10_NCBI_RefSeq_softmasked.TIBv1b.sing.maf TMP/_MZ_830233_right.maf28
+maf_project TMP/_MZ_830233_left.maf28 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf28 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf28
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf28
+multiz M=1  TMP/_MZ_830233_left.maf28 TMP/_MZ_830233_right.maf28 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ28
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ28
+mv TMP/_MZ_830233_MZ28 TMP/_MZ_830233_right.maf29
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ29
+cp cs10_NCBI_RefSeq_softmasked.KOMPb.sing.maf TMP/_MZ_830233_left.maf29
+maf_project TMP/_MZ_830233_left.maf29 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf29 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf29
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf29
+multiz M=1  TMP/_MZ_830233_left.maf29 TMP/_MZ_830233_right.maf29 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ29
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf29
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf29
+mv TMP/_MZ_830233_MZ27 TMP/_MZ_830233_left.maf30
+mv TMP/_MZ_830233_MZ29 TMP/_MZ_830233_right.maf30
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ30
+maf_project TMP/_MZ_830233_left.maf30 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf30 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf30
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf30
+multiz M=1  TMP/_MZ_830233_left.maf30 TMP/_MZ_830233_right.maf30 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ30
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf30
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf30
+mv TMP/_MZ_830233_MZ16 TMP/_MZ_830233_left.maf31
+mv TMP/_MZ_830233_MZ30 TMP/_MZ_830233_right.maf31
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ31
+maf_project TMP/_MZ_830233_left.maf31 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf31 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf31
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf31
+multiz M=1  TMP/_MZ_830233_left.maf31 TMP/_MZ_830233_right.maf31 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ31
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf31
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf31
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ32
+cp cs10_NCBI_RefSeq_softmasked.YMMv1a.sing.maf TMP/_MZ_830233_left.maf32
+cp cs10_NCBI_RefSeq_softmasked.YMMv1b.sing.maf TMP/_MZ_830233_right.maf32
+maf_project TMP/_MZ_830233_left.maf32 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf32 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf32
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf32
+multiz M=1  TMP/_MZ_830233_left.maf32 TMP/_MZ_830233_right.maf32 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ32
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ32
+mv TMP/_MZ_830233_MZ32 TMP/_MZ_830233_right.maf33
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ33
+cp cs10_NCBI_RefSeq_softmasked.YMv2b.sing.maf TMP/_MZ_830233_left.maf33
+maf_project TMP/_MZ_830233_left.maf33 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf33 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf33
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf33
+multiz M=1  TMP/_MZ_830233_left.maf33 TMP/_MZ_830233_right.maf33 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ33
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf33
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf33
+mv TMP/_MZ_830233_MZ33 TMP/_MZ_830233_right.maf34
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ34
+cp cs10_NCBI_RefSeq_softmasked.YMv2a.sing.maf TMP/_MZ_830233_left.maf34
+maf_project TMP/_MZ_830233_left.maf34 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf34 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf34
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf34
+multiz M=1  TMP/_MZ_830233_left.maf34 TMP/_MZ_830233_right.maf34 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ34
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf34
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf34
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ35
+cp cs10_NCBI_RefSeq_softmasked.FL18_coge60292.sing.maf TMP/_MZ_830233_left.maf35
+cp cs10_NCBI_RefSeq_softmasked.FL48_coge60293.sing.maf TMP/_MZ_830233_right.maf35
+maf_project TMP/_MZ_830233_left.maf35 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf35 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf35
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf35
+multiz M=1  TMP/_MZ_830233_left.maf35 TMP/_MZ_830233_right.maf35 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ35
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ35
+mv TMP/_MZ_830233_MZ35 TMP/_MZ_830233_right.maf36
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ36
+cp cs10_NCBI_RefSeq_softmasked.FL49_coge60294.sing.maf TMP/_MZ_830233_left.maf36
+maf_project TMP/_MZ_830233_left.maf36 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf36 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf36
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf36
+multiz M=1  TMP/_MZ_830233_left.maf36 TMP/_MZ_830233_right.maf36 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ36
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf36
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf36
+mv TMP/_MZ_830233_MZ36 TMP/_MZ_830233_right.maf37
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ37
+cp cs10_NCBI_RefSeq_softmasked.FL02_coge60295.sing.maf TMP/_MZ_830233_left.maf37
+maf_project TMP/_MZ_830233_left.maf37 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf37 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf37
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf37
+multiz M=1  TMP/_MZ_830233_left.maf37 TMP/_MZ_830233_right.maf37 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ37
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf37
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf37
+mv TMP/_MZ_830233_MZ37 TMP/_MZ_830233_right.maf38
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ38
+grep -v eof TMP/_MZ_830233_right.maf38 >> TMP/_MZ_830233_MZ38
+rm -f TMP/_MZ_830233_right.maf38 TMP/_MZ_830233_left.maf38
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ39
+cp cs10_NCBI_RefSeq_softmasked.T2T_GCA_054642775_1_IMPD.sing.maf TMP/_MZ_830233_left.maf39
+cp cs10_NCBI_RefSeq_softmasked.T2T_GCA_054642815_1_IMPD.sing.maf TMP/_MZ_830233_right.maf39
+maf_project TMP/_MZ_830233_left.maf39 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf39 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf39
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf39
+multiz M=1  TMP/_MZ_830233_left.maf39 TMP/_MZ_830233_right.maf39 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ39
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ39
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ40
+cp cs10_NCBI_RefSeq_softmasked.FMv1a.sing.maf TMP/_MZ_830233_left.maf40
+cp cs10_NCBI_RefSeq_softmasked.FMv1b.sing.maf TMP/_MZ_830233_right.maf40
+maf_project TMP/_MZ_830233_left.maf40 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf40 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf40
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf40
+multiz M=1  TMP/_MZ_830233_left.maf40 TMP/_MZ_830233_right.maf40 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ40
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ40
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ41
+cp cs10_NCBI_RefSeq_softmasked.ANC_2.sing.maf TMP/_MZ_830233_left.maf41
+cp cs10_NCBI_RefSeq_softmasked.ASM5191176v1.sing.maf TMP/_MZ_830233_right.maf41
+maf_project TMP/_MZ_830233_left.maf41 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf41 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf41
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf41
+multiz M=1  TMP/_MZ_830233_left.maf41 TMP/_MZ_830233_right.maf41 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ41
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ41
+mv TMP/_MZ_830233_MZ41 TMP/_MZ_830233_right.maf42
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ42
+cp cs10_NCBI_RefSeq_softmasked.ASM5191178v1.sing.maf TMP/_MZ_830233_left.maf42
+maf_project TMP/_MZ_830233_left.maf42 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf42 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf42
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf42
+multiz M=1  TMP/_MZ_830233_left.maf42 TMP/_MZ_830233_right.maf42 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ42
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf42
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf42
+mv TMP/_MZ_830233_MZ42 TMP/_MZ_830233_right.maf43
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ43
+cp cs10_NCBI_RefSeq_softmasked.ANC_1.sing.maf TMP/_MZ_830233_left.maf43
+maf_project TMP/_MZ_830233_left.maf43 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf43 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf43
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf43
+multiz M=1  TMP/_MZ_830233_left.maf43 TMP/_MZ_830233_right.maf43 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ43
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf43
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf43
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ44
+cp cs10_NCBI_RefSeq_softmasked.TRWR.sing.maf TMP/_MZ_830233_left.maf44
+cp cs10_NCBI_RefSeq_softmasked.TWSVa.sing.maf TMP/_MZ_830233_right.maf44
+maf_project TMP/_MZ_830233_left.maf44 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf44 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf44
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf44
+multiz M=1  TMP/_MZ_830233_left.maf44 TMP/_MZ_830233_right.maf44 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ44
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ44
+mv TMP/_MZ_830233_MZ44 TMP/_MZ_830233_right.maf45
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ45
+cp cs10_NCBI_RefSeq_softmasked.TWFBa.sing.maf TMP/_MZ_830233_left.maf45
+maf_project TMP/_MZ_830233_left.maf45 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf45 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf45
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf45
+multiz M=1  TMP/_MZ_830233_left.maf45 TMP/_MZ_830233_right.maf45 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ45
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf45
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf45
+mv TMP/_MZ_830233_MZ45 TMP/_MZ_830233_right.maf46
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ46
+cp cs10_NCBI_RefSeq_softmasked.H3S1a.sing.maf TMP/_MZ_830233_left.maf46
+maf_project TMP/_MZ_830233_left.maf46 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf46 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf46
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf46
+multiz M=1  TMP/_MZ_830233_left.maf46 TMP/_MZ_830233_right.maf46 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ46
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf46
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf46
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ47
+cp cs10_NCBI_RefSeq_softmasked.AH3Mb.sing.maf TMP/_MZ_830233_left.maf47
+cp cs10_NCBI_RefSeq_softmasked.GRMa.sing.maf TMP/_MZ_830233_right.maf47
+maf_project TMP/_MZ_830233_left.maf47 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf47 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf47
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf47
+multiz M=1  TMP/_MZ_830233_left.maf47 TMP/_MZ_830233_right.maf47 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ47
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ47
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ48
+cp cs10_NCBI_RefSeq_softmasked.MM3v1a.sing.maf TMP/_MZ_830233_left.maf48
+cp cs10_NCBI_RefSeq_softmasked.MM3v1b.sing.maf TMP/_MZ_830233_right.maf48
+maf_project TMP/_MZ_830233_left.maf48 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf48 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf48
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf48
+multiz M=1  TMP/_MZ_830233_left.maf48 TMP/_MZ_830233_right.maf48 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ48
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ48
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ49
+cp cs10_NCBI_RefSeq_softmasked.MBFBa.sing.maf TMP/_MZ_830233_left.maf49
+cp cs10_NCBI_RefSeq_softmasked.MNDB.sing.maf TMP/_MZ_830233_right.maf49
+maf_project TMP/_MZ_830233_left.maf49 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf49 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf49
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf49
+multiz M=1  TMP/_MZ_830233_left.maf49 TMP/_MZ_830233_right.maf49 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ49
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ49
+mv TMP/_MZ_830233_MZ49 TMP/_MZ_830233_right.maf50
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ50
+cp cs10_NCBI_RefSeq_softmasked.MBSVa.sing.maf TMP/_MZ_830233_left.maf50
+maf_project TMP/_MZ_830233_left.maf50 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf50 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf50
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf50
+multiz M=1  TMP/_MZ_830233_left.maf50 TMP/_MZ_830233_right.maf50 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ50
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf50
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf50
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ51
+cp cs10_NCBI_RefSeq_softmasked.UFBa.sing.maf TMP/_MZ_830233_left.maf51
+cp cs10_NCBI_RefSeq_softmasked.URKL.sing.maf TMP/_MZ_830233_right.maf51
+maf_project TMP/_MZ_830233_left.maf51 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf51 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf51
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf51
+multiz M=1  TMP/_MZ_830233_left.maf51 TMP/_MZ_830233_right.maf51 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ51
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ51
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ52
+cp cs10_NCBI_RefSeq_softmasked.OFBa.sing.maf TMP/_MZ_830233_left.maf52
+cp cs10_NCBI_RefSeq_softmasked.OFP5.sing.maf TMP/_MZ_830233_right.maf52
+maf_project TMP/_MZ_830233_left.maf52 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf52 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf52
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf52
+multiz M=1  TMP/_MZ_830233_left.maf52 TMP/_MZ_830233_right.maf52 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ52
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ52
+mv TMP/_MZ_830233_MZ51 TMP/_MZ_830233_left.maf53
+mv TMP/_MZ_830233_MZ52 TMP/_MZ_830233_right.maf53
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ53
+maf_project TMP/_MZ_830233_left.maf53 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf53 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf53
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf53
+multiz M=1  TMP/_MZ_830233_left.maf53 TMP/_MZ_830233_right.maf53 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ53
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf53
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf53
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ54
+cp cs10_NCBI_RefSeq_softmasked.LP10.sing.maf TMP/_MZ_830233_left.maf54
+cp cs10_NCBI_RefSeq_softmasked.LP6.sing.maf TMP/_MZ_830233_right.maf54
+maf_project TMP/_MZ_830233_left.maf54 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf54 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf54
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf54
+multiz M=1  TMP/_MZ_830233_left.maf54 TMP/_MZ_830233_right.maf54 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ54
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ54
+mv TMP/_MZ_830233_MZ54 TMP/_MZ_830233_right.maf55
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ55
+cp cs10_NCBI_RefSeq_softmasked.ASM5191170v1.sing.maf TMP/_MZ_830233_left.maf55
+maf_project TMP/_MZ_830233_left.maf55 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf55 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf55
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf55
+multiz M=1  TMP/_MZ_830233_left.maf55 TMP/_MZ_830233_right.maf55 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ55
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf55
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf55
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ56
+cp cs10_NCBI_RefSeq_softmasked.FCS1a.sing.maf TMP/_MZ_830233_left.maf56
+cp cs10_NCBI_RefSeq_softmasked.GSC.sing.maf TMP/_MZ_830233_right.maf56
+maf_project TMP/_MZ_830233_left.maf56 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf56 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf56
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf56
+multiz M=1  TMP/_MZ_830233_left.maf56 TMP/_MZ_830233_right.maf56 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ56
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ56
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ57
+cp cs10_NCBI_RefSeq_softmasked.SDFBa.sing.maf TMP/_MZ_830233_left.maf57
+cp cs10_NCBI_RefSeq_softmasked.SUNDR.sing.maf TMP/_MZ_830233_right.maf57
+maf_project TMP/_MZ_830233_left.maf57 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf57 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf57
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf57
+multiz M=1  TMP/_MZ_830233_left.maf57 TMP/_MZ_830233_right.maf57 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ57
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ57
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ58
+cp cs10_NCBI_RefSeq_softmasked.SKTZ.sing.maf TMP/_MZ_830233_left.maf58
+cp cs10_NCBI_RefSeq_softmasked.SZFBa.sing.maf TMP/_MZ_830233_right.maf58
+maf_project TMP/_MZ_830233_left.maf58 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf58 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf58
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf58
+multiz M=1  TMP/_MZ_830233_left.maf58 TMP/_MZ_830233_right.maf58 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ58
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ58
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ59
+cp cs10_NCBI_RefSeq_softmasked.WC.sing.maf TMP/_MZ_830233_left.maf59
+cp cs10_NCBI_RefSeq_softmasked.WCFBa.sing.maf TMP/_MZ_830233_right.maf59
+maf_project TMP/_MZ_830233_left.maf59 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf59 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf59
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf59
+multiz M=1  TMP/_MZ_830233_left.maf59 TMP/_MZ_830233_right.maf59 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ59
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ59
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ60
+cp cs10_NCBI_RefSeq_softmasked.TK7.sing.maf TMP/_MZ_830233_left.maf60
+cp cs10_NCBI_RefSeq_softmasked.TKFBa.sing.maf TMP/_MZ_830233_right.maf60
+maf_project TMP/_MZ_830233_left.maf60 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf60 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf60
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf60
+multiz M=1  TMP/_MZ_830233_left.maf60 TMP/_MZ_830233_right.maf60 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ60
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ60
+mv TMP/_MZ_830233_MZ60 TMP/_MZ_830233_right.maf61
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ61
+cp cs10_NCBI_RefSeq_softmasked.BLYS.sing.maf TMP/_MZ_830233_left.maf61
+maf_project TMP/_MZ_830233_left.maf61 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf61 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf61
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf61
+multiz M=1  TMP/_MZ_830233_left.maf61 TMP/_MZ_830233_right.maf61 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ61
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf61
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf61
+mv TMP/_MZ_830233_MZ61 TMP/_MZ_830233_right.maf62
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ62
+cp cs10_NCBI_RefSeq_softmasked.BBKH.sing.maf TMP/_MZ_830233_left.maf62
+maf_project TMP/_MZ_830233_left.maf62 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf62 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf62
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf62
+multiz M=1  TMP/_MZ_830233_left.maf62 TMP/_MZ_830233_right.maf62 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ62
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf62
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf62
+mv TMP/_MZ_830233_MZ62 TMP/_MZ_830233_right.maf63
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ63
+cp cs10_NCBI_RefSeq_softmasked.TK10.sing.maf TMP/_MZ_830233_left.maf63
+maf_project TMP/_MZ_830233_left.maf63 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf63 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf63
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf63
+multiz M=1  TMP/_MZ_830233_left.maf63 TMP/_MZ_830233_right.maf63 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ63
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf63
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf63
+mv TMP/_MZ_830233_MZ59 TMP/_MZ_830233_left.maf64
+mv TMP/_MZ_830233_MZ63 TMP/_MZ_830233_right.maf64
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ64
+maf_project TMP/_MZ_830233_left.maf64 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf64 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf64
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf64
+multiz M=1  TMP/_MZ_830233_left.maf64 TMP/_MZ_830233_right.maf64 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ64
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf64
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf64
+mv TMP/_MZ_830233_MZ64 TMP/_MZ_830233_right.maf65
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ65
+cp cs10_NCBI_RefSeq_softmasked.CHM9.sing.maf TMP/_MZ_830233_left.maf65
+maf_project TMP/_MZ_830233_left.maf65 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf65 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf65
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf65
+multiz M=1  TMP/_MZ_830233_left.maf65 TMP/_MZ_830233_right.maf65 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ65
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf65
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf65
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ66
+cp cs10_NCBI_RefSeq_softmasked.FOG.sing.maf TMP/_MZ_830233_left.maf66
+cp cs10_NCBI_RefSeq_softmasked.GMO.sing.maf TMP/_MZ_830233_right.maf66
+maf_project TMP/_MZ_830233_left.maf66 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf66 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf66
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf66
+multiz M=1  TMP/_MZ_830233_left.maf66 TMP/_MZ_830233_right.maf66 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ66
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ66
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ67
+cp cs10_NCBI_RefSeq_softmasked.CHMD3.sing.maf TMP/_MZ_830233_left.maf67
+cp cs10_NCBI_RefSeq_softmasked.SDI.sing.maf TMP/_MZ_830233_right.maf67
+maf_project TMP/_MZ_830233_left.maf67 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf67 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf67
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf67
+multiz M=1  TMP/_MZ_830233_left.maf67 TMP/_MZ_830233_right.maf67 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ67
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ67
+mv TMP/_MZ_830233_MZ67 TMP/_MZ_830233_right.maf68
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ68
+cp cs10_NCBI_RefSeq_softmasked.CHMD5.sing.maf TMP/_MZ_830233_left.maf68
+maf_project TMP/_MZ_830233_left.maf68 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf68 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf68
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf68
+multiz M=1  TMP/_MZ_830233_left.maf68 TMP/_MZ_830233_right.maf68 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ68
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf68
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf68
+mv TMP/_MZ_830233_MZ66 TMP/_MZ_830233_left.maf69
+mv TMP/_MZ_830233_MZ68 TMP/_MZ_830233_right.maf69
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ69
+maf_project TMP/_MZ_830233_left.maf69 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf69 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf69
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf69
+multiz M=1  TMP/_MZ_830233_left.maf69 TMP/_MZ_830233_right.maf69 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ69
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf69
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf69
+mv TMP/_MZ_830233_MZ69 TMP/_MZ_830233_right.maf70
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ70
+cp cs10_NCBI_RefSeq_softmasked.PURD.sing.maf TMP/_MZ_830233_left.maf70
+maf_project TMP/_MZ_830233_left.maf70 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf70 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf70
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf70
+multiz M=1  TMP/_MZ_830233_left.maf70 TMP/_MZ_830233_right.maf70 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ70
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf70
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf70
+mv TMP/_MZ_830233_MZ65 TMP/_MZ_830233_left.maf71
+mv TMP/_MZ_830233_MZ70 TMP/_MZ_830233_right.maf71
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ71
+maf_project TMP/_MZ_830233_left.maf71 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf71 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf71
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf71
+multiz M=1  TMP/_MZ_830233_left.maf71 TMP/_MZ_830233_right.maf71 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ71
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf71
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf71
+mv TMP/_MZ_830233_MZ71 TMP/_MZ_830233_right.maf72
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ72
+cp cs10_NCBI_RefSeq_softmasked.ASM151000v1.sing.maf TMP/_MZ_830233_left.maf72
+maf_project TMP/_MZ_830233_left.maf72 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf72 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf72
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf72
+multiz M=1  TMP/_MZ_830233_left.maf72 TMP/_MZ_830233_right.maf72 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ72
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf72
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf72
+mv TMP/_MZ_830233_MZ58 TMP/_MZ_830233_left.maf73
+mv TMP/_MZ_830233_MZ72 TMP/_MZ_830233_right.maf73
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ73
+maf_project TMP/_MZ_830233_left.maf73 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf73 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf73
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf73
+multiz M=1  TMP/_MZ_830233_left.maf73 TMP/_MZ_830233_right.maf73 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ73
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf73
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf73
+mv TMP/_MZ_830233_MZ57 TMP/_MZ_830233_left.maf74
+mv TMP/_MZ_830233_MZ73 TMP/_MZ_830233_right.maf74
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ74
+maf_project TMP/_MZ_830233_left.maf74 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf74 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf74
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf74
+multiz M=1  TMP/_MZ_830233_left.maf74 TMP/_MZ_830233_right.maf74 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ74
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf74
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf74
+mv TMP/_MZ_830233_MZ56 TMP/_MZ_830233_left.maf75
+mv TMP/_MZ_830233_MZ74 TMP/_MZ_830233_right.maf75
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ75
+maf_project TMP/_MZ_830233_left.maf75 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf75 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf75
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf75
+multiz M=1  TMP/_MZ_830233_left.maf75 TMP/_MZ_830233_right.maf75 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ75
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf75
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf75
+mv TMP/_MZ_830233_MZ55 TMP/_MZ_830233_left.maf76
+mv TMP/_MZ_830233_MZ75 TMP/_MZ_830233_right.maf76
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ76
+maf_project TMP/_MZ_830233_left.maf76 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf76 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf76
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf76
+multiz M=1  TMP/_MZ_830233_left.maf76 TMP/_MZ_830233_right.maf76 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ76
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf76
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf76
+mv TMP/_MZ_830233_MZ53 TMP/_MZ_830233_left.maf77
+mv TMP/_MZ_830233_MZ76 TMP/_MZ_830233_right.maf77
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ77
+maf_project TMP/_MZ_830233_left.maf77 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf77 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf77
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf77
+multiz M=1  TMP/_MZ_830233_left.maf77 TMP/_MZ_830233_right.maf77 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ77
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf77
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf77
+mv TMP/_MZ_830233_MZ77 TMP/_MZ_830233_right.maf78
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ78
+cp cs10_NCBI_RefSeq_softmasked.ASM5191164v1.sing.maf TMP/_MZ_830233_left.maf78
+maf_project TMP/_MZ_830233_left.maf78 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf78 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf78
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf78
+multiz M=1  TMP/_MZ_830233_left.maf78 TMP/_MZ_830233_right.maf78 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ78
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf78
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf78
+mv TMP/_MZ_830233_MZ78 TMP/_MZ_830233_right.maf79
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ79
+cp cs10_NCBI_RefSeq_softmasked.Csat_AbacusV2.sing.maf TMP/_MZ_830233_left.maf79
+maf_project TMP/_MZ_830233_left.maf79 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf79 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf79
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf79
+multiz M=1  TMP/_MZ_830233_left.maf79 TMP/_MZ_830233_right.maf79 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ79
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf79
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf79
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ80
+cp cs10_NCBI_RefSeq_softmasked.W103.sing.maf TMP/_MZ_830233_left.maf80
+cp cs10_NCBI_RefSeq_softmasked.WLR.sing.maf TMP/_MZ_830233_right.maf80
+maf_project TMP/_MZ_830233_left.maf80 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf80 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf80
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf80
+multiz M=1  TMP/_MZ_830233_left.maf80 TMP/_MZ_830233_right.maf80 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ80
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ80
+mv TMP/_MZ_830233_MZ80 TMP/_MZ_830233_right.maf81
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ81
+cp cs10_NCBI_RefSeq_softmasked.W19LR.sing.maf TMP/_MZ_830233_left.maf81
+maf_project TMP/_MZ_830233_left.maf81 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf81 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf81
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf81
+multiz M=1  TMP/_MZ_830233_left.maf81 TMP/_MZ_830233_right.maf81 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ81
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf81
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf81
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ82
+cp cs10_NCBI_RefSeq_softmasked.WH106.sing.maf TMP/_MZ_830233_left.maf82
+cp cs10_NCBI_RefSeq_softmasked.WH94.sing.maf TMP/_MZ_830233_right.maf82
+maf_project TMP/_MZ_830233_left.maf82 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf82 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf82
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf82
+multiz M=1  TMP/_MZ_830233_left.maf82 TMP/_MZ_830233_right.maf82 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ82
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ82
+mv TMP/_MZ_830233_MZ82 TMP/_MZ_830233_right.maf83
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ83
+cp cs10_NCBI_RefSeq_softmasked.WH72.sing.maf TMP/_MZ_830233_left.maf83
+maf_project TMP/_MZ_830233_left.maf83 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf83 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf83
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf83
+multiz M=1  TMP/_MZ_830233_left.maf83 TMP/_MZ_830233_right.maf83 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ83
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf83
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf83
+mv TMP/_MZ_830233_MZ83 TMP/_MZ_830233_right.maf84
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ84
+cp cs10_NCBI_RefSeq_softmasked.WH96.sing.maf TMP/_MZ_830233_left.maf84
+maf_project TMP/_MZ_830233_left.maf84 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf84 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf84
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf84
+multiz M=1  TMP/_MZ_830233_left.maf84 TMP/_MZ_830233_right.maf84 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ84
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf84
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf84
+mv TMP/_MZ_830233_MZ81 TMP/_MZ_830233_left.maf85
+mv TMP/_MZ_830233_MZ84 TMP/_MZ_830233_right.maf85
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ85
+maf_project TMP/_MZ_830233_left.maf85 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf85 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf85
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf85
+multiz M=1  TMP/_MZ_830233_left.maf85 TMP/_MZ_830233_right.maf85 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ85
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf85
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf85
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ86
+cp cs10_NCBI_RefSeq_softmasked.PPFBa.sing.maf TMP/_MZ_830233_left.maf86
+cp cs10_NCBI_RefSeq_softmasked.PURP.sing.maf TMP/_MZ_830233_right.maf86
+maf_project TMP/_MZ_830233_left.maf86 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf86 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf86
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf86
+multiz M=1  TMP/_MZ_830233_left.maf86 TMP/_MZ_830233_right.maf86 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ86
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ86
+mv TMP/_MZ_830233_MZ86 TMP/_MZ_830233_right.maf87
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ87
+cp cs10_NCBI_RefSeq_softmasked.SODLb.sing.maf TMP/_MZ_830233_left.maf87
+maf_project TMP/_MZ_830233_left.maf87 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf87 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf87
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf87
+multiz M=1  TMP/_MZ_830233_left.maf87 TMP/_MZ_830233_right.maf87 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ87
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf87
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf87
+mv TMP/_MZ_830233_MZ85 TMP/_MZ_830233_left.maf88
+mv TMP/_MZ_830233_MZ87 TMP/_MZ_830233_right.maf88
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ88
+maf_project TMP/_MZ_830233_left.maf88 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf88 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf88
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf88
+multiz M=1  TMP/_MZ_830233_left.maf88 TMP/_MZ_830233_right.maf88 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ88
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf88
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf88
+mv TMP/_MZ_830233_MZ79 TMP/_MZ_830233_left.maf89
+mv TMP/_MZ_830233_MZ88 TMP/_MZ_830233_right.maf89
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ89
+maf_project TMP/_MZ_830233_left.maf89 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf89 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf89
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf89
+multiz M=1  TMP/_MZ_830233_left.maf89 TMP/_MZ_830233_right.maf89 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ89
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf89
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf89
+mv TMP/_MZ_830233_MZ50 TMP/_MZ_830233_left.maf90
+mv TMP/_MZ_830233_MZ89 TMP/_MZ_830233_right.maf90
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ90
+maf_project TMP/_MZ_830233_left.maf90 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf90 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf90
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf90
+multiz M=1  TMP/_MZ_830233_left.maf90 TMP/_MZ_830233_right.maf90 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ90
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf90
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf90
+mv TMP/_MZ_830233_MZ90 TMP/_MZ_830233_right.maf91
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ91
+cp cs10_NCBI_RefSeq_softmasked.H3S7a.sing.maf TMP/_MZ_830233_left.maf91
+maf_project TMP/_MZ_830233_left.maf91 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf91 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf91
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf91
+multiz M=1  TMP/_MZ_830233_left.maf91 TMP/_MZ_830233_right.maf91 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ91
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf91
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf91
+mv TMP/_MZ_830233_MZ91 TMP/_MZ_830233_right.maf92
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ92
+cp cs10_NCBI_RefSeq_softmasked.ASM23057v5.sing.maf TMP/_MZ_830233_left.maf92
+maf_project TMP/_MZ_830233_left.maf92 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf92 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf92
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf92
+multiz M=1  TMP/_MZ_830233_left.maf92 TMP/_MZ_830233_right.maf92 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ92
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf92
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf92
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ93
+cp cs10_NCBI_RefSeq_softmasked.SSA2.sing.maf TMP/_MZ_830233_left.maf93
+cp cs10_NCBI_RefSeq_softmasked.SVA12b.sing.maf TMP/_MZ_830233_right.maf93
+maf_project TMP/_MZ_830233_left.maf93 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf93 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf93
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf93
+multiz M=1  TMP/_MZ_830233_left.maf93 TMP/_MZ_830233_right.maf93 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ93
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ93
+mv TMP/_MZ_830233_MZ93 TMP/_MZ_830233_right.maf94
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ94
+cp cs10_NCBI_RefSeq_softmasked.SVA6b.sing.maf TMP/_MZ_830233_left.maf94
+maf_project TMP/_MZ_830233_left.maf94 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf94 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf94
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf94
+multiz M=1  TMP/_MZ_830233_left.maf94 TMP/_MZ_830233_right.maf94 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ94
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf94
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf94
+mv TMP/_MZ_830233_MZ94 TMP/_MZ_830233_right.maf95
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ95
+cp cs10_NCBI_RefSeq_softmasked.SSA1.sing.maf TMP/_MZ_830233_left.maf95
+maf_project TMP/_MZ_830233_left.maf95 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf95 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf95
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf95
+multiz M=1  TMP/_MZ_830233_left.maf95 TMP/_MZ_830233_right.maf95 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ95
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf95
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf95
+mv TMP/_MZ_830233_MZ95 TMP/_MZ_830233_right.maf96
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ96
+cp cs10_NCBI_RefSeq_softmasked.ACBD.sing.maf TMP/_MZ_830233_left.maf96
+maf_project TMP/_MZ_830233_left.maf96 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf96 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf96
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf96
+multiz M=1  TMP/_MZ_830233_left.maf96 TMP/_MZ_830233_right.maf96 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ96
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf96
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf96
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ97
+cp cs10_NCBI_RefSeq_softmasked.TKFBb.sing.maf TMP/_MZ_830233_left.maf97
+cp cs10_NCBI_RefSeq_softmasked.WCFBb.sing.maf TMP/_MZ_830233_right.maf97
+maf_project TMP/_MZ_830233_left.maf97 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf97 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf97
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf97
+multiz M=1  TMP/_MZ_830233_left.maf97 TMP/_MZ_830233_right.maf97 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ97
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ97
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ98
+cp cs10_NCBI_RefSeq_softmasked.MBFBb.sing.maf TMP/_MZ_830233_left.maf98
+cp cs10_NCBI_RefSeq_softmasked.SCFB.sing.maf TMP/_MZ_830233_right.maf98
+maf_project TMP/_MZ_830233_left.maf98 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf98 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf98
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf98
+multiz M=1  TMP/_MZ_830233_left.maf98 TMP/_MZ_830233_right.maf98 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ98
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ98
+mv TMP/_MZ_830233_MZ98 TMP/_MZ_830233_right.maf99
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ99
+cp cs10_NCBI_RefSeq_softmasked.SKFBb.sing.maf TMP/_MZ_830233_left.maf99
+maf_project TMP/_MZ_830233_left.maf99 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf99 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf99
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf99
+multiz M=1  TMP/_MZ_830233_left.maf99 TMP/_MZ_830233_right.maf99 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ99
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf99
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf99
+mv TMP/_MZ_830233_MZ97 TMP/_MZ_830233_left.maf100
+mv TMP/_MZ_830233_MZ99 TMP/_MZ_830233_right.maf100
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ100
+maf_project TMP/_MZ_830233_left.maf100 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf100 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf100
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf100
+multiz M=1  TMP/_MZ_830233_left.maf100 TMP/_MZ_830233_right.maf100 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ100
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf100
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf100
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ101
+cp cs10_NCBI_RefSeq_softmasked.DPFBb.sing.maf TMP/_MZ_830233_left.maf101
+cp cs10_NCBI_RefSeq_softmasked.TWFBb.sing.maf TMP/_MZ_830233_right.maf101
+maf_project TMP/_MZ_830233_left.maf101 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf101 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf101
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf101
+multiz M=1  TMP/_MZ_830233_left.maf101 TMP/_MZ_830233_right.maf101 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ101
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ101
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ102
+cp cs10_NCBI_RefSeq_softmasked.FBHO.sing.maf TMP/_MZ_830233_left.maf102
+cp cs10_NCBI_RefSeq_softmasked.UFBb.sing.maf TMP/_MZ_830233_right.maf102
+maf_project TMP/_MZ_830233_left.maf102 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf102 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf102
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf102
+multiz M=1  TMP/_MZ_830233_left.maf102 TMP/_MZ_830233_right.maf102 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ102
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ102
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ103
+cp cs10_NCBI_RefSeq_softmasked.FB191.sing.maf TMP/_MZ_830233_left.maf103
+cp cs10_NCBI_RefSeq_softmasked.SZFBb.sing.maf TMP/_MZ_830233_right.maf103
+maf_project TMP/_MZ_830233_left.maf103 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf103 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf103
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf103
+multiz M=1  TMP/_MZ_830233_left.maf103 TMP/_MZ_830233_right.maf103 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ103
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ103
+mv TMP/_MZ_830233_MZ103 TMP/_MZ_830233_right.maf104
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ104
+cp cs10_NCBI_RefSeq_softmasked.OFBb.sing.maf TMP/_MZ_830233_left.maf104
+maf_project TMP/_MZ_830233_left.maf104 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf104 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf104
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf104
+multiz M=1  TMP/_MZ_830233_left.maf104 TMP/_MZ_830233_right.maf104 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ104
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf104
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf104
+mv TMP/_MZ_830233_MZ102 TMP/_MZ_830233_left.maf105
+mv TMP/_MZ_830233_MZ104 TMP/_MZ_830233_right.maf105
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ105
+maf_project TMP/_MZ_830233_left.maf105 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf105 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf105
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf105
+multiz M=1  TMP/_MZ_830233_left.maf105 TMP/_MZ_830233_right.maf105 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ105
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf105
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf105
+mv TMP/_MZ_830233_MZ105 TMP/_MZ_830233_right.maf106
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ106
+cp cs10_NCBI_RefSeq_softmasked.SDFBb.sing.maf TMP/_MZ_830233_left.maf106
+maf_project TMP/_MZ_830233_left.maf106 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf106 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf106
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf106
+multiz M=1  TMP/_MZ_830233_left.maf106 TMP/_MZ_830233_right.maf106 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ106
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf106
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf106
+mv TMP/_MZ_830233_MZ101 TMP/_MZ_830233_left.maf107
+mv TMP/_MZ_830233_MZ106 TMP/_MZ_830233_right.maf107
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ107
+maf_project TMP/_MZ_830233_left.maf107 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf107 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf107
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf107
+multiz M=1  TMP/_MZ_830233_left.maf107 TMP/_MZ_830233_right.maf107 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ107
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf107
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf107
+mv TMP/_MZ_830233_MZ100 TMP/_MZ_830233_left.maf108
+mv TMP/_MZ_830233_MZ107 TMP/_MZ_830233_right.maf108
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ108
+maf_project TMP/_MZ_830233_left.maf108 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf108 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf108
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf108
+multiz M=1  TMP/_MZ_830233_left.maf108 TMP/_MZ_830233_right.maf108 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ108
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf108
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf108
+mv TMP/_MZ_830233_MZ108 TMP/_MZ_830233_right.maf109
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ109
+cp cs10_NCBI_RefSeq_softmasked.COFBa.sing.maf TMP/_MZ_830233_left.maf109
+maf_project TMP/_MZ_830233_left.maf109 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf109 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf109
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf109
+multiz M=1  TMP/_MZ_830233_left.maf109 TMP/_MZ_830233_right.maf109 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ109
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf109
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf109
+mv TMP/_MZ_830233_MZ109 TMP/_MZ_830233_right.maf110
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ110
+cp cs10_NCBI_RefSeq_softmasked.PPFBb.sing.maf TMP/_MZ_830233_left.maf110
+maf_project TMP/_MZ_830233_left.maf110 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf110 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf110
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf110
+multiz M=1  TMP/_MZ_830233_left.maf110 TMP/_MZ_830233_right.maf110 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ110
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf110
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf110
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ111
+cp cs10_NCBI_RefSeq_softmasked.EH23a.sing.maf TMP/_MZ_830233_left.maf111
+cp cs10_NCBI_RefSeq_softmasked.S8H2LR.sing.maf TMP/_MZ_830233_right.maf111
+maf_project TMP/_MZ_830233_left.maf111 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf111 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf111
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf111
+multiz M=1  TMP/_MZ_830233_left.maf111 TMP/_MZ_830233_right.maf111 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ111
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ111
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ112
+cp cs10_NCBI_RefSeq_softmasked.HO40.sing.maf TMP/_MZ_830233_left.maf112
+cp cs10_NCBI_RefSeq_softmasked.STHb.sing.maf TMP/_MZ_830233_right.maf112
+maf_project TMP/_MZ_830233_left.maf112 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf112 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf112
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf112
+multiz M=1  TMP/_MZ_830233_left.maf112 TMP/_MZ_830233_right.maf112 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ112
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ112
+mv TMP/_MZ_830233_MZ112 TMP/_MZ_830233_right.maf113
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ113
+cp cs10_NCBI_RefSeq_softmasked.SHH5b.sing.maf TMP/_MZ_830233_left.maf113
+maf_project TMP/_MZ_830233_left.maf113 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf113 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf113
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf113
+multiz M=1  TMP/_MZ_830233_left.maf113 TMP/_MZ_830233_right.maf113 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ113
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf113
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf113
+mv TMP/_MZ_830233_MZ113 TMP/_MZ_830233_right.maf114
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ114
+cp cs10_NCBI_RefSeq_softmasked.S8Hb.sing.maf TMP/_MZ_830233_left.maf114
+maf_project TMP/_MZ_830233_left.maf114 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf114 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf114
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf114
+multiz M=1  TMP/_MZ_830233_left.maf114 TMP/_MZ_830233_right.maf114 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ114
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf114
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf114
+mv TMP/_MZ_830233_MZ114 TMP/_MZ_830233_right.maf115
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ115
+cp cs10_NCBI_RefSeq_softmasked.BH55.sing.maf TMP/_MZ_830233_left.maf115
+maf_project TMP/_MZ_830233_left.maf115 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf115 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf115
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf115
+multiz M=1  TMP/_MZ_830233_left.maf115 TMP/_MZ_830233_right.maf115 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ115
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf115
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf115
+mv TMP/_MZ_830233_MZ111 TMP/_MZ_830233_left.maf116
+mv TMP/_MZ_830233_MZ115 TMP/_MZ_830233_right.maf116
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ116
+maf_project TMP/_MZ_830233_left.maf116 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf116 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf116
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf116
+multiz M=1  TMP/_MZ_830233_left.maf116 TMP/_MZ_830233_right.maf116 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ116
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf116
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf116
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ117
+cp cs10_NCBI_RefSeq_softmasked.DPSVb.sing.maf TMP/_MZ_830233_left.maf117
+cp cs10_NCBI_RefSeq_softmasked.SSV.sing.maf TMP/_MZ_830233_right.maf117
+maf_project TMP/_MZ_830233_left.maf117 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf117 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf117
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf117
+multiz M=1  TMP/_MZ_830233_left.maf117 TMP/_MZ_830233_right.maf117 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ117
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ117
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ118
+cp cs10_NCBI_RefSeq_softmasked.SVA6a.sing.maf TMP/_MZ_830233_left.maf118
+cp cs10_NCBI_RefSeq_softmasked.WHLR.sing.maf TMP/_MZ_830233_right.maf118
+maf_project TMP/_MZ_830233_left.maf118 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf118 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf118
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf118
+multiz M=1  TMP/_MZ_830233_left.maf118 TMP/_MZ_830233_right.maf118 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ118
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ118
+mv TMP/_MZ_830233_MZ117 TMP/_MZ_830233_left.maf119
+mv TMP/_MZ_830233_MZ118 TMP/_MZ_830233_right.maf119
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ119
+maf_project TMP/_MZ_830233_left.maf119 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf119 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf119
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf119
+multiz M=1  TMP/_MZ_830233_left.maf119 TMP/_MZ_830233_right.maf119 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ119
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf119
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf119
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ120
+cp cs10_NCBI_RefSeq_softmasked.COSVb.sing.maf TMP/_MZ_830233_left.maf120
+cp cs10_NCBI_RefSeq_softmasked.SSH.sing.maf TMP/_MZ_830233_right.maf120
+maf_project TMP/_MZ_830233_left.maf120 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf120 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf120
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf120
+multiz M=1  TMP/_MZ_830233_left.maf120 TMP/_MZ_830233_right.maf120 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ120
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ120
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ121
+cp cs10_NCBI_RefSeq_softmasked.SSHS.sing.maf TMP/_MZ_830233_left.maf121
+cp cs10_NCBI_RefSeq_softmasked.SV2.sing.maf TMP/_MZ_830233_right.maf121
+maf_project TMP/_MZ_830233_left.maf121 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf121 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf121
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf121
+multiz M=1  TMP/_MZ_830233_left.maf121 TMP/_MZ_830233_right.maf121 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ121
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ121
+mv TMP/_MZ_830233_MZ120 TMP/_MZ_830233_left.maf122
+mv TMP/_MZ_830233_MZ121 TMP/_MZ_830233_right.maf122
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ122
+maf_project TMP/_MZ_830233_left.maf122 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf122 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf122
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf122
+multiz M=1  TMP/_MZ_830233_left.maf122 TMP/_MZ_830233_right.maf122 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ122
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf122
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf122
+mv TMP/_MZ_830233_MZ119 TMP/_MZ_830233_left.maf123
+mv TMP/_MZ_830233_MZ122 TMP/_MZ_830233_right.maf123
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ123
+maf_project TMP/_MZ_830233_left.maf123 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf123 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf123
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf123
+multiz M=1  TMP/_MZ_830233_left.maf123 TMP/_MZ_830233_right.maf123 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ123
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf123
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf123
+mv TMP/_MZ_830233_MZ123 TMP/_MZ_830233_right.maf124
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ124
+cp cs10_NCBI_RefSeq_softmasked.MBSVb.sing.maf TMP/_MZ_830233_left.maf124
+maf_project TMP/_MZ_830233_left.maf124 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf124 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf124
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf124
+multiz M=1  TMP/_MZ_830233_left.maf124 TMP/_MZ_830233_right.maf124 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ124
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf124
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf124
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ125
+cp cs10_NCBI_RefSeq_softmasked.TWSVb.sing.maf TMP/_MZ_830233_left.maf125
+cp cs10_NCBI_RefSeq_softmasked.WCSV.sing.maf TMP/_MZ_830233_right.maf125
+maf_project TMP/_MZ_830233_left.maf125 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf125 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf125
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf125
+multiz M=1  TMP/_MZ_830233_left.maf125 TMP/_MZ_830233_right.maf125 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ125
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ125
+mv TMP/_MZ_830233_MZ125 TMP/_MZ_830233_right.maf126
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ126
+cp cs10_NCBI_RefSeq_softmasked.SVA12a.sing.maf TMP/_MZ_830233_left.maf126
+maf_project TMP/_MZ_830233_left.maf126 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf126 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf126
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf126
+multiz M=1  TMP/_MZ_830233_left.maf126 TMP/_MZ_830233_right.maf126 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ126
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf126
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf126
+mv TMP/_MZ_830233_MZ126 TMP/_MZ_830233_right.maf127
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ127
+cp cs10_NCBI_RefSeq_softmasked.USV.sing.maf TMP/_MZ_830233_left.maf127
+maf_project TMP/_MZ_830233_left.maf127 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf127 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf127
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf127
+multiz M=1  TMP/_MZ_830233_left.maf127 TMP/_MZ_830233_right.maf127 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ127
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf127
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf127
+mv TMP/_MZ_830233_MZ124 TMP/_MZ_830233_left.maf128
+mv TMP/_MZ_830233_MZ127 TMP/_MZ_830233_right.maf128
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ128
+maf_project TMP/_MZ_830233_left.maf128 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf128 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf128
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf128
+multiz M=1  TMP/_MZ_830233_left.maf128 TMP/_MZ_830233_right.maf128 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ128
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf128
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf128
+mv TMP/_MZ_830233_MZ128 TMP/_MZ_830233_right.maf129
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ129
+cp cs10_NCBI_RefSeq_softmasked.SHH24.sing.maf TMP/_MZ_830233_left.maf129
+maf_project TMP/_MZ_830233_left.maf129 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf129 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf129
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf129
+multiz M=1  TMP/_MZ_830233_left.maf129 TMP/_MZ_830233_right.maf129 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ129
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf129
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf129
+mv TMP/_MZ_830233_MZ116 TMP/_MZ_830233_left.maf130
+mv TMP/_MZ_830233_MZ129 TMP/_MZ_830233_right.maf130
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ130
+maf_project TMP/_MZ_830233_left.maf130 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf130 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf130
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf130
+multiz M=1  TMP/_MZ_830233_left.maf130 TMP/_MZ_830233_right.maf130 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ130
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf130
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf130
+mv TMP/_MZ_830233_MZ110 TMP/_MZ_830233_left.maf131
+mv TMP/_MZ_830233_MZ130 TMP/_MZ_830233_right.maf131
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ131
+maf_project TMP/_MZ_830233_left.maf131 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf131 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf131
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf131
+multiz M=1  TMP/_MZ_830233_left.maf131 TMP/_MZ_830233_right.maf131 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ131
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf131
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf131
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ132
+cp cs10_NCBI_RefSeq_softmasked.SK88.sing.maf TMP/_MZ_830233_left.maf132
+cp cs10_NCBI_RefSeq_softmasked.SKFBa.sing.maf TMP/_MZ_830233_right.maf132
+maf_project TMP/_MZ_830233_left.maf132 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf132 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf132
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf132
+multiz M=1  TMP/_MZ_830233_left.maf132 TMP/_MZ_830233_right.maf132 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ132
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ132
+mv TMP/_MZ_830233_MZ132 TMP/_MZ_830233_right.maf133
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ133
+cp cs10_NCBI_RefSeq_softmasked.AH3Ma.sing.maf TMP/_MZ_830233_left.maf133
+maf_project TMP/_MZ_830233_left.maf133 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf133 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf133
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf133
+multiz M=1  TMP/_MZ_830233_left.maf133 TMP/_MZ_830233_right.maf133 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ133
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf133
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf133
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ134
+cp cs10_NCBI_RefSeq_softmasked.CST53.sing.maf TMP/_MZ_830233_left.maf134
+cp cs10_NCBI_RefSeq_softmasked.CST8.sing.maf TMP/_MZ_830233_right.maf134
+maf_project TMP/_MZ_830233_left.maf134 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf134 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf134
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf134
+multiz M=1  TMP/_MZ_830233_left.maf134 TMP/_MZ_830233_right.maf134 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ134
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ134
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ135
+cp cs10_NCBI_RefSeq_softmasked.STHa.sing.maf TMP/_MZ_830233_left.maf135
+cp cs10_NCBI_RefSeq_softmasked.STLR.sing.maf TMP/_MZ_830233_right.maf135
+maf_project TMP/_MZ_830233_left.maf135 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf135 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf135
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf135
+multiz M=1  TMP/_MZ_830233_left.maf135 TMP/_MZ_830233_right.maf135 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ135
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ135
+mv TMP/_MZ_830233_MZ134 TMP/_MZ_830233_left.maf136
+mv TMP/_MZ_830233_MZ135 TMP/_MZ_830233_right.maf136
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ136
+maf_project TMP/_MZ_830233_left.maf136 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf136 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf136
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf136
+multiz M=1  TMP/_MZ_830233_left.maf136 TMP/_MZ_830233_right.maf136 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ136
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf136
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf136
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ137
+cp cs10_NCBI_RefSeq_softmasked.TST192.sing.maf TMP/_MZ_830233_left.maf137
+cp cs10_NCBI_RefSeq_softmasked.TST58.sing.maf TMP/_MZ_830233_right.maf137
+maf_project TMP/_MZ_830233_left.maf137 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf137 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf137
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf137
+multiz M=1  TMP/_MZ_830233_left.maf137 TMP/_MZ_830233_right.maf137 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ137
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ137
+mv TMP/_MZ_830233_MZ137 TMP/_MZ_830233_right.maf138
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ138
+cp cs10_NCBI_RefSeq_softmasked.TS13.sing.maf TMP/_MZ_830233_left.maf138
+maf_project TMP/_MZ_830233_left.maf138 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf138 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf138
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf138
+multiz M=1  TMP/_MZ_830233_left.maf138 TMP/_MZ_830233_right.maf138 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ138
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf138
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf138
+mv TMP/_MZ_830233_MZ136 TMP/_MZ_830233_left.maf139
+mv TMP/_MZ_830233_MZ138 TMP/_MZ_830233_right.maf139
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ139
+maf_project TMP/_MZ_830233_left.maf139 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf139 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf139
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf139
+multiz M=1  TMP/_MZ_830233_left.maf139 TMP/_MZ_830233_right.maf139 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ139
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf139
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf139
+mv TMP/_MZ_830233_MZ133 TMP/_MZ_830233_left.maf140
+mv TMP/_MZ_830233_MZ139 TMP/_MZ_830233_right.maf140
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ140
+maf_project TMP/_MZ_830233_left.maf140 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf140 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf140
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf140
+multiz M=1  TMP/_MZ_830233_left.maf140 TMP/_MZ_830233_right.maf140 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ140
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf140
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf140
+mv TMP/_MZ_830233_MZ140 TMP/_MZ_830233_right.maf141
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ141
+cp cs10_NCBI_RefSeq_softmasked.Chemdog91_175268.sing.maf TMP/_MZ_830233_left.maf141
+maf_project TMP/_MZ_830233_left.maf141 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf141 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf141
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf141
+multiz M=1  TMP/_MZ_830233_left.maf141 TMP/_MZ_830233_right.maf141 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ141
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf141
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf141
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ142
+cp cs10_NCBI_RefSeq_softmasked.DPSVa.sing.maf TMP/_MZ_830233_left.maf142
+cp cs10_NCBI_RefSeq_softmasked.DRBP.sing.maf TMP/_MZ_830233_right.maf142
+maf_project TMP/_MZ_830233_left.maf142 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf142 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf142
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf142
+multiz M=1  TMP/_MZ_830233_left.maf142 TMP/_MZ_830233_right.maf142 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ142
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ142
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ143
+cp cs10_NCBI_RefSeq_softmasked.DPFBa.sing.maf TMP/_MZ_830233_left.maf143
+cp cs10_NCBI_RefSeq_softmasked.SKSV.sing.maf TMP/_MZ_830233_right.maf143
+maf_project TMP/_MZ_830233_left.maf143 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf143 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf143
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf143
+multiz M=1  TMP/_MZ_830233_left.maf143 TMP/_MZ_830233_right.maf143 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ143
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ143
+mv TMP/_MZ_830233_MZ142 TMP/_MZ_830233_left.maf144
+mv TMP/_MZ_830233_MZ143 TMP/_MZ_830233_right.maf144
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ144
+maf_project TMP/_MZ_830233_left.maf144 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf144 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf144
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf144
+multiz M=1  TMP/_MZ_830233_left.maf144 TMP/_MZ_830233_right.maf144 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ144
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf144
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf144
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ145
+cp cs10_NCBI_RefSeq_softmasked.WHWa.sing.maf TMP/_MZ_830233_left.maf145
+cp cs10_NCBI_RefSeq_softmasked.Cannbio_2.sing.maf TMP/_MZ_830233_right.maf145
+maf_project TMP/_MZ_830233_left.maf145 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf145 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf145
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf145
+multiz M=1  TMP/_MZ_830233_left.maf145 TMP/_MZ_830233_right.maf145 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ145
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ145
+mv TMP/_MZ_830233_MZ144 TMP/_MZ_830233_left.maf146
+mv TMP/_MZ_830233_MZ145 TMP/_MZ_830233_right.maf146
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ146
+maf_project TMP/_MZ_830233_left.maf146 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf146 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf146
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf146
+multiz M=1  TMP/_MZ_830233_left.maf146 TMP/_MZ_830233_right.maf146 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ146
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf146
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf146
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ147
+cp cs10_NCBI_RefSeq_softmasked.S8Ha.sing.maf TMP/_MZ_830233_left.maf147
+cp cs10_NCBI_RefSeq_softmasked.SUV8.sing.maf TMP/_MZ_830233_right.maf147
+maf_project TMP/_MZ_830233_left.maf147 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf147 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf147
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf147
+multiz M=1  TMP/_MZ_830233_left.maf147 TMP/_MZ_830233_right.maf147 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ147
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ147
+mv TMP/_MZ_830233_MZ147 TMP/_MZ_830233_right.maf148
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ148
+cp cs10_NCBI_RefSeq_softmasked.S8LR.sing.maf TMP/_MZ_830233_left.maf148
+maf_project TMP/_MZ_830233_left.maf148 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf148 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf148
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf148
+multiz M=1  TMP/_MZ_830233_left.maf148 TMP/_MZ_830233_right.maf148 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ148
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf148
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf148
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ149
+cp cs10_NCBI_RefSeq_softmasked.SH50.sing.maf TMP/_MZ_830233_left.maf149
+cp cs10_NCBI_RefSeq_softmasked.SHH5a.sing.maf TMP/_MZ_830233_right.maf149
+maf_project TMP/_MZ_830233_left.maf149 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf149 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf149
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf149
+multiz M=1  TMP/_MZ_830233_left.maf149 TMP/_MZ_830233_right.maf149 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ149
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ149
+mv TMP/_MZ_830233_MZ149 TMP/_MZ_830233_right.maf150
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ150
+cp cs10_NCBI_RefSeq_softmasked.SHLR.sing.maf TMP/_MZ_830233_left.maf150
+maf_project TMP/_MZ_830233_left.maf150 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf150 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf150
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf150
+multiz M=1  TMP/_MZ_830233_left.maf150 TMP/_MZ_830233_right.maf150 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ150
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf150
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf150
+mv TMP/_MZ_830233_MZ150 TMP/_MZ_830233_right.maf151
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ151
+cp cs10_NCBI_RefSeq_softmasked.SSLR.sing.maf TMP/_MZ_830233_left.maf151
+maf_project TMP/_MZ_830233_left.maf151 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf151 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf151
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf151
+multiz M=1  TMP/_MZ_830233_left.maf151 TMP/_MZ_830233_right.maf151 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ151
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf151
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf151
+mv TMP/_MZ_830233_MZ148 TMP/_MZ_830233_left.maf152
+mv TMP/_MZ_830233_MZ151 TMP/_MZ_830233_right.maf152
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ152
+maf_project TMP/_MZ_830233_left.maf152 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf152 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf152
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf152
+multiz M=1  TMP/_MZ_830233_left.maf152 TMP/_MZ_830233_right.maf152 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ152
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf152
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf152
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ153
+cp cs10_NCBI_RefSeq_softmasked.ACDC.sing.maf TMP/_MZ_830233_left.maf153
+cp cs10_NCBI_RefSeq_softmasked.DCHCC.sing.maf TMP/_MZ_830233_right.maf153
+maf_project TMP/_MZ_830233_left.maf153 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf153 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf153
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf153
+multiz M=1  TMP/_MZ_830233_left.maf153 TMP/_MZ_830233_right.maf153 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ153
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ153
+mv TMP/_MZ_830233_MZ153 TMP/_MZ_830233_right.maf154
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ154
+cp cs10_NCBI_RefSeq_softmasked.ASM186575v1.sing.maf TMP/_MZ_830233_left.maf154
+maf_project TMP/_MZ_830233_left.maf154 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf154 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf154
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf154
+multiz M=1  TMP/_MZ_830233_left.maf154 TMP/_MZ_830233_right.maf154 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ154
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf154
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf154
+mv TMP/_MZ_830233_MZ152 TMP/_MZ_830233_left.maf155
+mv TMP/_MZ_830233_MZ154 TMP/_MZ_830233_right.maf155
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ155
+maf_project TMP/_MZ_830233_left.maf155 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf155 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf155
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf155
+multiz M=1  TMP/_MZ_830233_left.maf155 TMP/_MZ_830233_right.maf155 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ155
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf155
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf155
+mv TMP/_MZ_830233_MZ155 TMP/_MZ_830233_right.maf156
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ156
+cp cs10_NCBI_RefSeq_softmasked.GRMb.sing.maf TMP/_MZ_830233_left.maf156
+maf_project TMP/_MZ_830233_left.maf156 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf156 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf156
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf156
+multiz M=1  TMP/_MZ_830233_left.maf156 TMP/_MZ_830233_right.maf156 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ156
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf156
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf156
+mv TMP/_MZ_830233_MZ146 TMP/_MZ_830233_left.maf157
+mv TMP/_MZ_830233_MZ156 TMP/_MZ_830233_right.maf157
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ157
+maf_project TMP/_MZ_830233_left.maf157 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf157 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf157
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf157
+multiz M=1  TMP/_MZ_830233_left.maf157 TMP/_MZ_830233_right.maf157 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ157
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf157
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf157
+mv TMP/_MZ_830233_MZ141 TMP/_MZ_830233_left.maf158
+mv TMP/_MZ_830233_MZ157 TMP/_MZ_830233_right.maf158
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ158
+maf_project TMP/_MZ_830233_left.maf158 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf158 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf158
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf158
+multiz M=1  TMP/_MZ_830233_left.maf158 TMP/_MZ_830233_right.maf158 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ158
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf158
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf158
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ159
+cp cs10_NCBI_RefSeq_softmasked.SMSQ.sing.maf TMP/_MZ_830233_left.maf159
+cp cs10_NCBI_RefSeq_softmasked.WHWb.sing.maf TMP/_MZ_830233_right.maf159
+maf_project TMP/_MZ_830233_left.maf159 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf159 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf159
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf159
+multiz M=1  TMP/_MZ_830233_left.maf159 TMP/_MZ_830233_right.maf159 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ159
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ159
+mv TMP/_MZ_830233_MZ159 TMP/_MZ_830233_right.maf160
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ160
+cp cs10_NCBI_RefSeq_softmasked.NLv1b.sing.maf TMP/_MZ_830233_left.maf160
+maf_project TMP/_MZ_830233_left.maf160 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf160 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf160
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf160
+multiz M=1  TMP/_MZ_830233_left.maf160 TMP/_MZ_830233_right.maf160 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ160
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf160
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf160
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ161
+cp cs10_NCBI_RefSeq_softmasked.g79X.sing.maf TMP/_MZ_830233_left.maf161
+cp cs10_NCBI_RefSeq_softmasked.NLv1a.sing.maf TMP/_MZ_830233_right.maf161
+maf_project TMP/_MZ_830233_left.maf161 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf161 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf161
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf161
+multiz M=1  TMP/_MZ_830233_left.maf161 TMP/_MZ_830233_right.maf161 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ161
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ161
+mv TMP/_MZ_830233_MZ160 TMP/_MZ_830233_left.maf162
+mv TMP/_MZ_830233_MZ161 TMP/_MZ_830233_right.maf162
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ162
+maf_project TMP/_MZ_830233_left.maf162 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf162 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf162
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf162
+multiz M=1  TMP/_MZ_830233_left.maf162 TMP/_MZ_830233_right.maf162 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ162
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf162
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf162
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ163
+cp cs10_NCBI_RefSeq_softmasked.BH4.sing.maf TMP/_MZ_830233_left.maf163
+cp cs10_NCBI_RefSeq_softmasked.FB30.sing.maf TMP/_MZ_830233_right.maf163
+maf_project TMP/_MZ_830233_left.maf163 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf163 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf163
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf163
+multiz M=1  TMP/_MZ_830233_left.maf163 TMP/_MZ_830233_right.maf163 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ163
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ163
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ164
+cp cs10_NCBI_RefSeq_softmasked.I59.sing.maf TMP/_MZ_830233_left.maf164
+cp cs10_NCBI_RefSeq_softmasked.I68.sing.maf TMP/_MZ_830233_right.maf164
+maf_project TMP/_MZ_830233_left.maf164 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf164 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf164
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf164
+multiz M=1  TMP/_MZ_830233_left.maf164 TMP/_MZ_830233_right.maf164 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ164
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ164
+mv TMP/_MZ_830233_MZ164 TMP/_MZ_830233_right.maf165
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ165
+cp cs10_NCBI_RefSeq_softmasked.I78.sing.maf TMP/_MZ_830233_left.maf165
+maf_project TMP/_MZ_830233_left.maf165 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf165 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf165
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf165
+multiz M=1  TMP/_MZ_830233_left.maf165 TMP/_MZ_830233_right.maf165 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ165
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf165
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf165
+mv TMP/_MZ_830233_MZ165 TMP/_MZ_830233_right.maf166
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ166
+cp cs10_NCBI_RefSeq_softmasked.I52.sing.maf TMP/_MZ_830233_left.maf166
+maf_project TMP/_MZ_830233_left.maf166 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf166 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf166
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf166
+multiz M=1  TMP/_MZ_830233_left.maf166 TMP/_MZ_830233_right.maf166 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ166
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf166
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf166
+mv TMP/_MZ_830233_MZ166 TMP/_MZ_830233_right.maf167
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ167
+cp cs10_NCBI_RefSeq_softmasked.I53.sing.maf TMP/_MZ_830233_left.maf167
+maf_project TMP/_MZ_830233_left.maf167 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf167 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf167
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf167
+multiz M=1  TMP/_MZ_830233_left.maf167 TMP/_MZ_830233_right.maf167 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ167
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf167
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf167
+mv TMP/_MZ_830233_MZ167 TMP/_MZ_830233_right.maf168
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ168
+cp cs10_NCBI_RefSeq_softmasked.I75.sing.maf TMP/_MZ_830233_left.maf168
+maf_project TMP/_MZ_830233_left.maf168 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf168 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf168
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf168
+multiz M=1  TMP/_MZ_830233_left.maf168 TMP/_MZ_830233_right.maf168 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ168
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf168
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf168
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ169
+cp cs10_NCBI_RefSeq_softmasked.I3.sing.maf TMP/_MZ_830233_left.maf169
+cp cs10_NCBI_RefSeq_softmasked.I61.sing.maf TMP/_MZ_830233_right.maf169
+maf_project TMP/_MZ_830233_left.maf169 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf169 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf169
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf169
+multiz M=1  TMP/_MZ_830233_left.maf169 TMP/_MZ_830233_right.maf169 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ169
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ169
+mv TMP/_MZ_830233_MZ168 TMP/_MZ_830233_left.maf170
+mv TMP/_MZ_830233_MZ169 TMP/_MZ_830233_right.maf170
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ170
+maf_project TMP/_MZ_830233_left.maf170 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf170 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf170
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf170
+multiz M=1  TMP/_MZ_830233_left.maf170 TMP/_MZ_830233_right.maf170 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ170
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf170
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf170
+mv TMP/_MZ_830233_MZ170 TMP/_MZ_830233_right.maf171
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ171
+cp cs10_NCBI_RefSeq_softmasked.BH44.sing.maf TMP/_MZ_830233_left.maf171
+maf_project TMP/_MZ_830233_left.maf171 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf171 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf171
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf171
+multiz M=1  TMP/_MZ_830233_left.maf171 TMP/_MZ_830233_right.maf171 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ171
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf171
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf171
+mv TMP/_MZ_830233_MZ163 TMP/_MZ_830233_left.maf172
+mv TMP/_MZ_830233_MZ171 TMP/_MZ_830233_right.maf172
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ172
+maf_project TMP/_MZ_830233_left.maf172 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf172 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf172
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf172
+multiz M=1  TMP/_MZ_830233_left.maf172 TMP/_MZ_830233_right.maf172 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ172
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf172
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf172
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ173
+cp cs10_NCBI_RefSeq_softmasked.P20.sing.maf TMP/_MZ_830233_left.maf173
+cp cs10_NCBI_RefSeq_softmasked.P22.sing.maf TMP/_MZ_830233_right.maf173
+maf_project TMP/_MZ_830233_left.maf173 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf173 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf173
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf173
+multiz M=1  TMP/_MZ_830233_left.maf173 TMP/_MZ_830233_right.maf173 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ173
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ173
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ174
+cp cs10_NCBI_RefSeq_softmasked.EH23b.sing.maf TMP/_MZ_830233_left.maf174
+cp cs10_NCBI_RefSeq_softmasked.ERB.sing.maf TMP/_MZ_830233_right.maf174
+maf_project TMP/_MZ_830233_left.maf174 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf174 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf174
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf174
+multiz M=1  TMP/_MZ_830233_left.maf174 TMP/_MZ_830233_right.maf174 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ174
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ174
+mv TMP/_MZ_830233_MZ173 TMP/_MZ_830233_left.maf175
+mv TMP/_MZ_830233_MZ174 TMP/_MZ_830233_right.maf175
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ175
+maf_project TMP/_MZ_830233_left.maf175 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf175 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf175
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf175
+multiz M=1  TMP/_MZ_830233_left.maf175 TMP/_MZ_830233_right.maf175 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ175
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf175
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf175
+mv TMP/_MZ_830233_MZ175 TMP/_MZ_830233_right.maf176
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ176
+cp cs10_NCBI_RefSeq_softmasked.SG123.sing.maf TMP/_MZ_830233_left.maf176
+maf_project TMP/_MZ_830233_left.maf176 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf176 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf176
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf176
+multiz M=1  TMP/_MZ_830233_left.maf176 TMP/_MZ_830233_right.maf176 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ176
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf176
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf176
+mv TMP/_MZ_830233_MZ172 TMP/_MZ_830233_left.maf177
+mv TMP/_MZ_830233_MZ176 TMP/_MZ_830233_right.maf177
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ177
+maf_project TMP/_MZ_830233_left.maf177 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf177 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf177
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf177
+multiz M=1  TMP/_MZ_830233_left.maf177 TMP/_MZ_830233_right.maf177 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ177
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf177
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf177
+mv TMP/_MZ_830233_MZ162 TMP/_MZ_830233_left.maf178
+mv TMP/_MZ_830233_MZ177 TMP/_MZ_830233_right.maf178
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ178
+maf_project TMP/_MZ_830233_left.maf178 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf178 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf178
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf178
+multiz M=1  TMP/_MZ_830233_left.maf178 TMP/_MZ_830233_right.maf178 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ178
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf178
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf178
+mv TMP/_MZ_830233_MZ158 TMP/_MZ_830233_left.maf179
+mv TMP/_MZ_830233_MZ178 TMP/_MZ_830233_right.maf179
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ179
+maf_project TMP/_MZ_830233_left.maf179 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf179 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf179
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf179
+multiz M=1  TMP/_MZ_830233_left.maf179 TMP/_MZ_830233_right.maf179 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ179
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf179
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf179
+mv TMP/_MZ_830233_MZ131 TMP/_MZ_830233_left.maf180
+mv TMP/_MZ_830233_MZ179 TMP/_MZ_830233_right.maf180
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ180
+maf_project TMP/_MZ_830233_left.maf180 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf180 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf180
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf180
+multiz M=1  TMP/_MZ_830233_left.maf180 TMP/_MZ_830233_right.maf180 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ180
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf180
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf180
+mv TMP/_MZ_830233_MZ96 TMP/_MZ_830233_left.maf181
+mv TMP/_MZ_830233_MZ180 TMP/_MZ_830233_right.maf181
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ181
+maf_project TMP/_MZ_830233_left.maf181 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf181 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf181
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf181
+multiz M=1  TMP/_MZ_830233_left.maf181 TMP/_MZ_830233_right.maf181 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ181
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf181
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf181
+mv TMP/_MZ_830233_MZ92 TMP/_MZ_830233_left.maf182
+mv TMP/_MZ_830233_MZ181 TMP/_MZ_830233_right.maf182
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ182
+maf_project TMP/_MZ_830233_left.maf182 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf182 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf182
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf182
+multiz M=1  TMP/_MZ_830233_left.maf182 TMP/_MZ_830233_right.maf182 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ182
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf182
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf182
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ183
+cp cs10_NCBI_RefSeq_softmasked.CALO.sing.maf TMP/_MZ_830233_left.maf183
+cp cs10_NCBI_RefSeq_softmasked.COSVa.sing.maf TMP/_MZ_830233_right.maf183
+maf_project TMP/_MZ_830233_left.maf183 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf183 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf183
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf183
+multiz M=1  TMP/_MZ_830233_left.maf183 TMP/_MZ_830233_right.maf183 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ183
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ183
+mv TMP/_MZ_830233_MZ183 TMP/_MZ_830233_right.maf184
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ184
+cp cs10_NCBI_RefSeq_softmasked.COFBb.sing.maf TMP/_MZ_830233_left.maf184
+maf_project TMP/_MZ_830233_left.maf184 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf184 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf184
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf184
+multiz M=1  TMP/_MZ_830233_left.maf184 TMP/_MZ_830233_right.maf184 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ184
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf184
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf184
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ185
+cp cs10_NCBI_RefSeq_softmasked.JL_DASH.sing.maf TMP/_MZ_830233_left.maf185
+cp cs10_NCBI_RefSeq_softmasked.JL_Mother.sing.maf TMP/_MZ_830233_right.maf185
+maf_project TMP/_MZ_830233_left.maf185 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf185 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf185
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf185
+multiz M=1  TMP/_MZ_830233_left.maf185 TMP/_MZ_830233_right.maf185 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ185
+grep -v -h eof TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ185
+mv TMP/_MZ_830233_MZ185 TMP/_MZ_830233_right.maf186
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ186
+cp cs10_NCBI_RefSeq_softmasked.JL5.sing.maf TMP/_MZ_830233_left.maf186
+maf_project TMP/_MZ_830233_left.maf186 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf186 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf186
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf186
+multiz M=1  TMP/_MZ_830233_left.maf186 TMP/_MZ_830233_right.maf186 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ186
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf186
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf186
+mv TMP/_MZ_830233_MZ186 TMP/_MZ_830233_right.maf187
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ187
+cp cs10_NCBI_RefSeq_softmasked.JL_Father.sing.maf TMP/_MZ_830233_left.maf187
+maf_project TMP/_MZ_830233_left.maf187 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf187 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf187
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf187
+multiz M=1  TMP/_MZ_830233_left.maf187 TMP/_MZ_830233_right.maf187 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ187
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf187
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf187
+mv TMP/_MZ_830233_MZ184 TMP/_MZ_830233_left.maf188
+mv TMP/_MZ_830233_MZ187 TMP/_MZ_830233_right.maf188
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ188
+maf_project TMP/_MZ_830233_left.maf188 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf188 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf188
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf188
+multiz M=1  TMP/_MZ_830233_left.maf188 TMP/_MZ_830233_right.maf188 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ188
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf188
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf188
+mv TMP/_MZ_830233_MZ188 TMP/_MZ_830233_right.maf189
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ189
+cp cs10_NCBI_RefSeq_softmasked.SODLa.sing.maf TMP/_MZ_830233_left.maf189
+maf_project TMP/_MZ_830233_left.maf189 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf189 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf189
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf189
+multiz M=1  TMP/_MZ_830233_left.maf189 TMP/_MZ_830233_right.maf189 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ189
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf189
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf189
+mv TMP/_MZ_830233_MZ182 TMP/_MZ_830233_left.maf190
+mv TMP/_MZ_830233_MZ189 TMP/_MZ_830233_right.maf190
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ190
+maf_project TMP/_MZ_830233_left.maf190 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf190 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf190
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf190
+multiz M=1  TMP/_MZ_830233_left.maf190 TMP/_MZ_830233_right.maf190 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ190
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf190
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf190
+mv TMP/_MZ_830233_MZ190 TMP/_MZ_830233_right.maf191
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ191
+cp cs10_NCBI_RefSeq_softmasked.ASM2916894v1.sing.maf TMP/_MZ_830233_left.maf191
+maf_project TMP/_MZ_830233_left.maf191 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf191 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf191
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf191
+multiz M=1  TMP/_MZ_830233_left.maf191 TMP/_MZ_830233_right.maf191 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ191
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf191
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf191
+mv TMP/_MZ_830233_MZ191 TMP/_MZ_830233_right.maf192
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ192
+cp cs10_NCBI_RefSeq_softmasked.PTK32.sing.maf TMP/_MZ_830233_left.maf192
+maf_project TMP/_MZ_830233_left.maf192 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf192 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf192
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf192
+multiz M=1  TMP/_MZ_830233_left.maf192 TMP/_MZ_830233_right.maf192 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ192
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf192
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf192
+mv TMP/_MZ_830233_MZ192 TMP/_MZ_830233_right.maf193
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ193
+cp cs10_NCBI_RefSeq_softmasked.ABC.sing.maf TMP/_MZ_830233_left.maf193
+maf_project TMP/_MZ_830233_left.maf193 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf193 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf193
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf193
+multiz M=1  TMP/_MZ_830233_left.maf193 TMP/_MZ_830233_right.maf193 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ193
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf193
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf193
+mv TMP/_MZ_830233_MZ48 TMP/_MZ_830233_left.maf194
+mv TMP/_MZ_830233_MZ193 TMP/_MZ_830233_right.maf194
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ194
+maf_project TMP/_MZ_830233_left.maf194 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf194 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf194
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf194
+multiz M=1  TMP/_MZ_830233_left.maf194 TMP/_MZ_830233_right.maf194 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ194
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf194
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf194
+mv TMP/_MZ_830233_MZ194 TMP/_MZ_830233_right.maf195
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ195
+cp cs10_NCBI_RefSeq_softmasked.Punto_Rojo.sing.maf TMP/_MZ_830233_left.maf195
+maf_project TMP/_MZ_830233_left.maf195 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf195 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf195
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf195
+multiz M=1  TMP/_MZ_830233_left.maf195 TMP/_MZ_830233_right.maf195 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ195
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf195
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf195
+mv TMP/_MZ_830233_MZ195 TMP/_MZ_830233_right.maf196
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ196
+cp cs10_NCBI_RefSeq_softmasked.Cherry_Pie.sing.maf TMP/_MZ_830233_left.maf196
+maf_project TMP/_MZ_830233_left.maf196 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf196 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf196
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf196
+multiz M=1  TMP/_MZ_830233_left.maf196 TMP/_MZ_830233_right.maf196 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ196
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf196
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf196
+mv TMP/_MZ_830233_MZ47 TMP/_MZ_830233_left.maf197
+mv TMP/_MZ_830233_MZ196 TMP/_MZ_830233_right.maf197
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ197
+maf_project TMP/_MZ_830233_left.maf197 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf197 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf197
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf197
+multiz M=1  TMP/_MZ_830233_left.maf197 TMP/_MZ_830233_right.maf197 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ197
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf197
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf197
+mv TMP/_MZ_830233_MZ46 TMP/_MZ_830233_left.maf198
+mv TMP/_MZ_830233_MZ197 TMP/_MZ_830233_right.maf198
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ198
+maf_project TMP/_MZ_830233_left.maf198 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf198 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf198
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf198
+multiz M=1  TMP/_MZ_830233_left.maf198 TMP/_MZ_830233_right.maf198 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ198
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf198
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf198
+mv TMP/_MZ_830233_MZ198 TMP/_MZ_830233_right.maf199
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ199
+cp cs10_NCBI_RefSeq_softmasked.BOAXb.sing.maf TMP/_MZ_830233_left.maf199
+maf_project TMP/_MZ_830233_left.maf199 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf199 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf199
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf199
+multiz M=1  TMP/_MZ_830233_left.maf199 TMP/_MZ_830233_right.maf199 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ199
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf199
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf199
+mv TMP/_MZ_830233_MZ43 TMP/_MZ_830233_left.maf200
+mv TMP/_MZ_830233_MZ199 TMP/_MZ_830233_right.maf200
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ200
+maf_project TMP/_MZ_830233_left.maf200 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf200 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf200
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf200
+multiz M=1  TMP/_MZ_830233_left.maf200 TMP/_MZ_830233_right.maf200 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ200
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf200
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf200
+mv TMP/_MZ_830233_MZ40 TMP/_MZ_830233_left.maf201
+mv TMP/_MZ_830233_MZ200 TMP/_MZ_830233_right.maf201
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ201
+maf_project TMP/_MZ_830233_left.maf201 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf201 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf201
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf201
+multiz M=1  TMP/_MZ_830233_left.maf201 TMP/_MZ_830233_right.maf201 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ201
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf201
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf201
+mv TMP/_MZ_830233_MZ39 TMP/_MZ_830233_left.maf202
+mv TMP/_MZ_830233_MZ201 TMP/_MZ_830233_right.maf202
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ202
+maf_project TMP/_MZ_830233_left.maf202 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf202 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf202
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf202
+multiz M=1  TMP/_MZ_830233_left.maf202 TMP/_MZ_830233_right.maf202 0 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ202
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf202
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf202
+mv TMP/_MZ_830233_MZ38 TMP/_MZ_830233_left.maf203
+mv TMP/_MZ_830233_MZ202 TMP/_MZ_830233_right.maf203
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ203
+maf_project TMP/_MZ_830233_left.maf203 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf203 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf203
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf203
+multiz M=1  TMP/_MZ_830233_left.maf203 TMP/_MZ_830233_right.maf203 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ203
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf203
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf203
+mv TMP/_MZ_830233_MZ203 TMP/_MZ_830233_right.maf204
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ204
+cp cs10_NCBI_RefSeq_softmasked.BOAXa.sing.maf TMP/_MZ_830233_left.maf204
+maf_project TMP/_MZ_830233_left.maf204 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf204 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf204
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf204
+mv TMP/_MZ_830233_right.maf204 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf204 TMP/_MZ_830233_right.maf204
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf204
+multiz M=1  TMP/_MZ_830233_left.maf204 TMP/_MZ_830233_right.maf204 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ204
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf204
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf204
+mv TMP/_MZ_830233_MZ204 TMP/_MZ_830233_right.maf205
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ205
+cp cs10_NCBI_RefSeq_softmasked.CANU_GWHCAYE00000000.sing.maf TMP/_MZ_830233_left.maf205
+maf_project TMP/_MZ_830233_left.maf205 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf205 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf205
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf205
+mv TMP/_MZ_830233_right.maf205 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf205 TMP/_MZ_830233_right.maf205
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf205
+multiz M=1  TMP/_MZ_830233_left.maf205 TMP/_MZ_830233_right.maf205 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ205
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf205
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf205
+mv TMP/_MZ_830233_MZ34 TMP/_MZ_830233_left.maf206
+mv TMP/_MZ_830233_MZ205 TMP/_MZ_830233_right.maf206
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ206
+maf_project TMP/_MZ_830233_left.maf206 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf206 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf206
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf206
+mv TMP/_MZ_830233_right.maf206 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf206 TMP/_MZ_830233_right.maf206
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf206
+multiz M=1  TMP/_MZ_830233_left.maf206 TMP/_MZ_830233_right.maf206 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ206
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf206
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf206
+mv TMP/_MZ_830233_MZ206 TMP/_MZ_830233_right.maf207
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ207
+cp cs10_NCBI_RefSeq_softmasked.cannabis_hap1_GWHISUO00000000_1.sing.maf TMP/_MZ_830233_left.maf207
+maf_project TMP/_MZ_830233_left.maf207 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf207 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf207
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf207
+mv TMP/_MZ_830233_right.maf207 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf207 TMP/_MZ_830233_right.maf207
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf207
+multiz M=1  TMP/_MZ_830233_left.maf207 TMP/_MZ_830233_right.maf207 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ207
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf207
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf207
+mv TMP/_MZ_830233_MZ31 TMP/_MZ_830233_left.maf208
+mv TMP/_MZ_830233_MZ207 TMP/_MZ_830233_right.maf208
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ208
+maf_project TMP/_MZ_830233_left.maf208 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf208 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf208
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf208
+mv TMP/_MZ_830233_right.maf208 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf208 TMP/_MZ_830233_right.maf208
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf208
+multiz M=1  TMP/_MZ_830233_left.maf208 TMP/_MZ_830233_right.maf208 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ208
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf208
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf208
+mv TMP/_MZ_830233_MZ1 TMP/_MZ_830233_left.maf209
+mv TMP/_MZ_830233_MZ208 TMP/_MZ_830233_right.maf209
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ209
+maf_project TMP/_MZ_830233_left.maf209 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf209 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf209
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf209
+mv TMP/_MZ_830233_right.maf209 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf209 TMP/_MZ_830233_right.maf209
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf209
+multiz M=1  TMP/_MZ_830233_left.maf209 TMP/_MZ_830233_right.maf209 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ209
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf209
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf209
+mv TMP/_MZ_830233_MZ209 TMP/_MZ_830233_right.maf210
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ210
+cp cs10_NCBI_RefSeq_softmasked.cannabis_hap2_GWHISUP00000000_1.sing.maf TMP/_MZ_830233_left.maf210
+maf_project TMP/_MZ_830233_left.maf210 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf210 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf210
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf210
+mv TMP/_MZ_830233_right.maf210 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf210 TMP/_MZ_830233_right.maf210
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf210
+multiz M=1  TMP/_MZ_830233_left.maf210 TMP/_MZ_830233_right.maf210 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ210
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf210
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf210
+mv TMP/_MZ_830233_MZ0 TMP/_MZ_830233_left.maf211
+mv TMP/_MZ_830233_MZ210 TMP/_MZ_830233_right.maf211
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ211
+maf_project TMP/_MZ_830233_left.maf211 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf211 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf211
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf211
+mv TMP/_MZ_830233_right.maf211 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf211 TMP/_MZ_830233_right.maf211
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf211
+multiz M=1  TMP/_MZ_830233_left.maf211 TMP/_MZ_830233_right.maf211 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ211
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf211
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf211
+mv TMP/_MZ_830233_MZ211 TMP/_MZ_830233_right.maf212
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ212
+cp cs10_NCBI_RefSeq_softmasked.ASM1303036v1.sing.maf TMP/_MZ_830233_left.maf212
+maf_project TMP/_MZ_830233_left.maf212 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf212 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf212
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf212
+mv TMP/_MZ_830233_right.maf212 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf212 TMP/_MZ_830233_right.maf212
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf212
+multiz M=1  TMP/_MZ_830233_left.maf212 TMP/_MZ_830233_right.maf212 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ212
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf212
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf212
+mv TMP/_MZ_830233_MZ212 TMP/_MZ_830233_right.maf213
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ213
+cp cs10_NCBI_RefSeq_softmasked.ASM5191173v1.sing.maf TMP/_MZ_830233_left.maf213
+maf_project TMP/_MZ_830233_left.maf213 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf213 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf213
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf213
+mv TMP/_MZ_830233_right.maf213 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf213 TMP/_MZ_830233_right.maf213
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf213
+multiz M=1  TMP/_MZ_830233_left.maf213 TMP/_MZ_830233_right.maf213 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ213
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf213
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf213
+mv TMP/_MZ_830233_MZ213 TMP/_MZ_830233_right.maf214
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ214
+cp cs10_NCBI_RefSeq_softmasked.ASM5191171v1.sing.maf TMP/_MZ_830233_left.maf214
+maf_project TMP/_MZ_830233_left.maf214 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf214 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf214
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf214
+mv TMP/_MZ_830233_right.maf214 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf214 TMP/_MZ_830233_right.maf214
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf214
+multiz M=1  TMP/_MZ_830233_left.maf214 TMP/_MZ_830233_right.maf214 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ214
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf214
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf214
+mv TMP/_MZ_830233_MZ214 TMP/_MZ_830233_right.maf215
+cp TMP/_MZ_830233_head TMP/_MZ_830233_MZ215
+cp cs10_NCBI_RefSeq_softmasked.ASM209043v1.sing.maf TMP/_MZ_830233_left.maf215
+maf_project TMP/_MZ_830233_left.maf215 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+maf_project TMP/_MZ_830233_right.maf215 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O2 > TMP/_MZ_830233_U2
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf215
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf215
+mv TMP/_MZ_830233_right.maf215 TMP/_MZ_830233_middle.maf
+mv TMP/_MZ_830233_left.maf215 TMP/_MZ_830233_right.maf215
+mv TMP/_MZ_830233_middle.maf TMP/_MZ_830233_left.maf215
+multiz M=1  TMP/_MZ_830233_left.maf215 TMP/_MZ_830233_right.maf215 1 TMP/_MZ_830233_U1 TMP/_MZ_830233_U2 >> TMP/_MZ_830233_MZ215
+mv TMP/_MZ_830233_U1 TMP/_MZ_830233_left.maf215
+mv TMP/_MZ_830233_U2 TMP/_MZ_830233_right.maf215
+maf_project TMP/_MZ_830233_MZ215 cs10_NCBI_RefSeq_softmasked TMP/_MZ_830233_O1 > TMP/_MZ_830233_U1
+grep -v eof TMP/_MZ_830233_U1 >> out.maf
+rm TMP/_MZ_830233_*
+echo "##eof maf" >> out.maf
